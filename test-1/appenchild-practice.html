@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    #root>div {
+      width: 200px;
+      height: 200px;
+      border: 1px solid red;
+      margin: 20px;
+    }
+
+    #root>div>section{
+
+      width: 500px;
+      height: 500px;
+      border: 1px solid blue;
+      background-color: #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      position: absolute;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <script>
+    const root = document.getElementById('root');
+    root.style.backgroundColor = '#ccc';
+    root.style.width = '100vw';
+    root.style.height = '100vh';
+    root.style.display = 'flex';
+    root.style.justifyContent = 'center';
+    root.style.alignItems = 'center';
+
+    //--------------------------------------------------------------------
+    
+    for (let i = 0; i < 5; i++) {
+      const div = root.children;
+      console.log(div);
+      const modal = document.createElement('section');
+        
+        div[i].setAttribute(`data-modal`, `lay-${i}`);
+        div[i].addEventListener('click', function (event) {
+          console.log('a');
+          if (close === true) {
+            close = false;
+            modal.style.display = 'block';
+          } else {
+            close = true;
+            modal.style.display = 'none';
+          }
+      });
+  }
+
+    // let close = true;
+    
+    // div.style.display = 'flex';
+    // div.style.justifyContent = 'center';
+    // div.style.alignItems = 'center';
+    
+    // root.appendChild(div);
+    // div.appendChild(modal);
+    
+    // const modalOne = {
+    //   color: modal.style.backgroundColor = "blue",
+    //   width: modal.style.width = '40vw',
+    //   height: modal.style.height = '80vh',
+    //   border: modal.style.border = '1px solid black',
+    //   display: modal.style.display = 'none',
+    //   display: modal.style.display = 'fixed',
+    //   position: modal.style.position = 'absolute'
+    // }
+
+    // const modalTwo = {
+    //   color: modal.style.backgroundColor = "red",
+    //   width: modal.style.width = '40vw',
+    //   height: modal.style.height = '80vh',
+    //   border: modal.style.border = '1px solid black',
+    //   display: modal.style.display = 'none',
+    //   display: modal.style.display = 'fixed',
+    //   position: modal.style.position = 'absolute'
+
+    // }
+
+
+    // for(let i = 0; .length; i++){
+
+
+    // }
+    //------------------------------------------------------------
+
+    // appendChild()
+    // event.target
+  </script>
+</body>
+
+</html>

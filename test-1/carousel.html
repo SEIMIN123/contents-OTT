@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .con {
+      width: 300vw;
+      display: flex;
+      transition: transform 1s;
+    }
+
+    .box {
+      width: 100vw;
+    }
+
+    .box>img {
+
+      width: 100%;
+    }
+
+    .btn1 {
+
+      width: 50px;
+      height: 50px;
+      border-top: 5px solid #000;
+      border-right: 5px solid #000;
+      position: absolute;
+      top: 950px;
+      content: '';
+      left: 35px;
+      transform: rotate(225deg);
+      
+    }
+    
+    .btn3 {
+      
+      width: 50px;
+      height: 50px;
+      border-top: 5px solid #000;
+      border-right: 5px solid #000;
+      position: absolute;
+      left: 90vw;
+      top: 950px;
+      content: '';
+      transform: rotate(50deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div style="overflow: hidden">
+    <div class="con">
+      <div class="box">
+        <img src="./pic/flag-4552833_1280.jpg" alt="">
+      </div>
+      <div class="box">
+        <img src="./pic/sea-4955005_1280.jpg" alt="">
+      </div>
+      <div class="box">
+        <img src="./pic/waterdrop-4645249_1280.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <button class="btn1"></button>
+  <button class="btn2">버튼2</button>
+  <button class="btn3"></button>
+  <script>
+    document.querySelector('.btn1').addEventListener('click', function () {
+
+      document.querySelector('.con').style.transform = 'translate(-100vw)';
+    });
+
+    document.querySelector('.btn2').addEventListener('click', function () {
+
+      document.querySelector('.con').style.transform = 'translate(-200vw)';
+    });
+
+    document.querySelector('.btn3').addEventListener('click', function () {
+
+      document.querySelector('.con').style.transform = 'translate(0vw)';
+    });
+  </script>
+</body>
+
+</html>

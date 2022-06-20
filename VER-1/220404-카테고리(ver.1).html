@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+    <style>
+
+    *{margin: 0; padding: 0;}
+    
+    #con {
+
+      width: 100vw;
+      height: 100vh;
+      
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      
+      flex-direction: row;
+      
+    }
+
+
+    #con > div:nth-child(1) {
+
+      width: 20vw;
+      height: 100vh;
+      background-color: rgb(86, 88, 88);
+
+      position: fixed;
+
+    }
+
+    #con > div:nth-child(1) > ul > li {
+
+      color: white; 
+      
+      list-style: none;
+      line-height: 8vw;
+      text-align: center;
+      font-weight: bolder;
+      font-size: 20px;
+    }
+
+
+
+
+
+    .box {
+
+      width: 100vw;
+      height: 100vh;
+    }
+    
+    header  {
+      
+      height: 40vh;
+      background-color: rgb(124, 119, 119);
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      flex-direction: row;
+      
+    }
+    
+    main {
+      
+      background-color: #ccc;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      flex-wrap:wrap;
+    }
+    
+    section {
+      
+      width: 20vw;
+      height: 20vh;
+      background-color: rgb(139, 137, 137);
+
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+
+
+      
+      margin: 1vw;
+      
+    }
+    
+    footer { 
+      
+      background-color: #ccc;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    
+    footer > div {
+      
+      width: 50%;
+      height: 7vh;
+      background-color: rgb(80, 77, 77);
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+
+      margin: 15px;
+      
+    }
+    </style>
+
+<body>
+  <div id="con">
+    <div>
+      <ul>
+        <li>홈</li>
+        <li>검색</li>
+        <li>다본작품</li>
+        <li>다운로드</li>
+        <li>랜덤</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <header></header>    
+      <main>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+      </main>
+      <footer>
+        <div></div>
+      </footer>
+    </div>
+  </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,458 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes side {
+  3% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(0);
+  }
+
+  28% {
+    transform: translateX(-110vw);
+  }
+
+  100% {
+    transform: translateX(-110vw);
+  }
+}
+
+body {
+
+  background-color: rgb(49, 49, 49);
+
+}
+
+#con {
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+/* --------------------------------------------------------- */
+
+/*  사이드 바  */
+
+#con>div:nth-child(1) {
+
+  width: 10vw;
+  height: 100vh;
+  background-color: rgb(31, 31, 31);
+  position: fixed;
+  z-index: 999;
+  margin-left: -185px;
+  transition: 0.5s;
+
+}
+
+#con>div:nth-child(1):hover {
+  margin-left: 0px;
+}
+
+#con>div:nth-child(1):hover:before {
+  transition: 0.5s;
+  position: absolute;
+
+}
+
+#con>div:nth-child(1)>ul>li {
+
+  color: white;
+  line-height: 5vw;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+#con>div:nth-child(1)>ul>li:hover {
+  color: rgb(179, 179, 179);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+
+/* ---------------------------------------------------- */
+
+/* 메인 전체박스 */
+
+.box {
+
+  width: 100vw;
+  height: 100vh;
+
+}
+
+header {
+  width: 110vw;
+  height: 100vh;
+  background-color: rgb(49, 49, 49);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+header:hover {
+
+  cursor: pointer;
+}
+
+.card {
+
+  width: 110vw;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+}
+
+.card::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 900;
+
+}
+
+.card-1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 7;
+
+  transform: translateX(110vw);
+  background-image: url(https://t1.daumcdn.net/cfile/tistory/21496633592181AA20);
+  background-size: cover;
+
+  animation: side 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+}
+
+.card-1.card-two {
+  z-index: 6;
+  background-image: url(https://images7.alphacoders.com/120/thumb-1920-1206753.png);
+  animation-delay: 7s;
+}
+
+.card-1.card-three {
+  z-index: 5;
+  background-image: url(https://blog.kakaocdn.net/dn/bdGpPT/btrnjehup91/CqWMPU4imIPWkKSi2kH130/img.jpg);
+  animation-delay: 14s;
+}
+
+.card-1.card-four {
+  z-index: 4;
+  background-image: url(https://blog.kakaocdn.net/dn/cqaBIQ/btriRLp6mW0/8fdFflTlVz2099cbuB3uLk/img.jpg);
+  animation-delay: 21s;
+}
+
+main {
+  width: 110vw;
+  height: 70vh;
+  background-color: rgb(49, 49, 49);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+main>section {
+
+  width: 300px;
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 20px;
+
+}
+
+.menu {
+  width: 120vw;
+  color: white;
+  margin-left: 55px;
+
+}
+
+section:hover {
+
+  cursor: pointer;
+  transition: 0.5s;
+  transform: translate(3px, 3px);
+}
+
+footer {
+  width: 110vw;
+  height: 70vh;
+  background-color: rgb(49, 49, 49);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer>section {
+
+  width: 300px;
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 20px;
+
+}
+
+.menu1 {
+
+  width: 120vw;
+  color: white;
+  margin-left: 55px;
+
+}
+
+.img-1 {
+
+  background: url(https://hayabusa.io/adcross/adx/abm/15b026e7-7c50-4a22-8c85-227b12271da7.png?background=000000&fit=fill&format=webp&height=216&quality=60&width=384);
+
+  background-size: cover;
+}
+
+.img-2 {
+
+  background: url(https://hayabusa.io/adcross/adx/abm/06c65478-ae53-4491-9412-5ebd6f4d3948.png?background=000000&fit=fill&format=webp&height=216&quality=60&width=384);
+
+  background-size: cover;
+}
+
+.img-3 {
+
+  background: url(https://hayabusa.io/adcross/adx/abm/de7fd5c5-ff39-4383-b1dc-911e45e021fb.png?background=000000&fit=fill&format=webp&height=216&quality=60&width=384);
+
+  background-size: cover;
+}
+
+.img-4 {
+
+  background: url(https://hayabusa.io/abema/series/87-1191/thumb.v1647493204.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
+
+  background-size: cover;
+}
+
+.img-5 {
+
+  background: url(https://hayabusa.io/abema/series/87-954/thumb.v1647596235.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
+
+  background-size: cover;
+}
+
+.img-6 {
+
+  background: url(https://abm.hayabusa.media/series/162-7zft5piyb4e/thumb.png%3Fversion%3D1636093350?background=000000&fit=fill&format=webp&height=216&mode=fast&quality=60&width=384);
+
+  background-size: cover;
+}
+
+.img-7 {
+
+  background: url(https://hayabusa.io/abema/series/87-1173/thumb.v1648090504.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
+
+  background-size: cover;
+}
+
+.img-8 {
+
+  background: url(https://abm.hayabusa.media/series/568-4/thumb.png%3Fversion%3D1627288143?background=000000&fit=fill&format=webp&height=216&mode=fast&quality=60&width=384);
+
+  background-size: cover;
+}
+
+.img-9 {
+
+  background: url(https://hayabusa.io/abema/series/87-1140/thumb.v1647494703.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
+
+  background-size: cover;
+}
+
+.img-10 {
+
+  background: url(https://abm.hayabusa.media/series/90-1318/thumb.png%3Fversion%3D1628171406?background=000000&fit=fill&format=webp&height=216&mode=fast&quality=60&width=384);
+
+  background-size: cover;
+}
+
+.img-11 {
+
+  background: url(https://abm.hayabusa.media/series/90-793/thumb.png%3Fversion%3D1627287915?background=000000&fit=fill&format=webp&height=216&mode=fast&quality=60&width=384);
+
+  background-size: cover;
+}
+
+.img-12 {
+
+  background: url(https://abm.hayabusa.media/series/90-1608/thumb.png%3Fversion%3D1638525523?background=000000&fit=fill&format=webp&height=216&mode=fast&quality=60&width=384);
+
+  background-size: cover;
+}
+
+/* ------------------------------------------------------ */
+
+
+.jpg-1 {
+
+  background: url(https://hayabusa.io/abema/series/199-6/thumb.v1646666408.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
+
+  background-size: cover;
+}
+
+.jpg-2 {
+
+  background: url(https://hayabusa.io/abema/series/420-1/thumb.v1648211668.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
+
+  background-size: cover;
+}
+
+.jpg-3 {
+
+  background: url(https://hayabusa.io/abema/series/30-5/thumb.v1648797502.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
+
+  background-size: cover;
+}
+
+.jpg-4 {
+
+  background: url(https://hayabusa.io/abema/series/26-75/thumb.v1648436510.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
+
+  background-size: cover;
+}
+
+.jpg-5 {
+
+  background: url(https://hayabusa.io/abema/series/536-1/thumb.v1649063922.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
+
+  background-size: cover;
+}
+
+.jpg-6 {
+
+  background: url(https://hayabusa.io/abema/series/203-2/thumb.v1649152504.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
+
+  background-size: cover;
+}
+
+.jpg-7 {
+
+  background: url(https://hayabusa.io/abema/series/189-30/thumb.v1649064305.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
+
+  background-size: cover;
+}
+
+.jpg-8 {
+
+  background: url(https://hayabusa.io/adcross/adx/abm/41a64b54-e454-4d25-aef1-bd2bbe52766b.jpg?background=000000&fit=fill&format=webp&height=216&quality=60&width=384);
+
+  background-size: cover;
+}
+
+.jpg-9 {
+
+  background: url(https://hayabusa.io/abema/series/194-25/thumb.v1648645204.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
+
+  background-size: cover;
+}
+
+.jpg-10 {
+
+  background: url(https://hayabusa.io/abema/series/25-73/thumb.v1648788076.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
+
+  background-size: cover;
+}
+
+.jpg-11 {
+
+  background: url(https://hayabusa.io/adcross/adx/abm/9df21892-3046-447c-abc2-0bd633eb8176.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
+
+  background-size: cover;
+}
+
+.jpg-12 {
+
+  background: url(https://hayabusa.io/abema/series/5-28/thumb.v1646140843.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
+
+  background-size: cover;
+}
+
+#modal {
+  width: 40vw;
+  height: 85vh;
+  position: absolute;
+  position: fixed;
+  top: 8%;
+  left: 32%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalcon {
+
+  width: 40vw;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modalbox {
+
+  width: 40vw;
+  height: 42vh;
+}
+
+.modalbox1 {
+
+  width: 40vw;
+  height: 42vh;
+}
+
+.modalbox1>h2 {
+
+  color: #fff;
+  margin: 20px;
+}
+
+.modalbox1>p {
+
+  color: #fff;
+  margin: 20px;
+  font-size: 19px;
+}
+
+#modal_close {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: -30px;
+  right: 0;
+}
+
+#modal_close>a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(https://img.icons8.com/metro/26/000000/close-window.png);
+}

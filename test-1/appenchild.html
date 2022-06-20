@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {margin: 0; padding:0; box-sizing: border-box;}
+
+    #root {
+      width:100vw;
+      height:500vh;
+      background-color: #ccc
+    }
+
+    #root>section {
+      width:100vw;
+      height:1vh;
+      background-color: salmon;
+      border:1px solid black;
+    }
+
+    #root>aside {
+      width:100vw;
+      height:1vh;
+      background-color: cyan;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="root">
+  </div>
+
+  <script>
+    const maker = document.getElementById('root');
+    let article = document.createElement('article');
+    maker.appendChild(article);
+
+
+    let count = 0;
+    maker.addEventListener('wheel', function() {
+      console.log('wheel 이벤트가 일어나고 있어');
+      let section = document.createElement('section');
+      section.setAttribute('id', `section-${count}`);
+      section.textContent = count;
+      maker.appendChild(section);
+      count++;
+    });
+
+    maker.addEventListener('click', function() {
+      console.log("클릭이벤트가 일어나고 있어");
+      let aside = document.createElement('aside');
+      aside.textContent = "클릭했지롱";
+      maker.insertBefore(aside, maker.firstChild);
+
+    });
+
+
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #root {
+      width: 100vw;
+      height: 100vh;
+      background-color: #333;
+    }
+
+    #root>div {
+      width: 200px;
+      height: 200px;
+      background-color: #ccc;
+    }
+
+    #root>div>section {
+      width: 300px;
+      height: 300px;
+      background-color: salmon;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="root">
+    <div id="image-trigger"></div>
+  </div>
+  <script>
+    const root = document.getElementById('root');
+    const imageTrigger = document.getElementById('image-trigger');
+
+    // check point 1 
+    // 아래의 imageTrigger 이벤트는 초기화한 isPopupStatus 의 boolean 타입으로 핸들링되는 구조
+    let isPopupStatus = true;
+
+    imageTrigger.addEventListener('click', function () {
+      console.log('test');
+      if (isPopupStatus === true)
+      // isPopupStatusr가 맞으면
+      {
+        const makeDiv = document.createElement('div');
+        // div를 만들고 makeDive에 저장을 한다. 
+        const makeSection = document.createElement('section');
+        // section을 만들고 makeSection에 저장한다.
+        const closeButton = document.createElement('button');
+        // button을 만들고 closeButton에 저장한다.
+        closeButton.setAttribute('id', "close-button");
+        // button이라는 속성의 id에 close-button이라는 할당값을 준다.
+        closeButton.textContent = "click";
+        //// button에 click이라는 글씨를 만든다. 
+
+        makeSection.setAttribute('id', "popup-section");
+        // section이라는 속성의 id에 popup-section이라는 할당값을 준다.
+        makeSection.textContent = "test";
+        // makeSection에 test라는 글씨를 만든다. 
+        makeSection.appendChild(closeButton);
+        // section에 closeButton을 추가한다. 
+        makeDiv.appendChild(makeSection);
+        // div에 section을 추가한다. 
+        root.appendChild(makeDiv);
+        // root에 div를 추가한다.  
+        isPopupStatus = false; // 한번 만들어지면 못만들게 처리
+      }
+
+      //----------------------------------------------------------------------
+
+
+      // * 위에서 만들어진 section 태그에 대한 이벤트 처리
+      const closeButton = document.getElementById('close-button');
+      const popupSection = document.getElementById('popup-section');
+      closeButton.addEventListener('click', function () {
+        if (isPopupStatus === false) {
+          console.log(popupSection);
+          console.dir(root.children[1]);
+          root.removeChild(root.children[1]);
+          isPopupStatus = true;
+        }
+      });
+    });
+
+    // isPopupStatus 가 true 일때 팝업창이 생성된다.
+    // isPopupStatus 가 false 일때'만' 팝업 종료창이 실행된다.
+
+    // 랜덤으로 데이터가 바뀌는 인터렉션은 isPopupStatus가 false 일때 동작시킬 수 있게끔 조정한다.
+
+
+    const randomDataArr = ["랜덤1", "랜덤2", "랜덤3", "랜덤4", "랜덤5"];
+  </script>
+</body>
+
+</html>

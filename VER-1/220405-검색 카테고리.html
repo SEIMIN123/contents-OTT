@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    *{margin: 0; padding: 0;}
+
+
+
+    #back {
+      width: 100vw;
+      height: 100vh;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      flex-direction: row;
+
+    }
+
+    /* 사이드 바 */
+
+    #back > div:nth-child(1) {
+
+      width: 15vw;
+      height: 100vh;
+      background-color: rgb(146, 140, 140);
+
+    }
+
+    /* 가운데 메뉴 위 */
+
+    #back > div > div:nth-child(1) {
+      width: 85vw;
+      height: 100vh;
+      background-color: white;
+
+    }
+
+
+    /*  가운데 반 나눈거 */
+
+    #back > div > div:nth-child(1) > div {
+
+      width: 85vw;
+      height: 47vh;
+      background-color: rgb(255, 255, 255);
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      flex-direction: row;
+      flex-wrap: wrap;
+
+    }
+
+      /* 서치바  */
+
+    #back > div > div:nth-child(1) > div:nth-child(1) > h2{
+      color: white;
+      margin-left: 20px;
+    }
+
+    #back > div > div:nth-child(1) > div:nth-child(1) {
+
+      width: 30vw;
+      height: 50px;
+      background-color: rgb(184, 179, 179);
+
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+
+    }
+
+    /* 가운데 메뉴 위 레이아웃 (8) */
+
+    #back > div > div:nth-child(1) > div:nth-child(2) > div {
+
+      width: 20vw;
+      height: 20vh;
+      background-color: rgb(195, 198, 201);
+      margin-left: 17px;
+
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+
+    }
+
+    #back > div > div:nth-child(1) > div:nth-child(2) {
+
+      justify-content: center;
+    }
+
+
+      /*  가운데 메뉴 밑 */
+
+    #back > div >div:nth-child(1) > div:nth-child(3) {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      flex-direction: row;
+      flex-wrap: wrap;
+
+    }
+
+    /* 가운데 메뉴 밑 레이아웃 (10) */
+
+    #back > div >div:nth-child(1) > div:nth-child(3) > div {
+
+      width: 15vw;
+      height: 20vh;
+      background-color: rgb(163, 161, 161);
+      margin-left: 20px;
+
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+
+  </style>
+
+
+</head>
+<body>
+  <div id="back">
+    <div></div>
+      <div>
+          <div>
+            <div>
+              <h2>제목,가수,성우,앨범</h2></div>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+            
+                <div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+
+          </div>
+      </div>
+
+
+  </div>
+</body>
+</html>

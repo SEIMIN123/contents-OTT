@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #root {
+
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ccc;
+    }
+
+    #root>div {
+
+      width: 150px;
+      height: 150px;
+      border: 1px solid black;
+      margin: 20px;
+      background-color: blueviolet;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <div>
+      <div></div>
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+
+<script>
+  const root = document.getElementById('root');
+  const div = root.children;
+  
+  for (let i = 0; i < div.length; i++) {
+    div[i].setAttribute(`data-modal`, `lay-${i}`);
+    div[i].addEventListener('click', function (event) {
+      const modal = document.createElement('section');
+        // modal.style.backgroundColor = "blue",
+        // modal.style.width = '40vw',
+        // modal.style.height = '80vh',
+        // modal.style.border = '1px solid black',
+        // modal.style.display = 'none',
+        // modal.style.display = 'fixed',
+        // modal.style.position = 'absolute'
+      console.log('a');
+      console.log(event.target);
+
+
+    });
+  }
+</script>
+
+</html>
