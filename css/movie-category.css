@@ -114,6 +114,9 @@
             align-items: center;
     text-align: left;
   }
+  .lay > section:nth-child(2) > h1 {
+    font-size: 1.3vw;
+  }
   /* ----------------------------------------------------- */
   /* 가수 정보 */
   .lay > section:nth-child(3) {
