@@ -122,11 +122,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    margin: 150px;
+    border-radius: 30px;
+    background-size: contain;
+    background-position: center center;
+    background-attachment: initial;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    margin: 10vw;
   }
 
   .lay > section:nth-child(3) > div:hover {
@@ -137,7 +139,6 @@
 
   .lay > section:nth-child(3) > div:nth-child(1) {
     background: url(https://image.yes24.com/momo/TopCate0010/hani/L_1174219.jpg);
-    background-size: cover;
   }
 
   .lay > section:nth-child(3) > div:nth-child(2) {
@@ -314,19 +315,11 @@
 
   .lay > section:nth-child(3) > div {
     width: 40vw;
-    height: 20vh;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 3vw;
-    background-size: contain;
-    background-position: center center;
-    background-attachment: initial;
-    background-repeat: no-repeat;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
   }
 
   .lay > section:nth-child(3) > div:hover {
@@ -337,11 +330,19 @@
   .lay > section:nth-child(3) > div:nth-child(1) {
     background: url(https://image.yes24.com/momo/TopCate0010/hani/L_1174219.jpg);
     background-size: cover;
+    background-position: center center;
+    background-attachment: initial;
+    background-repeat: no-repeat;
+    border-radius: 30px;
   }
 
   .lay > section:nth-child(3) > div:nth-child(2) {
     background: url(https://t1.daumcdn.net/cfile/tistory/1974B737509B8ECB09);
     background-size: cover;
+    background-position: center center;
+    background-attachment: initial;
+    background-repeat: no-repeat;
+    border-radius: 30px;
   }
 
   /* ------------------------------------------------------ */
