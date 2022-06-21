@@ -237,12 +237,12 @@
   /* --------------------------------------------------------- */
   /*  사이드 바  */
   #con > div:nth-child(1) {
-    width: 43vw;
+    width: 45vw;
     height: 100vh;
     background-color: #1f1f1f;
     position: fixed;
     z-index: 999;
-    margin-left: -185px;
+    margin-left: -39vw;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
@@ -299,10 +299,10 @@
   }
   /* 서치바  */
   #con > div > div:nth-child(1) > div:nth-child(1) > input {
-    width: 30vw;
+    width: 50vw;
     height: 4vh;
     background-color: #eeeeee;
-    margin-left: 8.5vw;
+    margin-left: 25vw;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -315,7 +315,7 @@
   /* 가운데 메뉴 위 레이아웃 (8) */
   #con > div > div:nth-child(1) > div:nth-child(2) {
     width: 100vw;
-    height: 100vh;
+    height: 65vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -333,7 +333,7 @@
     height: 15vh;
     font-size: 3vw;
     background-color: #e5e7e9;
-    margin: 10px;
+    margin: 2vw;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;

@@ -415,12 +415,12 @@
   /* --------------------------------------------------------- */
   /*  사이드 바  */
   #con > div:nth-child(1) {
-    width: 45vw;
+    width: 43vw;
     height: 100vh;
     background-color: #1f1f1f;
     position: fixed;
     z-index: 999;
-    margin-left: -38vw;
+    margin-left: -185px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }

@@ -319,13 +319,13 @@ s  #con {
     background-color: rgb(31, 31, 31);
     position: fixed;
     z-index: 999;
-    margin-left: -185px;
+    margin-left: -38vw;
     transition: 0.5s;
+    margin-top: -1.2vh;
 
   }
 
   #con>div:nth-child(1):hover {
-    height: 100vh;
     margin-left: 0px;
   }
 
@@ -341,7 +341,7 @@ s  #con {
     line-height: 5vw;
     text-align: center;
     font-weight: bolder;
-    margin: 8vh;
+    margin: 5vh;
     font-size: 20px;
     list-style: none;
   }
@@ -385,7 +385,7 @@ s  #con {
 
   .lay>section:nth-child(1) {
     width: 100vw;
-    height: 100vh;
+    height: 30vh;
     background: url(../pic/main-1.png);
     background-size: contain;
     background-position: center center;
@@ -397,15 +397,14 @@ s  #con {
   .lay>section:nth-child(2) {
 
     width: 100vw;
-    height: 50vh;
+    height: 40vh;
     background-color: rgb(66, 66, 66);
     color: #fff;
-    font-size: 3vw;
+    font-size: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: left;
-    margin-top: -35vh;
 
   }
 
@@ -484,7 +483,7 @@ s  #con {
   .lay>section:nth-child(4)>div {
 
     width: 40vw;
-    height: 30vh;
+    height: 35vh;
     display: flex;
     justify-content: center;
     align-items: center;

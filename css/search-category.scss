@@ -270,12 +270,12 @@
 
   #con>div:nth-child(1) {
 
-    width: 43vw;
+    width: 45vw;
     height: 100vh;
     background-color: rgb(31, 31, 31);
     position: fixed;
     z-index: 999;
-    margin-left: -185px;
+    margin-left: -39vw;
     transition: 0.5s;
 
   }
@@ -340,11 +340,10 @@
 
   #con>div>div:nth-child(1)>div:nth-child(1)>input {
 
-    width: 30vw;
+    width: 50vw;
     height: 4vh;
     background-color: rgb(238, 238, 238);
-
-    margin-left: 8.5vw;
+    margin-left: 25vw;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -356,13 +355,14 @@
 
     width: 50px;
     height: 50px;
+
   }
 
   /* 가운데 메뉴 위 레이아웃 (8) */
 
   #con>div>div:nth-child(1)>div:nth-child(2) {
     width: 100vw;
-    height: 100vh;
+    height: 65vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -377,7 +377,7 @@
     height: 15vh;
     font-size: 3vw;
     background-color: rgb(229, 231, 233);
-    margin: 10px;
+    margin: 2vw;
     text-align: center;
     display: flex;
     justify-content: center;
