@@ -252,6 +252,9 @@
   }
 }
 
+
+//----------------------------------------------------
+
 @include mobile {
   #con {
 
@@ -275,7 +278,7 @@
     background-color: rgb(31, 31, 31);
     position: fixed;
     z-index: 999;
-    margin-left: -39vw;
+    margin-left: -41vw;
     transition: 0.5s;
 
   }

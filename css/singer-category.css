@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
@@ -11,44 +10,38 @@
 /* PC (해상도 1024px)*/
 @media all and (min-width: 1024px) {
   body {
-    background-color: #313131;
+    background-color: rgb(49, 49, 49);
   }
+
   #con {
     width: 100vw;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
   }
+
   /* --------------------------------------------------------- */
   /*  사이드 바  */
   #con > div:nth-child(1) {
     width: 10vw;
     height: 100vh;
-    background-color: #313131;
+    background-color: rgb(49, 49, 49);
     position: fixed;
     margin-left: -160px;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
+
   #con > div:nth-child(1):hover {
     margin-left: 0px;
   }
+
   #con > div:nth-child(1):hover:before {
-    -webkit-transition: 0.5s;
     transition: 0.5s;
     position: absolute;
   }
+
   #con > div:nth-child(1) > ul > li {
     color: white;
     list-style: none;
@@ -57,140 +50,128 @@
     font-weight: bolder;
     font-size: 20px;
   }
+
   #con > div:nth-child(1) > ul > li:hover {
-    color: #b3b3b3;
+    color: rgb(179, 179, 179);
     cursor: pointer;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
+
   /* ---------------------------------------------------- */
   /* 메인 세부화면 */
   .lay {
     width: 100vw;
     height: 100vh;
   }
+
   .lay > section {
     width: 100vw;
     height: 100vh;
     margin: 10px;
     margin-left: 2vw;
-    background-color: #424242;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    background-color: rgb(66, 66, 66);
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     border-radius: 30px;
   }
+
   .lay > section:nth-child(1) {
     width: 100vw;
     height: 100vh;
     background: url(https://mblogthumb-phinf.pstatic.net/MjAxOTA2MjRfMTQw/MDAxNTYxMzc5OTM0NDg4.342-LIBLB_SbZziMsbAnY1KYbQk3246aK8LjR-6ODzog.aNA2pEHoQCxe1HNXK9Ly0plLnq2qjHeH3RUaXPNJ2gwg.JPEG.sizzips/%EC%A6%9B%ED%86%A0%EB%A7%88%EC%9A%94.jpg?type=w800);
     background-size: cover;
   }
+
   .lay > section:nth-child(1):hover {
     cursor: pointer;
   }
+
   .lay > section:nth-child(2) {
     width: 100vw;
     height: 35vh;
     color: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
+
   .lay > section:nth-child(2) > h2 {
     font-size: 1.3vw;
   }
+
   /* ----------------------------------------------------- */
   /* 가수 정보 */
   .lay > section:nth-child(3) {
     width: 100vw;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
+
   .lay > section:nth-child(3) > div {
     width: 20vw;
     height: 40vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     border-radius: 30px;
     margin: 20px;
   }
+
   .lay > section:nth-child(3) > div:hover {
     cursor: pointer;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
-    -webkit-transform: translate(3px, 3px);
-            transform: translate(3px, 3px);
+    transform: translate(3px, 3px);
   }
+
   .lay > section:nth-child(3) > div:nth-child(1) {
     background: url(https://www.waratomo.com/shop/upfiles/psimg_UPCH20497.jpg);
     background-size: cover;
   }
+
   .lay > section:nth-child(3) > div:nth-child(2) {
     background: url(https://ww.namu.la/s/e9f065d9d91b2efe8dd32492c3cf817c2829d2e2f58cc4817cfb7b5cb2cf9685a45e44c68bff98b8df33d2e7418100247dd050f60241559803bc6586a639c87934700b0e3953866c8ce07df11d45f0fb80f0d37fbcbdc4b930bd76345d0ca44b);
     background-size: cover;
   }
+
   .lay > section:nth-child(3) > div:nth-child(3) {
     background: url(https://w.namu.la/s/811bd825e97279b3c0e9e6d7e319b0b0eab6a6f780bc726e78f3cfbf49284b8fa16aea85aec71beb2df7176ecab91c1985edfb098e5cd0140fcfdd23a43e8e078fdec9ce53005ef69835c4e6051c68b89c2d9d2e2f8514649bab346a4f08b08e);
     background-size: cover;
   }
+
   .lay > section:nth-child(3) > div:nth-child(4) {
     background: url(https://ww.namu.la/s/99a3c705c10889de79125b98e0a594a2f93e15eb8b262faae8f4977917c9775454eabd1cca2be246ff7acdf81397b10b7cc1c4952d7def67884ae3998b6b800506f111d1d5d33e9d5c2923fd0f059d7d);
     background-size: cover;
   }
+
   .lay > section:nth-child(3) > div:nth-child(5) {
     background: url(https://w.namu.la/s/24fe7da30a80a48fae4ec1f3c9f28f7c689c91d2909045a7e08e92fdbebf7a5189b2044e2bcdceec090c15eef72e0e0ff0fe9a61891749a341f08204c9bf26416318365b50a7f4dae128db3f282b2723);
     background-size: cover;
   }
+
   .lay > section:nth-child(3) > div:nth-child(6) {
     background: url(https://w.namu.la/s/e0798b20d5105f8d45ce3564eb68e6320295704d8f2cbe1ee44d1d4a892b768546ffbf08a85b1b74f29ada7bd3f5f143746bd19d2306c62a14071fe3ae9ab35dbd773bba980fa75051b88088fba7da5c17a2ba170c6481371d4bb4a6478f10a9);
     background-size: cover;
   }
+
   .lay > section:nth-child(3) > div:nth-child(7) {
     background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR91j8_P6PJvB175XmT7wpLN1g6GZF2sxDCaA&usqp=CAU);
     background-size: cover;
   }
+
   .lay > section:nth-child(3) > div:nth-child(8) {
     background: url(https://dcimg4.dcinside.co.kr/viewimage.php?id=37a8c432eadf39bf61&no=24b0d769e1d32ca73deb82fa11d028316c04369a2e349766dc7643c75491218ec63eca914a86f224260960629873d61066d3f8b03b67921debc5269ec890db913f437da107);
     background-size: cover;
   }
 }
-
 @media all and (max-width: 800px) {
   body {
-    background-color: #313131;
+    background-color: rgb(49, 49, 49);
     /* --------------------------------------------------------- */
     /*  사이드 바  */
     /* ---------------------------------------------------- */
@@ -201,35 +182,24 @@
   body #con {
     width: 100vw;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
   }
   body #con > div:nth-child(1) {
     width: 45vw;
     height: 100vh;
-    background-color: #1f1f1f;
+    background-color: rgb(31, 31, 31);
     position: fixed;
     z-index: 999;
-    margin-left: -39vw;
-    -webkit-transition: 0.5s;
+    margin-left: -41vw;
     transition: 0.5s;
   }
   body #con > div:nth-child(1):hover {
     margin-left: 0px;
   }
   body #con > div:nth-child(1):hover:before {
-    -webkit-transition: 0.5s;
     transition: 0.5s;
     position: absolute;
   }
@@ -243,8 +213,7 @@
     list-style: none;
   }
   body #con > div:nth-child(1) > ul > li:hover {
-    color: #b3b3b3;
-    -webkit-transition: 0.5s;
+    color: rgb(179, 179, 179);
     transition: 0.5s;
   }
   body .lay {
@@ -256,16 +225,10 @@
     height: 100vh;
     margin: 10px;
     margin-left: 2vw;
-    background-color: #424242;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    background-color: rgb(66, 66, 66);
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -285,55 +248,33 @@
     width: 100vw;
     height: 30vh;
     color: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     font-size: 2vw;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   body .lay > section:nth-child(3) {
     width: 100vw;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
   body .lay > section:nth-child(3) > div {
     width: 40vw;
     height: 20vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     border-radius: 30px;
     margin: 20px;
   }
   body .lay > section:nth-child(3) > div:hover {
     cursor: pointer;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
-    -webkit-transform: translate(3px, 3px);
-            transform: translate(3px, 3px);
+    transform: translate(3px, 3px);
   }
   body .lay > section:nth-child(3) > div:nth-child(1) {
     background: url(https://www.waratomo.com/shop/upfiles/psimg_UPCH20497.jpg);

@@ -157,7 +157,7 @@
   .lay>section:nth-child(2)>h1 {
 
     font-size: 1.3vw;
-  } 
+  }
 
 
   /* ----------------------------------------------------- */
@@ -302,7 +302,7 @@
     background-color: rgb(49, 49, 49);
   }
 
-s  #con {
+  s #con {
 
     width: 100vw;
     height: 100vh;
@@ -317,7 +317,7 @@ s  #con {
 
   /*  사이드 바  */
 
- 
+
   #con>div:nth-child(1) {
 
     width: 45vw;
@@ -325,7 +325,7 @@ s  #con {
     background-color: rgb(31, 31, 31);
     position: fixed;
     z-index: 999;
-    margin-left: -38vw;
+    margin-left: -41vw;
     transition: 0.5s;
     margin-top: -1.2vh;
 
@@ -410,7 +410,7 @@ s  #con {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: left;
+    text-align: center;
 
   }
 
@@ -489,18 +489,16 @@ s  #con {
   .lay>section:nth-child(4)>div {
 
     width: 40vw;
-    height: 35vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     background-size: contain;
     background-position: center center;
     background-attachment: initial;
     background-repeat: no-repeat;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-radius: 30px;
     margin: 20px;
   }
 
