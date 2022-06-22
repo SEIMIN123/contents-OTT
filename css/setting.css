@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
@@ -13,30 +14,54 @@
     width: 100vw;
     height: 100vh;
     background-color: #B5DDFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #root .box {
     width: 40vw;
     height: 98vh;
     background-color: #fff;
     border-radius: 30px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #root .email {
     width: 30vw;
     height: 25vh;
     margin: 10px;
     background-color: #B5DDFF;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #root .email > h2 {
     width: 15vw;
@@ -61,18 +86,22 @@
     font-size: 1.2vw;
     border-radius: 30px;
     border: 0;
-    color: rgb(145, 142, 142);
-    box-shadow: 0 5px rgb(148, 142, 142);
+    color: #918e8e;
+    -webkit-box-shadow: 0 5px #948e8e;
+            box-shadow: 0 5px #948e8e;
     cursor: pointer;
   }
   #root .emailbtn:hover {
-    background-color: rgb(226, 221, 221);
+    background-color: #e2dddd;
   }
   #root .emailbtn:active {
-    color: rgb(124, 118, 118);
+    color: #7c7676;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
-    box-shadow: 0 5px rgb(99, 96, 96);
-    transform: translateY(2px);
+    -webkit-box-shadow: 0 5px #636060;
+            box-shadow: 0 5px #636060;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
   }
   #root .password {
     width: 30vw;
@@ -80,10 +109,19 @@
     margin: 10px;
     background-color: #B5DDFF;
     border-radius: 30px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #root .password > h2 {
     width: 15vw;
@@ -108,18 +146,22 @@
     font-size: 1.2vw;
     border-radius: 30px;
     border: 0;
-    color: rgb(145, 142, 142);
-    box-shadow: 0 5px rgb(148, 142, 142);
+    color: #918e8e;
+    -webkit-box-shadow: 0 5px #948e8e;
+            box-shadow: 0 5px #948e8e;
     cursor: pointer;
   }
   #root .passwordbtn:hover {
-    background-color: rgb(226, 221, 221);
+    background-color: #e2dddd;
   }
   #root .passwordbtn:active {
-    color: rgb(124, 118, 118);
+    color: #7c7676;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
-    box-shadow: 0 5px rgb(99, 96, 96);
-    transform: translateY(2px);
+    -webkit-box-shadow: 0 5px #636060;
+            box-shadow: 0 5px #636060;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
   }
   #root .ticket {
     width: 30vw;
@@ -128,10 +170,19 @@
     background-color: #B5DDFF;
     border-radius: 30px;
     text-align: center;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #root .pri {
     color: #fff;
@@ -143,7 +194,8 @@
   }
   #root .cha:hover {
     font-size: 1.5vw;
-    color: rgb(238, 80, 80);
+    color: #ee5050;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
     cursor: pointer;
   }
@@ -153,9 +205,15 @@
     margin: 10px;
     background-color: #B5DDFF;
     border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #root .logoutbtn {
     width: 10vw;
@@ -163,49 +221,78 @@
     font-size: 1.3vw;
     border-radius: 30px;
     border: 0;
-    color: rgb(145, 142, 142);
-    box-shadow: 0 5px rgb(148, 142, 142);
+    color: #918e8e;
+    -webkit-box-shadow: 0 5px #948e8e;
+            box-shadow: 0 5px #948e8e;
     cursor: pointer;
   }
   #root .logoutbtn:hover {
-    background-color: rgb(226, 221, 221);
+    background-color: #e2dddd;
   }
   #root .logoutbtn:active {
-    color: rgb(124, 118, 118);
+    color: #7c7676;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
-    box-shadow: 0 5px rgb(99, 96, 96);
-    transform: translateY(2px);
+    -webkit-box-shadow: 0 5px #636060;
+            box-shadow: 0 5px #636060;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
   }
 }
+
 @media all and (max-width: 800px) {
   #root {
     width: 100vw;
     height: 100vh;
     background-color: #B5DDFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #root .box {
     width: 85vw;
     height: 98vh;
     background-color: #fff;
     border-radius: 30px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #root .email {
     width: 60vw;
     height: 25vh;
     margin: 2vh;
     background-color: #B5DDFF;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #root .email > h2 {
     width: 30vw;
@@ -219,7 +306,7 @@
     width: 40vw;
     height: 3.5vh;
     margin: 1vh;
-    padding-left: 2vw;
+    padding-left: 4vw;
     border-radius: 30px;
     border: 0;
   }
@@ -230,29 +317,42 @@
     font-size: 3vw;
     border-radius: 30px;
     border: 0;
-    color: rgb(145, 142, 142);
-    box-shadow: 0 5px rgb(148, 142, 142);
+    color: #918e8e;
+    -webkit-box-shadow: 0 5px #948e8e;
+            box-shadow: 0 5px #948e8e;
     cursor: pointer;
   }
   #root .emailbtn:hover {
-    background-color: rgb(226, 221, 221);
+    background-color: #e2dddd;
   }
   #root .emailbtn:active {
-    color: rgb(124, 118, 118);
+    color: #7c7676;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
-    box-shadow: 0 5px rgb(99, 96, 96);
-    transform: translateY(2px);
+    -webkit-box-shadow: 0 5px #636060;
+            box-shadow: 0 5px #636060;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
   }
   #root .password {
     width: 60vw;
     height: 25vh;
     margin: 2vh;
     background-color: #B5DDFF;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #root .password > h2 {
     width: 30vw;
@@ -266,7 +366,7 @@
     width: 40vw;
     height: 3.5vh;
     margin: 1vh;
-    padding-left: 2vw;
+    padding-left: 4vw;
     border-radius: 30px;
     border: 0;
   }
@@ -277,18 +377,22 @@
     font-size: 3vw;
     border-radius: 30px;
     border: 0;
-    color: rgb(145, 142, 142);
-    box-shadow: 0 5px rgb(148, 142, 142);
+    color: #918e8e;
+    -webkit-box-shadow: 0 5px #948e8e;
+            box-shadow: 0 5px #948e8e;
     cursor: pointer;
   }
   #root .passwordbtn:hover {
-    background-color: rgb(226, 221, 221);
+    background-color: #e2dddd;
   }
   #root .passwordbtn:active {
-    color: rgb(124, 118, 118);
+    color: #7c7676;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
-    box-shadow: 0 5px rgb(99, 96, 96);
-    transform: translateY(2px);
+    -webkit-box-shadow: 0 5px #636060;
+            box-shadow: 0 5px #636060;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
   }
   #root .ticket {
     width: 60vw;
@@ -297,10 +401,19 @@
     background-color: #B5DDFF;
     border-radius: 30px;
     text-align: center;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #root .pri {
     color: #fff;
@@ -312,8 +425,9 @@
   }
   #root .cha:hover {
     font-size: 3.5vw;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
-    color: rgb(238, 80, 80);
+    color: #ee5050;
     cursor: pointer;
   }
   #root .logout {
@@ -322,9 +436,15 @@
     margin: 10px;
     background-color: #B5DDFF;
     border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #root .logoutbtn {
     width: 35vw;
@@ -332,17 +452,21 @@
     font-size: 5vw;
     border-radius: 30px;
     border: 0;
-    color: rgb(145, 142, 142);
-    box-shadow: 0 5px rgb(148, 142, 142);
+    color: #918e8e;
+    -webkit-box-shadow: 0 5px #948e8e;
+            box-shadow: 0 5px #948e8e;
     cursor: pointer;
   }
   #root .logoutbtn:hover {
-    background-color: rgb(226, 221, 221);
+    background-color: #e2dddd;
   }
   #root .logoutbtn:active {
-    color: rgb(124, 118, 118);
+    color: #7c7676;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
-    box-shadow: 0 5px rgb(99, 96, 96);
-    transform: translateY(2px);
+    -webkit-box-shadow: 0 5px #636060;
+            box-shadow: 0 5px #636060;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
   }
 }

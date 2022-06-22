@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
@@ -12,32 +13,39 @@
   #con {
     width: 100vw;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-
   /* --------------------------------------------------------- */
   /*  사이드 바  */
   #con > div:nth-child(1) {
     width: 10vw;
     height: 100vh;
-    background-color: rgb(49, 49, 49);
+    background-color: #313131;
     position: fixed;
     margin-left: -160px;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
-
   #con > div:nth-child(1):hover {
     margin-left: 0px;
   }
-
   #con > div:nth-child(1):hover:before {
+    -webkit-transition: 0.5s;
     transition: 0.5s;
     position: absolute;
   }
-
   #con > div:nth-child(1) > ul > li {
     color: white;
     list-style: none;
@@ -46,66 +54,82 @@
     font-weight: bolder;
     font-size: 20px;
   }
-
   #con > div:nth-child(1) > ul > li:hover {
-    color: rgb(179, 179, 179);
+    color: #b3b3b3;
     cursor: pointer;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
-
   /* ---------------------------------------------------- */
   /* 가운데 메뉴 위 */
   #con > div > div:nth-child(1) {
     width: 100vw;
     height: 100vh;
   }
-
   /*  가운데 반 나눈거 */
   #con > div > div:nth-child(1) > div {
     width: 100vw;
-    background-color: rgb(37, 37, 37);
+    background-color: #252525;
     font-weight: 600;
     font-size: 30px;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-
   /* 서치바  */
   #con > div > div:nth-child(1) > div:nth-child(1) > input {
     width: 30vw;
     height: 4vh;
-    background-color: rgb(238, 238, 238);
+    background-color: #eeeeee;
     margin-left: 8.5vw;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
   }
-
   .search {
     width: 50px;
     height: 50px;
   }
-
   /* 가운데 메뉴 위 레이아웃 (8) */
   #con > div > div:nth-child(1) > div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   #con > div > div:nth-child(1) > div:nth-child(2) > div {
     width: 20vw;
     height: 25vh;
-    background-color: rgb(229, 231, 233);
+    background-color: #e5e7e9;
     margin: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -113,97 +137,123 @@
     /* 강사 comment */
     /* border-radius:50px; */
   }
-
   /*  가운데 메뉴 밑 */
   #con > div > div:nth-child(1) > div:nth-child(3) {
     width: 100vw;
     height: 80vh;
     font-weight: 600;
     font-size: 30px;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-
   /* 가운데 메뉴 밑 레이아웃 (10) */
   #con > div > div:nth-child(1) > div:nth-child(3) > div {
     width: 15vw;
     height: 20vh;
-    background-color: rgb(231, 229, 229);
+    background-color: #e7e5e5;
     margin-left: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 50px;
   }
-
   input {
     font-size: 25px;
     border-radius: 15px;
-    border: solid rgb(88, 88, 88);
+    border: solid #585858;
     padding-left: 20px;
-    outline: rgb(255, 254, 254);
+    outline: #fffefe;
     margin: 15px;
   }
-
   #con > div > div:nth-child(1) > div:nth-child(2) > div:hover {
     background-color: #ccc;
-    color: rgb(255, 255, 255);
-    box-shadow: 5px 5px 5px rgb(31, 31, 31);
-    transform: translate(3px, 3px);
+    color: white;
+    -webkit-box-shadow: 5px 5px 5px #1f1f1f;
+            box-shadow: 5px 5px 5px #1f1f1f;
+    -webkit-transform: translate(3px, 3px);
+            transform: translate(3px, 3px);
     cursor: pointer;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
-
   #con > div > div:nth-child(1) > div:nth-child(3) > div:hover {
     background-color: #ccc;
-    color: rgb(236, 236, 236);
-    box-shadow: 5px 5px 5px rgb(31, 31, 31);
-    transform: translate(3px, 3px);
+    color: #ececec;
+    -webkit-box-shadow: 5px 5px 5px #1f1f1f;
+            box-shadow: 5px 5px 5px #1f1f1f;
+    -webkit-transform: translate(3px, 3px);
+            transform: translate(3px, 3px);
     cursor: pointer;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
-
   .lay > section:nth-child(3) > div:hover {
     cursor: pointer;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
-    transform: translate(3px, 3px);
+    -webkit-transform: translate(3px, 3px);
+            transform: translate(3px, 3px);
   }
 }
+
 @media all and (max-width: 800px) {
   #con {
     width: 100vw;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-
   /* --------------------------------------------------------- */
   /*  사이드 바  */
   #con > div:nth-child(1) {
     width: 45vw;
     height: 100vh;
-    background-color: rgb(31, 31, 31);
+    background-color: #1f1f1f;
     position: fixed;
     z-index: 999;
     margin-left: -41vw;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
-
   #con > div:nth-child(1):hover {
     margin-left: 0px;
   }
-
   #con > div:nth-child(1):hover:before {
+    -webkit-transition: 0.5s;
     transition: 0.5s;
     position: absolute;
   }
-
   #con > div:nth-child(1) > ul > li {
     color: white;
     line-height: 5vw;
@@ -213,130 +263,164 @@
     font-size: 20px;
     list-style: none;
   }
-
   #con > div:nth-child(1) > ul > li:hover {
-    color: rgb(179, 179, 179);
+    color: #b3b3b3;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
-
   /* ---------------------------------------------------- */
   /* 가운데 메뉴 위 */
   #con > div > div:nth-child(1) {
     width: 100vw;
     height: 100vh;
   }
-
   /*  가운데 반 나눈거 */
   #con > div > div:nth-child(1) > div {
     width: 100vw;
-    background-color: rgb(37, 37, 37);
+    background-color: #252525;
     font-weight: 600;
     font-size: 30px;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-
   /* 서치바  */
   #con > div > div:nth-child(1) > div:nth-child(1) > input {
     width: 50vw;
     height: 4vh;
-    background-color: rgb(238, 238, 238);
+    background-color: #eeeeee;
     margin-left: 25vw;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
   }
-
   .search {
     width: 50px;
     height: 50px;
   }
-
   /* 가운데 메뉴 위 레이아웃 (8) */
   #con > div > div:nth-child(1) > div:nth-child(2) {
     width: 100vw;
     height: 65vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-
   #con > div > div:nth-child(1) > div:nth-child(2) > div {
     width: 30vw;
     height: 15vh;
     font-size: 3vw;
-    background-color: rgb(229, 231, 233);
+    background-color: #e5e7e9;
     margin: 2vw;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 20px;
   }
-
   /*  가운데 메뉴 밑 */
   #con > div > div:nth-child(1) > div:nth-child(3) {
     width: 100vw;
     height: 100vh;
     font-weight: bold;
     font-size: 30px;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   /* 가운데 메뉴 밑 레이아웃 (10) */
   #con > div > div:nth-child(1) > div:nth-child(3) > div {
     width: 30vw;
     height: 15vh;
     font-size: 3vw;
-    background-color: rgb(229, 231, 233);
+    background-color: #e5e7e9;
     margin: 10px;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 20px;
   }
-
   input {
     font-size: 25px;
     border-radius: 15px;
-    border: solid rgb(88, 88, 88);
+    border: solid #585858;
     padding-left: 20px;
-    outline: rgb(255, 254, 254);
+    outline: #fffefe;
     margin: 15px;
   }
-
   #con > div > div:nth-child(1) > div:nth-child(2) > div:hover {
     background-color: #ccc;
-    color: rgb(255, 255, 255);
-    box-shadow: 5px 5px 5px rgb(31, 31, 31);
-    transform: translate(3px, 3px);
+    color: white;
+    -webkit-box-shadow: 5px 5px 5px #1f1f1f;
+            box-shadow: 5px 5px 5px #1f1f1f;
+    -webkit-transform: translate(3px, 3px);
+            transform: translate(3px, 3px);
     cursor: pointer;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
-
   #con > div > div:nth-child(1) > div:nth-child(3) > div:hover {
     background-color: #ccc;
-    color: rgb(236, 236, 236);
-    box-shadow: 5px 5px 5px rgb(31, 31, 31);
-    transform: translate(3px, 3px);
+    color: #ececec;
+    -webkit-box-shadow: 5px 5px 5px #1f1f1f;
+            box-shadow: 5px 5px 5px #1f1f1f;
+    -webkit-transform: translate(3px, 3px);
+            transform: translate(3px, 3px);
     cursor: pointer;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
-
   .lay > section:nth-child(3) > div:hover {
     cursor: pointer;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
-    transform: translate(3px, 3px);
+    -webkit-transform: translate(3px, 3px);
+            transform: translate(3px, 3px);
   }
 }
