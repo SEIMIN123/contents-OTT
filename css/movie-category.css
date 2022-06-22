@@ -146,10 +146,6 @@
         -ms-flex-align: center;
             align-items: center;
     border-radius: 30px;
-    background-size: contain;
-    background-position: center center;
-    background-attachment: initial;
-    background-repeat: no-repeat;
     border-radius: 30px;
     margin: 10vw;
   }
@@ -162,10 +158,17 @@
   }
   .lay > section:nth-child(3) > div:nth-child(1) {
     background: url(https://image.yes24.com/momo/TopCate0010/hani/L_1174219.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: initial;
+    background-repeat: no-repeat;
   }
   .lay > section:nth-child(3) > div:nth-child(2) {
     background: url(https://t1.daumcdn.net/cfile/tistory/1974B737509B8ECB09);
     background-size: cover;
+    background-position: center center;
+    background-attachment: initial;
+    background-repeat: no-repeat;
   }
   /* ------------------------------------------------------ */
   /* 하단 추천작품 레이아웃 */
