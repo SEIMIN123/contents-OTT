@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .atv {
+  width: 11.5vw;
+  height: 14vh;
+  font-size: 50px;
+  font-weight: 400;
+  font-family: 'Kumar One', cursive;
+  border: 1px solid black;
+}
+
+#root .login {
+  width: 24.7vw;
+  height: 13vh;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 5vh;
+  border: 1px solid black;
+}
+
+#root .logtext {
+  width: 269px;
+  height: 24px;
+  padding-left: 0.5vw;
+}
+
+#root .password {
+  width: 24.7vw;
+  height: 13vh;
+  font-size: 24px;
+  font-weight: 400;
+  border: 1px solid black;
+}
+
+#root .passtext {
+  width: 269px;
+  height: 24px;
+  padding-left: 0.5vw;
+}
+
+#root .start {
+  width: 128px;
+  height: 29px;
+  border-radius: 5px;
+  margin: 5vh;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
