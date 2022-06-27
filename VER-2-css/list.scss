@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin flex ($d, $j, $a) {
+
+  display: ($d);
+  justify-content: ($j);
+  align-items: ($a);
+}
+
+@mixin border {
+  border: 1px solid black;
+}
+
+#root {
+
+  width: 150vw;
+  height: 100vh;
+  flex-direction: column;
+  @include border();
+  @include flex(flex, flex-start, flex-start);
+
+
+  .side {
+
+    width: 10vw;
+    height: 100vh;
+    background-color: salmon;
+    position: fixed;
+    z-index: 1;
+    @include border();
+
+  }
+
+  .sidecon {
+
+    width: 10vw;
+    height: 100vh;
+    flex-direction: column;
+    @include border();
+    @include flex(flex, flex-start, center);
+
+  }
+
+  .ham  {
+
+    width: 50px;
+    height: 50px;
+    margin: 10vh;
+    margin-top: 2vh;
+    @include border();
+  }
+
+  .home {
+
+    width: 50px;
+    height: 50px;
+    margin: 3vh;
+
+    @include border();
+  }
+
+  .list {
+
+    width: 50px;
+    height: 50px;
+    margin: 3vh;
+    @include border();
+  }
+
+  .contents {
+
+    width: 50px;
+    height: 50px;
+    margin: 3vh;
+
+    @include border();
+  }
+
+  .setting {
+
+    width: 50px;
+    height: 50px;
+    margin: 3vh;
+
+    @include border();
+  }
+
+  //--------------------------------------------------
+
+  .box1 {
+
+    width: 150vw;
+    height: 150vh;
+    background-color: burlywood;
+    @include border();
+    @include flex(flex, flex-start, flex-start);
+
+  }
+
+  .box2 {
+
+    width: 150vw;
+    height: 100vh;
+    background-color: rgb(37, 122, 219);
+    @include border();
+    @include flex(flex, flex-start, flex-start);
+
+  }
+
+  //--------------------------------------------------
+
+  .lay-con {
+    width: 255vw;
+    height: 100vh;
+    @include border();
+    @include flex(flex, center, center);
+
+  }
+
+
+  //--------------------------------------------------
+
+  .title-1 {
+
+    width: 19vw;
+    height: 5vh;
+    font-size: 20px;
+    font-weight: 400;
+    flex-direction: column;
+    margin-top: -60vh;
+    margin-left: -185vw;
+    position: absolute;
+    @include border();
+    @include flex(flex, flex-start, flex-start);
+
+  }
+
+  //--------------------------------------------------
+
+  .lay {
+
+    width: 15vw;
+    height: 40vh;
+    margin: 0.2vw;
+    border-radius: 10px;
+    position: relative;
+    z-index: 0;
+    @include border();
+    @include flex(flex, center, center);
+  }
+
+}

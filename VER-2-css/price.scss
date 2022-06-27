@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin flex ($d, $j, $a) {
+
+  display: ($d);
+  justify-content: ($j);
+  align-items: ($a);
+}
+
+@mixin border {
+  border: 1px solid black;
+}
+
+#root {
+
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  @include border();
+  @include flex(flex, flex-start, flex-start);
+
+
+  .side {
+
+    width: 10vw;
+    height: 100vh;
+    background-color: salmon;
+    position: fixed;
+    z-index: 1;
+    @include border();
+
+  }
+
+  .sidecon {
+
+    width: 10vw;
+    height: 100vh;
+    flex-direction: column;
+    @include border();
+    @include flex(flex, flex-start, center);
+
+  }
+
+  .ham {
+
+    width: 50px;
+    height: 50px;
+    margin: 10vh;
+    margin-top: 2vh;
+    @include border();
+  }
+
+  .home {
+
+    width: 50px;
+    height: 50px;
+    margin: 3vh;
+
+    @include border();
+  }
+
+  .list {
+
+    width: 50px;
+    height: 50px;
+    margin: 3vh;
+    @include border();
+  }
+
+  .contents {
+
+    width: 50px;
+    height: 50px;
+    margin: 3vh;
+
+    @include border();
+  }
+
+  .setting {
+
+    width: 50px;
+    height: 50px;
+    margin: 3vh;
+
+    @include border();
+  }
+
+  //--------------------------------------------------
+
+  .box1 {
+
+    width: 100vw;
+    height: 100vh;
+    background-color: burlywood;
+    @include border();
+    @include flex(flex, center, center);
+
+  }
+
+  .con {
+
+    width: 100vw;
+    height: 100vh;
+    @include border();
+    @include flex(flex, center, center);
+
+  }
+
+  .con-1 {
+
+    width: 20vw;
+    height: 24vw;
+    flex-direction: column;
+    margin: 1vw;
+    margin-top: -50vh;
+    @include border();
+    @include flex(flex, flex-start, flex-start);
+
+
+  }
+
+  .con-2 {
+
+    width: 20vw;
+    height: 24vw;
+    flex-direction: column;
+    margin: 1vw;
+    margin-top: -50vh;
+    @include border();
+    @include flex(flex, flex-start, flex-start);
+
+  }
+
+  .con-3 {
+
+    width: 20vw;
+    height: 24vw;
+    flex-direction: column;
+    margin: 1vw;
+    margin-top: -50vh;
+    @include border();
+    @include flex(flex, flex-start, flex-start);
+
+  }
+  
+  .text {
+
+    margin: 1vh;
+
+  }
+
+  .text-1 {
+
+    font-size: 1vw;
+    margin: 1vh;
+  }
+
+  .btn {
+
+    width: 20vw;
+    height: 24vh;
+    @include border();
+    @include flex(flex, center, center);
+
+  }
+
+  .btn>div {
+
+    width: 10vw;
+    height: 10vh;
+    margin: 1vw;
+    @include border();
+    @include flex(flex, center, center);
+
+  }
+}

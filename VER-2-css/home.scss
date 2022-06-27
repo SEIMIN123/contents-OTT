@@ -17,8 +17,8 @@
 
 #root {
 
-  width: 147vw;
-  height: 500vh;
+  width: 150vw;
+  height: 100vh;
   @include border();
   @include flex(flex, flex-start, flex-start);
 
@@ -33,9 +33,65 @@
 
   }
 
+  .sidecon {
+
+    width: 10vw;
+    height: 100vh;
+    flex-direction: column;
+    @include border();
+    @include flex(flex, flex-start, center);
+
+  }
+
+  .ham  {
+
+    width: 50px;
+    height: 50px;
+    margin: 10vh;
+    margin-top: 2vh;
+    @include border();
+  }
+
+  .home {
+
+    width: 50px;
+    height: 50px;
+    margin: 3vh;
+
+    @include border();
+  }
+
+  .list {
+
+    width: 50px;
+    height: 50px;
+    margin: 3vh;
+    @include border();
+  }
+
+  .contents {
+
+    width: 50px;
+    height: 50px;
+    margin: 3vh;
+
+    @include border();
+  }
+
+  .setting {
+
+    width: 50px;
+    height: 50px;
+    margin: 3vh;
+
+    @include border();
+  }
+
+//------------------------------------------------------------
+
   .box1 {
 
-    width: 250vw;
+    width: 150vw;
     height: 70vh;
     background-color: bisque;
     @include border();
@@ -45,8 +101,8 @@
 
   .box2 {
 
-    width: 250vw;
-    height: 100vh;
+    width: 150vw;
+    height: 150vh;
     background-color: burlywood;
     flex-direction: column;
     @include border();
@@ -54,15 +110,27 @@
 
   }
 
-  .box3 {
+  // .box3 {
 
-    width: 250vw;
-    height: 100vh;
-    background-color: rgb(143, 86, 86);
-    flex-direction: column;
-    @include border();
-    @include flex(flex, flex-start, flex-start);
-  }
+  //   width: 150vw;
+  //   height: 100vh;
+  //   background-color: rgb(143, 86, 86);
+  //   flex-direction: column;
+  //   @include border();
+  //   @include flex(flex, flex-start, flex-start);
+  // }
+
+  // .box4 {
+
+  //   width: 150vw;
+  //   height: 50vh;
+  //   background-color: rgb(61, 129, 231);
+  //   flex-direction: column;
+  //   @include border();
+  //   @include flex(flex, flex-start, flex-start);
+  // }
+
+//------------------------------------------------------------
 
   .lay-con {
     width: 255vw;
@@ -72,68 +140,105 @@
 
   }
 
-  .lay-con-1 {
-    width: 255vw;
-    height: 50vh;
-    @include border();
-    @include flex(flex, center, center);
+  // .lay-con-1 {
+  //   width: 255vw;
+  //   height: 50vh;
+  //   @include border();
+  //   @include flex(flex, center, center);
 
-  }
+  // }
 
-  .title {
+  // .lay-con-2 {
+  //   width: 255vw;
+  //   height: 50vh;
+  //   @include border();
+  //   @include flex(flex, center, center);
 
-    width: 16vw;
-    height: 5vh;
-    font-size: 20px;
-    font-weight: 400;
-    flex-direction: column;
-    margin-top: -25vh;
-    margin-left: -215vw;
-    position: absolute;
-    @include border();
-    @include flex(flex, flex-start, flex-start);
+  // }
 
-  }
+//------------------------------------------------------------
 
-  .title-1 {
+  // .title {
 
-    width: 16vw;
-    height: 5vh;
-    font-size: 20px;
-    font-weight: 400;
-    flex-direction: column;
-    margin-left: -215vw;
-    margin-top: -40vh;
-    position: absolute;
-    @include border();
-    @include flex(flex, flex-start, flex-start);
+  //   width: 16vw;
+  //   height: 5vh;
+  //   font-size: 20px;
+  //   font-weight: 400;
+  //   flex-direction: column;
+  //   margin-top: -40vh;
+  //   margin-left: -215vw;
+  //   position: absolute;
+  //   @include border();
+  //   @include flex(flex, flex-start, flex-start);
 
-  }
+  // }
 
-  .lay {
+  // .title-1 {
 
-    width: 15vw;
-    height: 15vh;
-    margin: 0.2vw;
-    border-radius: 10px;
-    position: relative;
-    @include border();
-    @include flex(flex, center, center);
+  //   width: 16vw;
+  //   height: 5vh;
+  //   font-size: 20px;
+  //   font-weight: 400;
+  //   flex-direction: column;
+  //   margin-left: -215vw;
+  //   margin-top: -40vh;
+  //   position: absolute;
+  //   @include border();
+  //   @include flex(flex, flex-start, flex-start);
 
-  }
+  // }
 
-  .lay-1 {
+  // .title-2 {
 
-    width: 15vw;
-    height: 15vh;
-    margin: 0.2vw;
-    border-radius: 10px;
-    position: relative;
-    @include border();
-    @include flex(flex, center, center);
+  //   width: 16vw;
+  //   height: 5vh;
+  //   font-size: 20px;
+  //   font-weight: 400;
+  //   flex-direction: column;
+  //   margin-left: -215vw;
+  //   margin-top: -40vh;
+  //   position: absolute;
+  //   @include border();
+  //   @include flex(flex, flex-start, flex-start);
 
-  }
+  // }
 
+//------------------------------------------------------------
 
+  // .lay {
+
+  //   width: 15vw;
+  //   height: 20vh;
+  //   margin: 0.2vw;
+  //   border-radius: 10px;
+  //   position: relative;
+  //   @include border();
+  //   @include flex(flex, center, center);
+
+  // }
+
+  // .lay-1 {
+
+  //   width: 15vw;
+  //   height: 20vh;
+  //   margin: 0.2vw;
+  //   border-radius: 10px;
+  //   position: relative;
+  //   @include border();
+  //   @include flex(flex, center, center);
+
+  // }
+
+  // .lay-2 {
+
+  //   width: 15vw;
+  //   height: 20vh;
+  //   margin: 0.2vw;
+  //   border-radius: 10px;
+  //   position: relative;
+  //   @include border();
+  //   @include flex(flex, center, center);
+
+  // }
 
 }

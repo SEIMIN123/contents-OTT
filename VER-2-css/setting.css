@@ -6,8 +6,12 @@
 }
 
 #root {
-  width: 150vw;
+  width: 100vw;
   height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,6 +29,7 @@
   height: 100vh;
   background-color: salmon;
   position: fixed;
+  z-index: 1;
   border: 1px solid black;
 }
 
@@ -84,9 +89,9 @@
 }
 
 #root .box1 {
-  width: 150vw;
-  height: 70vh;
-  background-color: bisque;
+  width: 100vw;
+  height: 100vh;
+  background-color: burlywood;
   border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,10 +104,28 @@
           align-items: center;
 }
 
-#root .box2 {
-  width: 150vw;
-  height: 150vh;
-  background-color: burlywood;
+#root .con {
+  width: 40vw;
+  height: 90vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .con-1 {
+  width: 35vw;
+  height: 20vw;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -119,17 +142,46 @@
           align-items: flex-start;
 }
 
-#root .lay-con {
-  width: 255vw;
-  height: 50vh;
+#root .email {
+  margin: 3vh;
+}
+
+#root .password {
+  margin: 3vh;
+}
+
+#root .con-2 {
+  width: 35vw;
+  height: 5vw;
   border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+#root .con-2 > button {
+  margin: 1.5vw;
+}
+
+#root .con-3 {
+  width: 35vw;
+  height: 23vw;
+  border: 1px solid black;
+}
+
+#root .ticket {
+  margin: 3vh;
+}
+
+#root .ticket-1 {
+  margin: 3vh;
+}
+
+#root .ticket-2 {
+  margin: 3vh;
+}
+
+#root .ticket-3 {
+  margin: 3vh;
+}
+
+#root .con-3 > button {
+  margin: 1.5vw;
 }

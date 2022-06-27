@@ -31,11 +31,13 @@
     font-weight: 400;
     font-family: 'Kumar One', cursive;
     @include border();
+    @include flex(flex, center, center);
+
   }
 
   .login {
 
-    width: 24.7vw;
+    width: 15vw;
     height: 13vh;
     font-size: 24px;
     font-weight: 400;
@@ -52,7 +54,7 @@
 
   .password {
 
-    width: 24.7vw;
+    width: 15vw;
     height: 13vh;
     font-size: 24px;
     font-weight: 400;
