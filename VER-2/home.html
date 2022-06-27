@@ -45,8 +45,8 @@
         <!-- <div class="box3">
           <div class="lay-con-1">
             <div class="title-1">액션</div> -->
-            <!-- <div class="lay-1" data-lay="16"></div> -->
-            <!-- <div class="lay-1" data-lay="17"></div>
+        <!-- <div class="lay-1" data-lay="16"></div> -->
+        <!-- <div class="lay-1" data-lay="17"></div>
             <div class="lay-1" data-lay="18"></div>
             <div class="lay-1" data-lay="19"></div>
             <div class="lay-1" data-lay="20"></div>
@@ -60,14 +60,14 @@
             <div class="lay-1" data-lay="28"></div>
             <div class="lay-1" data-lay="29"></div>
             <div class="lay-1" data-lay="30"></div> -->
-          </div>
+      </div>
 
-          <!-- <div class="box4">
+      <!-- <div class="box4">
             <div class="lay-con-2">
               <div class="title-2">스릴러
               </div> -->
-              <!-- <div class="lay-2" data-lay="31"></div> -->
-              <!-- <div class="lay-2" data-lay="32"></div>
+      <!-- <div class="lay-2" data-lay="31"></div> -->
+      <!-- <div class="lay-2" data-lay="32"></div>
               <div class="lay-2" data-lay="33"></div>
               <div class="lay-2" data-lay="34"></div>
               <div class="lay-2" data-lay="35"></div>
@@ -81,11 +81,11 @@
               <div class="lay-2" data-lay="43"></div>
               <div class="lay-2" data-lay="44"></div>
               <div class="lay-2" data-lay="45"></div> -->
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+  </div>
+  </div>
+  </div>
+  </div>
   </div>
   </div>
 </body>
@@ -93,22 +93,34 @@
   const con = document.querySelector('.con');
   const box = document.querySelector('.box2');
   const layCon = document.querySelector('.lay-con');
-  const style = [
-    {width: '15vw'},
-    {height: '20vh'},
-    {margin: '0.2vw'},
-    {border: '1px solid black'},
-    {borderRadius: '10px'}
+  const style = [{
+      width: '15vw'
+    },
+    {
+      height: '20vh'
+    },
+    {
+      margin: '0.2vw'
+    },
+    {
+      border: '1px solid black'
+    },
+    {
+      borderRadius: '10px'
+    }
   ];
 
   console.log(con);
   console.log(box);
   console.log(layCon);
-  
+
   for (let i = 0; i < 15; i++) {
-    
-    let makeDiv = document.createElement('div');
+
+    style.forEach((value, index) => {
+    const makeDiv = document.createElement('div');
     layCon.appendChild(makeDiv);
+
+    });
   }
 </script>
 
