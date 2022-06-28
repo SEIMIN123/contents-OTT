@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #root {
+      width: 100vw;
+      height: 100vh;
+      background-color: #333;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #rank-box {
+      width: 100vw;
+      height: 80vh;
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #rank-box ul {
+      list-style-type: none;
+    }
+
+    #rank-box ul li {
+      width: 500px;
+      padding: 20px;
+      margin :10px;
+      background-color: #ccc;
+      border-radius: 10px;
+    }
+    #rank-box ul li:hover {
+      background-color: #333;
+      color:#ccc;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <div id="rank-box"></div>
+    <input type="date" name="date-value" id="get-date-value">
+
+    <!-- ? 내용물을 넣을 <div> 태그와 날짜를 입력할 수 있는 <input> 태그를 마크업했다. -->
+
+
+  </div>
+
+  <script>
+    const root = document.getElementById("root");
+    const rankBox = document.getElementById("rank-box");
+    const getDateValue = document.getElementById("get-date-value");
+
+    const ajax = new XMLHttpRequest();
+    const myKey = `a3be73f165bde17dddd626f733831fdc`;
+
+    getDateValue.addEventListener("change", function () {
+      // <input> 태그의 값이 '바뀌면' 이벤트 발생
+      let getDateString = getDateValue.value;
+      // 바뀐 값을 가져오기 위해 .value 키에 접근 -> 변수 할당
+      let setDateString = getDateString.split('-').join('');
+      // 2022-06-24 라는 문자열이 리턴되기에 .split()을 통해 하이픈 기준으로 구분하여 새로운 배열 반환
+      // 메서드체인 : 함수에 바로 연달아 사용하는 방식
+      // join 함수를 메서드 체인하여, 결과적으로 20220624와 같은 문자열값 획득
+      console.log(getDateValue.value);
+      console.log(setDateString);
+      let setDate = setDateString;
+      // 값을 구분을 위해 변수에 할당
+      const rankDate = `targetDt=${setDate}`;
+      // 할당한 변수의 값을 가지고 쿼리스트링의 주소로 활용
+      const _URL =
+        `http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=${myKey}&${rankDate}&itemPerPage=10`;
+      ajax.open("GET", _URL);
+      ajax.responseType = "json";
+      ajax.send();
+      ajax.addEventListener('load', () => {
+        const _movieAPI = ajax.response;
+        const boxOfficeList = _movieAPI.boxOfficeResult.dailyBoxOfficeList;
+
+        const enclose = (element, content) => {
+          return `<${element}>${content}</${element}>`;
+        }
+        // enclose () 간단히 태그 만드는 함수
+
+
+        let innerRankBox = [];
+
+        boxOfficeList.forEach((value, index)=> {
+          let elem = enclose("li", value.movieNm);
+          innerRankBox.push(elem);
+        });
+        // boxOfficeList는 배열이므로 forEach를 통해 loop 순회 -> 태그를 생성하는 enclose() 함수 반복 호출
+        // innerRankBox 라는 배열에 원소로 .push()
+        rankBox.innerHTML = `
+          <ul>
+            ${innerRankBox.join("")}
+            </ul>
+        `;  
+        // join을 통해 배열의 모든 원소를 하나의 문자열로 합침과 동시에 innerHTML의 값으로 활용
+        for (let i = 0; i < boxOfficeList.length; i++) {
+          console.log(`${i+1}등 영화 : ${_movieAPI.boxOfficeResult.dailyBoxOfficeList[i].movieNm}`);
+        }
+      });
+
+    })
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

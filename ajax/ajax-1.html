@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <!-- todo : 비동기 통신 AJAX 기술을 사용하기 위한 사전 준비 -->
+  <!-- 
+    work .1 http://kobis.or.kr/kobisopenapi/homepg/main/main.do 
+
+
+
+
+   -->
+  <script>
+    const ajax = new XMLHttpRequest();
+    // console.dir(ajax);
+    // 	http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=f5eef3421c602c6cb7ea224104795888&targetDt=20120101
+    const myKey = `a3be73f165bde17dddd626f733831fdc`;
+    const test = `targetDt=20220623`;
+    const _URL =`http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=${myKey}&${test}&itemPerPage=10`;
+    // console.log(_URL);
+    ajax.open("GET", _URL);
+    ajax.responseType = "json";
+    ajax.send();
+
+
+    ajax.addEventListener('load', () => {
+      const _movieAPI = ajax.response;
+      console.log(_movieAPI);
+      const boxOfficeList = _movieAPI.boxOfficeResult.dailyBoxOfficeList;
+      for (let i = 0; i < boxOfficeList.length; i++) {
+        console.log(`${i+1}등 영화 : ${_movieAPI.boxOfficeResult.dailyBoxOfficeList[i].movieNm}`);
+      }
+    });
+
+
+
+
+  </script>
+</body>
+
+</html>
