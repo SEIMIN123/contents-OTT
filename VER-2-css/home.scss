@@ -17,7 +17,7 @@
 
 #root {
 
-  width: 150vw;
+  width: 100vw;
   height: 100vh;
   @include border();
   @include flex(flex, flex-start, flex-start);
@@ -27,13 +27,14 @@
 
     width: 5vw;
     height: 100%;
-    background-color: salmon;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     z-index: 4;
     overflow: hidden;
+    background-color: #484848;
+
 
   }
 
@@ -42,13 +43,16 @@
     width: 5vw;
     height: 100vh;
     flex-direction: column;
+    background-color: #484848;
+
     @include flex(flex, flex-start, center);
   }
 
   .ham {
-    
+
     margin: 8vh;
     margin-left: 4vw;
+    color: #141414;
     cursor: pointer;
     @include flex(flex, center, center);
 
@@ -57,6 +61,8 @@
   .home {
     margin: 2vh;
     margin-left: -4vw;
+    color: #141414;
+
     @include flex(flex, center, center);
 
   }
@@ -65,183 +71,211 @@
 
     width: 15vw;
     height: 10vh;
-    margin-right: -20vw; 
+    margin-right: -20vw;
     font-size: 1.5vw;
     font-weight: 600;
+    color: #141414;
+
     @include flex(flex, center, center);
 
   }
 
-    .list {
-      margin: 2vh;
-      margin-left: -4vw;
-      @include flex(flex, center, center);
+  .list {
+    margin: 2vh;
+    margin-left: -4vw;
+    color: #141414;
 
-    }
+    @include flex(flex, center, center);
 
-    .listtext {
-
-      width: 15vw;
-      height: 10vh;
-      margin-right: -20vw; 
-      font-size: 1.5vw;
-      font-weight: 600;
-      @include flex(flex, center, center);
-  
-    }
-
-    .contents {
-
-      margin: 2vh;
-      margin-left: -4vw;
-      @include flex(flex, center, center);
-    }
-
-    .contentstext {
-
-      width: 15vw;
-      height: 10vh;
-      margin-right: -20vw; 
-      font-size: 1.5vw;
-      font-weight: 600;
-      @include flex(flex, center, center);
-  
-    }
-
-    .setting {
-
-      margin: 2vh;
-      margin-left: -4vw;
-      @include flex(flex, center, center);
-    }
-
-    .settingtext {
-
-      width: 15vw;
-      height: 10vh;
-      margin-right: -20vw; 
-      font-size: 1.5vw;
-      font-weight: 600;
-      @include flex(flex, center, center);
-  
-    }
-
-    //------------------------------------------------------------
-
-    .box1 {
-
-      width: 150vw;
-      height: 70vh;
-      background-color: bisque;
-      @include border();
-      @include flex(flex, center, center);
-
-    }
-
-    .box2 {
-
-      width: 150vw;
-      height: 50vh;
-      background-color: burlywood;
-      flex-direction: column;
-      @include border();
-      @include flex(flex, flex-start, flex-start);
-
-    }
-
-    .box3 {
-
-      width: 150vw;
-      height: 50vh;
-      background-color: rgb(143, 86, 86);
-      flex-direction: column;
-      @include border();
-      @include flex(flex, flex-start, flex-start);
-    }
-
-    .box4 {
-
-      width: 150vw;
-      height: 50vh;
-      background-color: rgb(61, 129, 231);
-      flex-direction: column;
-      @include border();
-      @include flex(flex, flex-start, flex-start);
-    }
-
-    //------------------------------------------------------------
-
-    .lay-con {
-      width: 255vw;
-      height: 50vh;
-      @include border();
-      @include flex(flex, center, center);
-
-    }
-
-    .lay-con-1 {
-      width: 255vw;
-      height: 50vh;
-      @include border();
-      @include flex(flex, center, center);
-
-    }
-
-    .lay-con-2 {
-      width: 255vw;
-      height: 50vh;
-      @include border();
-      @include flex(flex, center, center);
-
-    }
-
-    //------------------------------------------------------------
-
-    .title {
-
-      width: 16vw;
-      height: 5vh;
-      font-size: 1.5vw;
-      font-weight: 600;
-      flex-direction: column;
-      margin-top: -45vh;
-      margin-left: -228vw;
-      position: absolute;
-      z-index: 1;
-      @include border();
-      @include flex(flex, flex-start, flex-start);
-
-    }
-
-    .title-1 {
-
-      width: 16vw;
-      height: 5vh;
-      font-size: 1.5vw;
-      font-weight: 600;
-      flex-direction: column;
-      margin-left: -228vw;
-      margin-top: -45vh;
-      position: absolute;
-      z-index: 2;
-      @include border();
-      @include flex(flex, flex-start, flex-start);
-
-    }
-
-    .title-2 {
-
-      width: 16vw;
-      height: 5vh;
-      font-size: 1.5vw;
-      font-weight: 600;
-      flex-direction: column;
-      margin-left: -228vw;
-      margin-top: -45vh;
-      position: absolute;
-      z-index: 3;
-      @include border();
-      @include flex(flex, flex-start, flex-start);
-
-    }
   }
+
+  .listtext {
+
+    width: 15vw;
+    height: 10vh;
+    margin-right: -20vw;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #141414;
+
+    @include flex(flex, center, center);
+
+  }
+
+  .contents {
+
+    margin: 2vh;
+    margin-left: -4vw;
+    color: #141414;
+
+    @include flex(flex, center, center);
+  }
+
+  .contentstext {
+
+    width: 15vw;
+    height: 10vh;
+    margin-right: -20vw;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #141414;
+
+    @include flex(flex, center, center);
+
+  }
+
+  .setting {
+
+    margin: 2vh;
+    margin-left: -4vw;
+    color: #141414;
+
+    @include flex(flex, center, center);
+  }
+
+  .settingtext {
+
+    width: 15vw;
+    height: 10vh;
+    margin-right: -20vw;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #141414;
+
+    @include flex(flex, center, center);
+
+  }
+
+  //------------------------------------------------------------
+
+  .box1 {
+
+    width: 100vw;
+    height: 70vh;
+    background: url(../VER-2-pic/image\ 15.png);
+    background-size: contain;
+    background-position: 4.9vw center;
+    background-attachment: initial;
+    background-repeat: no-repeat;
+    @include border();
+    @include flex(flex, center, center);
+
+  }
+
+  .box2 {
+
+    width: 100vw;
+    height: 50vh;
+    flex-direction: column;
+    @include border();
+    @include flex(flex, flex-start, flex-start);
+
+  }
+
+  .box3 {
+
+    width: 100vw;
+    height: 50vh;
+    flex-direction: column;
+    @include border();
+    @include flex(flex, flex-start, flex-start);
+  }
+
+  .box4 {
+
+    width: 100vw;
+    height: 50vh;
+    flex-direction: column;
+    @include border();
+    @include flex(flex, flex-start, flex-start);
+  }
+
+  //------------------------------------------------------------
+
+  .lay-con {
+    width: 100vw;
+    height: 50vh;
+    background-color: #000;
+    @include border();
+    @include flex(flex, center, center);
+
+  }
+
+  .lay-con-1 {
+    width: 100vw;
+    height: 50vh;
+    background-color: #000;
+    @include border();
+    @include flex(flex, center, center);
+
+  }
+
+  .lay-con-2 {
+    width: 100vw;
+    height: 50vh;
+    background-color: #000;
+    @include border();
+    @include flex(flex, center, center);
+
+  }
+
+  //------------------------------------------------------------
+
+  .title {
+
+    width: 16vw;
+    height: 5vh;
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: 600;
+    flex-direction: column;
+    margin-top: -45vh;
+    margin-left: -70vw;
+    position: absolute;
+    z-index: 1;
+    @include border();
+    @include flex(flex, flex-start, flex-start);
+
+  }
+
+  .title-1 {
+
+    width: 16vw;
+    height: 5vh;
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: 600;
+    flex-direction: column;
+    margin-top: -45vh;
+    margin-left: -70vw;
+    position: absolute;
+    z-index: 1;
+    @include border();
+    @include flex(flex, flex-start, flex-start);
+
+  }
+
+  .title-2 {
+
+    width: 16vw;
+    height: 5vh;
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: 600;
+    flex-direction: column;
+    margin-top: -45vh;
+    margin-left: -70vw;
+    position: absolute;
+    z-index: 1;
+    @include border();
+    @include flex(flex, flex-start, flex-start);
+
+  }
+
+  .fa-solid {
+    position: relative;
+    @include flex(flex, center, center);
+
+  }
+
+}

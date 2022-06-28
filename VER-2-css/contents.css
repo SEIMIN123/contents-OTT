@@ -15,10 +15,14 @@
 }
 #root .side {
   width: 5vw;
-  height: 100vh;
+  height: 100%;
   background-color: salmon;
   position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
   z-index: 4;
+  overflow: hidden;
 }
 #root .sidecon {
   width: 5vw;
@@ -29,20 +33,80 @@
   align-items: center;
 }
 #root .ham {
-  margin: 10vh;
-  margin-top: 6vh;
+  margin: 8vh;
+  margin-left: 4vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #root .home {
-  margin: 3vh;
+  margin: 2vh;
+  margin-left: -4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root .hometext {
+  width: 15vw;
+  height: 10vh;
+  margin-right: -20vw;
+  font-size: 1.5vw;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #root .list {
-  margin: 3vh;
+  margin: 2vh;
+  margin-left: -4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root .listtext {
+  width: 15vw;
+  height: 10vh;
+  margin-right: -20vw;
+  font-size: 1.5vw;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #root .contents {
-  margin: 3vh;
+  margin: 2vh;
+  margin-left: -4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root .contentstext {
+  width: 15vw;
+  height: 10vh;
+  margin-right: -20vw;
+  font-size: 1.5vw;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #root .setting {
-  margin: 3vh;
+  margin: 2vh;
+  margin-left: -4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root .settingtext {
+  width: 15vw;
+  height: 10vh;
+  margin-right: -20vw;
+  font-size: 1.5vw;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #root .box1 {
   width: 150vw;
@@ -85,7 +149,7 @@
   font-weight: 600;
   flex-direction: column;
   margin-top: -60vh;
-  margin-left: -190vw;
+  margin-left: -200vw;
   position: absolute;
   border: 1px solid black;
   display: flex;
@@ -99,7 +163,7 @@
   font-weight: 600;
   flex-direction: column;
   margin-top: -60vh;
-  margin-left: -190vw;
+  margin-left: -200vw;
   position: absolute;
   border: 1px solid black;
   display: flex;

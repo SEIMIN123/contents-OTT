@@ -12,21 +12,30 @@
 
 <body>
   <div id="root">
-    <div class="side">
+    <div class="side sideopen">
       <div class="sidecon">
         <div class="ham">
-          <i class="fa-solid fa-bars fa-3x"></i>
+          <i class="fa-solid fa-bars fa-2x"></i>
         </div>
         <div class="home">
-          <i class="fa-solid fa-house fa-3x"></i>
+          <i class="fa-solid fa-house fa-2x"></i>
+          <div class="hometext">홈</div>
+
         </div>
         <div class="list">
-          <i class="fa-solid fa-list fa-3x"></i></div>
+          <i class="fa-solid fa-list fa-2x"></i>
+          <div class="listtext">리스트</div>
+        
+        </div>
         <div class="contents">
-          <i class="fa-solid fa-tv fa-3x"></i>
+          <i class="fa-solid fa-tv fa-2x"></i>
+          <div class="contentstext">내가 본 작품</div>
+
         </div>
         <div class="setting">
-          <i class="fa-solid fa-gear fa-3x"></i></div>
+          <i class="fa-solid fa-gear fa-2x"></i>
+          <div class="settingtext">설정</div>
+        </div>
       </div>
     </div>
 
@@ -54,6 +63,35 @@
         makeDivOne.style.margin = "0.2vw";
     
       }
+
+  //---------------------------------------------------------
+  
+  const sideOpen = document.querySelector('.sideopen');
+        const ham = document.querySelector('.ham');
+
+        let data1 = true;
+
+        ham.addEventListener('click', () => {
+
+          if (data1 === true) {
+            data1 = false;
+
+            sideOpen.style.width = "18vw";
+            sideOpen.style.height = "100%";
+            sideOpen.style.display = "block";
+            sideOpen.style.transition = "0.5s";
+            sideOpen.style.trasnform = "translateX(3vw)";
+            sideOpen.style.backgroundColor = "#ccc";
+
+          } else {
+
+            data1 = true;
+
+            sideOpen.style.width = "5vw";
+            sideOpen.style.backgroundColor = "salmon";
+
+          }
+        });
     </script>
 </body>
 

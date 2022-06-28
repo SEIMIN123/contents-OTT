@@ -27,10 +27,14 @@
   .side {
 
     width: 5vw;
-    height: 100vh;
+    height: 100%;
     background-color: salmon;
     position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
     z-index: 4;
+    overflow: hidden;
 
   }
 
@@ -42,27 +46,86 @@
     @include flex(flex, flex-start, center);
   }
 
-  .ham  {
-    margin: 10vh;
-    margin-top: 6vh;
+  .ham {
+    
+    margin: 8vh;
+    margin-left: 4vw;
+    cursor: pointer;
+    @include flex(flex, center, center);
+
   }
+
   .home {
+    margin: 2vh;
+    margin-left: -4vw;
+    @include flex(flex, center, center);
 
-    margin: 3vh;
   }
 
-  .list {
-    margin: 3vh;
-  }
-  .contents {
+  .hometext {
 
-    margin: 3vh;
+    width: 15vw;
+    height: 10vh;
+    margin-right: -20vw; 
+    font-size: 1.5vw;
+    font-weight: 600;
+    @include flex(flex, center, center);
+
   }
 
-  .setting {
+    .list {
+      margin: 2vh;
+      margin-left: -4vw;
+      @include flex(flex, center, center);
 
-    margin: 3vh;
-  }
+    }
+
+    .listtext {
+
+      width: 15vw;
+      height: 10vh;
+      margin-right: -20vw; 
+      font-size: 1.5vw;
+      font-weight: 600;
+      @include flex(flex, center, center);
+  
+    }
+
+    .contents {
+
+      margin: 2vh;
+      margin-left: -4vw;
+      @include flex(flex, center, center);
+    }
+
+    .contentstext {
+
+      width: 15vw;
+      height: 10vh;
+      margin-right: -20vw; 
+      font-size: 1.5vw;
+      font-weight: 600;
+      @include flex(flex, center, center);
+  
+    }
+
+    .setting {
+
+      margin: 2vh;
+      margin-left: -4vw;
+      @include flex(flex, center, center);
+    }
+
+    .settingtext {
+
+      width: 15vw;
+      height: 10vh;
+      margin-right: -20vw; 
+      font-size: 1.5vw;
+      font-weight: 600;
+      @include flex(flex, center, center);
+  
+    }
 
   //--------------------------------------------------
 
@@ -79,7 +142,7 @@
   .con {
 
     width: 40vw;
-    height: 90vh;
+    height: 98vh;
     flex-direction: column;
     @include border();
     @include flex(flex, center, center);
