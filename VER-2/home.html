@@ -7,121 +7,150 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="../VER-2-css/home.css">
+  <script src="https://kit.fontawesome.com/7986c55620.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div id="root">
-    <div class="side">
+    <div class="side sideopen">
       <div class="sidecon">
-        <div class="ham"></div>
-        <div class="home"></div>
-        <div class="list"></div>
-        <div class="contents"></div>
-        <div class="setting"></div>
+        <div class="ham">
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </div>
+        <div class="home">
+          <i class="fa-solid fa-house fa-2x"></i>
+          <div class="hometext">홈</div>
+
+        </div>
+        <div class="list">
+          <i class="fa-solid fa-list fa-2x"></i>
+          <div class="listtext">리스트</div>
+        
+        </div>
+        <div class="contents">
+          <i class="fa-solid fa-tv fa-2x"></i>
+          <div class="contentstext">내가 본 작품</div>
+
+        </div>
+        <div class="setting">
+          <i class="fa-solid fa-gear fa-2x"></i>
+          <div class="settingtext">설정</div>
+        </div>
       </div>
     </div>
     <div class="con">
       <div class="box1">이미지</div>
+
       <div class="box2">
         <div class="lay-con">
-          <!-- <div class="title">실시간 상위작품</div> -->
-          <!-- <div class="lay"></div> -->
-          <!-- <div class="lay" data-lay="2"></div>
-          <div class="lay" data-lay="3"></div>
-          <div class="lay" data-lay="4"></div>
-          <div class="lay" data-lay="5"></div>
-          <div class="lay" data-lay="6"></div>
-          <div class="lay" data-lay="7"></div>
-          <div class="lay" data-lay="8"></div>
-          <div class="lay" data-lay="9"></div>
-          <div class="lay" data-lay="10"></div>
-          <div class="lay" data-lay="11"></div>
-          <div class="lay" data-lay="12"></div>
-          <div class="lay" data-lay="13"></div>
-          <div class="lay" data-lay="14"></div>
-          <div class="lay" data-lay="15"></div>  -->
+          <div class="title">실시간 상위작품</div>
         </div>
-
-        <!-- <div class="box3">
-          <div class="lay-con-1">
-            <div class="title-1">액션</div> -->
-        <!-- <div class="lay-1" data-lay="16"></div> -->
-        <!-- <div class="lay-1" data-lay="17"></div>
-            <div class="lay-1" data-lay="18"></div>
-            <div class="lay-1" data-lay="19"></div>
-            <div class="lay-1" data-lay="20"></div>
-            <div class="lay-1" data-lay="21"></div>
-            <div class="lay-1" data-lay="22"></div>
-            <div class="lay-1" data-lay="23"></div>
-            <div class="lay-1" data-lay="24"></div>
-            <div class="lay-1" data-lay="25"></div>
-            <div class="lay-1" data-lay="26"></div>
-            <div class="lay-1" data-lay="27"></div>
-            <div class="lay-1" data-lay="28"></div>
-            <div class="lay-1" data-lay="29"></div>
-            <div class="lay-1" data-lay="30"></div> -->
       </div>
 
-      <!-- <div class="box4">
+      <div class="box3">
+          <div class="lay-con-1">
+            <div class="title-1">액션</div>
+          </div>
+      </div>
+
+      <div class="box4">
             <div class="lay-con-2">
               <div class="title-2">스릴러
-              </div> -->
-      <!-- <div class="lay-2" data-lay="31"></div> -->
-      <!-- <div class="lay-2" data-lay="32"></div>
-              <div class="lay-2" data-lay="33"></div>
-              <div class="lay-2" data-lay="34"></div>
-              <div class="lay-2" data-lay="35"></div>
-              <div class="lay-2" data-lay="36"></div>
-              <div class="lay-2" data-lay="37"></div>
-              <div class="lay-2" data-lay="38"></div>
-              <div class="lay-2" data-lay="39"></div>
-              <div class="lay-2" data-lay="40"></div>
-              <div class="lay-2" data-lay="41"></div>
-              <div class="lay-2" data-lay="42"></div>
-              <div class="lay-2" data-lay="43"></div>
-              <div class="lay-2" data-lay="44"></div>
-              <div class="lay-2" data-lay="45"></div> -->
+              </div>
+            </div>
+          </div>
     </div>
   </div>
   </div>
-  </div>
-  </div>
-  </div>
-  </div>
 </body>
+
 <script>
-  const con = document.querySelector('.con');
-  const box = document.querySelector('.box2');
-  const layCon = document.querySelector('.lay-con');
-  const style = [{
-      width: '15vw'
-    },
-    {
-      height: '20vh'
-    },
-    {
-      margin: '0.2vw'
-    },
-    {
-      border: '1px solid black'
-    },
-    {
-      borderRadius: '10px'
-    }
-  ];
+  const boxTwo = document.querySelector('.box2');
+  const boxThree = document.querySelector('.box3');
+  const boxFour = document.querySelector('.box4');
+  const layConOne = document.querySelector('.lay-con');
+  const layConTwo = document.querySelector('.lay-con-1');
+  const layConThree = document.querySelector('.lay-con-2');
 
-  console.log(con);
-  console.log(box);
-  console.log(layCon);
+  console.log(boxTwo);
+  console.log(boxThree);
+  console.log(boxFour);
+  console.log(layConOne);
+  console.log(layConTwo);
+  console.log(layConThree);
 
-  for (let i = 0; i < 15; i++) {
+  let data = 0;
+  for (let i = 0; i < 16; i++) {
 
-    style.forEach((value, index) => {
-    const makeDiv = document.createElement('div');
-    layCon.appendChild(makeDiv);
+    const makeDivOne = document.createElement("div");
+    const makeDivTwo = document.createElement("div");
+    const makeDivThree = document.createElement("div");
+    
+    layConOne.appendChild(makeDivOne);
+    boxTwo.appendChild(layConOne);
 
-    });
+    layConTwo.appendChild(makeDivTwo);
+    boxThree.appendChild(layConTwo);
+    
+    layConThree.appendChild(makeDivThree);
+    boxFour.appendChild(layConThree);
+
+    makeDivOne.style.width = "15vw";
+    makeDivOne.style.height = "20vw";
+    makeDivOne.style.border = "1px solid black";
+    makeDivOne.style.borderRadius = "10px";
+    makeDivOne.style.margin = "0.3vw";
+    makeDivOne.style.marginRight = "0vw";
+    makeDivOne.style.marginBottom = "-1.5vw";
+
+
+    makeDivTwo.style.width = "15vw";
+    makeDivTwo.style.height = "20vw";
+    makeDivTwo.style.border = "1px solid black";
+    makeDivTwo.style.borderRadius = "10px";
+    makeDivTwo.style.margin = "0.3vw";
+    makeDivTwo.style.marginRight = "0vw";
+    makeDivTwo.style.marginBottom = "-1.5vw";
+
+
+    makeDivThree.style.width = "15vw";
+    makeDivThree.style.height = "20vw";
+    makeDivThree.style.border = "1px solid black";
+    makeDivThree.style.borderRadius = "10px";
+    makeDivThree.style.margin = "0.3vw";
+    makeDivThree.style.marginRight = "0vw";
+    makeDivThree.style.marginBottom = "-1.5vw";
+
   }
-</script>
 
+  //----------------------------------------------------------
+
+  const sideOpen = document.querySelector('.sideopen');
+  const ham = document.querySelector('.ham');
+
+  let data1 = true;
+
+  ham.addEventListener('click', ()=> {
+
+    if (data1 === true){
+      data1 = false;
+      
+      sideOpen.style.width = "18vw";
+      sideOpen.style.height = "100%";
+      sideOpen.style.display = "block";
+      sideOpen.style.transition = "0.5s";
+      sideOpen.style.trasnform = "translateX(3vw)";
+      sideOpen.style.backgroundColor = "#ccc";
+
+    } else {
+
+      data1 = true;
+
+      sideOpen.style.width = "5vw";
+      sideOpen.style.backgroundColor = "salmon";
+
+    }
+  });
+
+</script>
 </html>

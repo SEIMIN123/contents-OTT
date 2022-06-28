@@ -1,187 +1,107 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #root {
   width: 100vw;
   height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
-
 #root .side {
-  width: 10vw;
+  width: 5vw;
   height: 100vh;
   background-color: salmon;
   position: fixed;
-  z-index: 1;
-  border: 1px solid black;
+  z-index: 4;
 }
-
 #root .sidecon {
-  width: 10vw;
+  width: 5vw;
   height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-direction: column;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
 }
-
 #root .ham {
-  width: 50px;
-  height: 50px;
   margin: 10vh;
-  margin-top: 2vh;
-  border: 1px solid black;
+  margin-top: 6vh;
 }
-
 #root .home {
-  width: 50px;
-  height: 50px;
   margin: 3vh;
-  border: 1px solid black;
 }
-
 #root .list {
-  width: 50px;
-  height: 50px;
   margin: 3vh;
-  border: 1px solid black;
 }
-
 #root .contents {
-  width: 50px;
-  height: 50px;
   margin: 3vh;
-  border: 1px solid black;
 }
-
 #root .setting {
-  width: 50px;
-  height: 50px;
   margin: 3vh;
-  border: 1px solid black;
 }
-
 #root .box1 {
   width: 100vw;
   height: 100vh;
   background-color: burlywood;
   border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root .con {
   width: 40vw;
   height: 90vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root .con-1 {
   width: 35vw;
   height: 20vw;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
-
 #root .email {
   margin: 3vh;
 }
-
 #root .password {
   margin: 3vh;
 }
-
 #root .con-2 {
   width: 35vw;
   height: 5vw;
   border: 1px solid black;
 }
-
 #root .con-2 > button {
   margin: 1.5vw;
 }
-
 #root .con-3 {
   width: 35vw;
   height: 23vw;
   border: 1px solid black;
 }
-
 #root .ticket {
   margin: 3vh;
 }
-
 #root .ticket-1 {
   margin: 3vh;
 }
-
 #root .ticket-2 {
   margin: 3vh;
 }
-
 #root .ticket-3 {
   margin: 3vh;
 }
-
 #root .con-3 > button {
   margin: 1.5vw;
 }

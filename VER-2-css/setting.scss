@@ -26,67 +26,42 @@
 
   .side {
 
-    width: 10vw;
+    width: 5vw;
     height: 100vh;
     background-color: salmon;
     position: fixed;
-    z-index: 1;
-    @include border();
+    z-index: 4;
 
   }
 
   .sidecon {
 
-    width: 10vw;
+    width: 5vw;
     height: 100vh;
     flex-direction: column;
-    @include border();
     @include flex(flex, flex-start, center);
-
   }
 
   .ham  {
-
-    width: 50px;
-    height: 50px;
     margin: 10vh;
-    margin-top: 2vh;
-    @include border();
+    margin-top: 6vh;
   }
-
   .home {
 
-    width: 50px;
-    height: 50px;
     margin: 3vh;
-
-    @include border();
   }
 
   .list {
-
-    width: 50px;
-    height: 50px;
     margin: 3vh;
-    @include border();
   }
-
   .contents {
 
-    width: 50px;
-    height: 50px;
     margin: 3vh;
-
-    @include border();
   }
 
   .setting {
 
-    width: 50px;
-    height: 50px;
     margin: 3vh;
-
-    @include border();
   }
 
   //--------------------------------------------------

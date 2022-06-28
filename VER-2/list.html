@@ -7,40 +7,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="../VER-2-css/list.css">
+  <script src="https://kit.fontawesome.com/7986c55620.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div id="root">
     <div class="side">
       <div class="sidecon">
-        <div class="ham"></div>
-        <div class="home"></div>
-        <div class="list"></div>
-        <div class="contents"></div>
-        <div class="setting"></div>
+        <div class="ham">
+          <i class="fa-solid fa-bars fa-3x"></i>
+        </div>
+        <div class="home">
+          <i class="fa-solid fa-house fa-3x"></i>
+        </div>
+        <div class="list">
+          <i class="fa-solid fa-list fa-3x"></i></div>
+        <div class="contents">
+          <i class="fa-solid fa-tv fa-3x"></i>
+        </div>
+        <div class="setting">
+          <i class="fa-solid fa-gear fa-3x"></i></div>
       </div>
     </div>
 
     <div class="box1">
       <div class="lay-con">
         <div class="title-1">MY LIST</div>
-        <div class="lay" data-lay="1"></div>
-        <div class="lay" data-lay="2"></div>
-        <div class="lay" data-lay="3"></div>
-        <div class="lay" data-lay="4"></div>
-        <div class="lay" data-lay="5"></div>
-        <div class="lay" data-lay="6"></div>
-        <div class="lay" data-lay="7"></div>
-        <div class="lay" data-lay="8"></div>
-        <div class="lay" data-lay="9"></div>
-        <div class="lay" data-lay="10"></div>
-        <div class="lay" data-lay="11"></div>
-        <div class="lay" data-lay="12"></div>
-        <div class="lay" data-lay="13"></div>
-        <div class="lay" data-lay="14"></div>
-        <div class="lay" data-lay="15"></div>
       </div>
     </div>
+
+    <script>
+      const boxOne = document.querySelector('.box1');
+      const layConOne = document.querySelector('.lay-con');
+    
+      let data = 0;
+      for (let i = 0; i < 15; i++) {
+    
+        const makeDivOne = document.createElement("div");
+        layConOne.appendChild(makeDivOne);
+        boxOne.appendChild(layConOne);
+    
+        makeDivOne.style.width = "15vw";
+        makeDivOne.style.height = "20vw";
+        makeDivOne.style.border = "1px solid black";
+        makeDivOne.style.borderRadius = "10px";
+        makeDivOne.style.margin = "0.2vw";
+    
+      }
+    </script>
 </body>
 
 </html>

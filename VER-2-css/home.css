@@ -1,135 +1,217 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #root {
   width: 150vw;
   height: 100vh;
   border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
-
 #root .side {
-  width: 10vw;
-  height: 100vh;
+  width: 5vw;
+  height: 100%;
   background-color: salmon;
   position: fixed;
-  border: 1px solid black;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 4;
+  overflow: hidden;
 }
-
 #root .sidecon {
-  width: 10vw;
+  width: 5vw;
   height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-direction: column;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
 }
-
 #root .ham {
-  width: 50px;
-  height: 50px;
-  margin: 10vh;
-  margin-top: 2vh;
-  border: 1px solid black;
+  margin: 8vh;
+  margin-left: 4vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 #root .home {
-  width: 50px;
-  height: 50px;
-  margin: 3vh;
-  border: 1px solid black;
+  margin: 2vh;
+  margin-left: -4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+#root .hometext {
+  width: 15vw;
+  height: 10vh;
+  margin-right: -20vw;
+  font-size: 1.5vw;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #root .list {
-  width: 50px;
-  height: 50px;
-  margin: 3vh;
-  border: 1px solid black;
+  margin: 2vh;
+  margin-left: -4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+#root .listtext {
+  width: 15vw;
+  height: 10vh;
+  margin-right: -20vw;
+  font-size: 1.5vw;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #root .contents {
-  width: 50px;
-  height: 50px;
-  margin: 3vh;
-  border: 1px solid black;
+  margin: 2vh;
+  margin-left: -4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+#root .contentstext {
+  width: 15vw;
+  height: 10vh;
+  margin-right: -20vw;
+  font-size: 1.5vw;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #root .setting {
-  width: 50px;
-  height: 50px;
-  margin: 3vh;
-  border: 1px solid black;
+  margin: 2vh;
+  margin-left: -4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+#root .settingtext {
+  width: 15vw;
+  height: 10vh;
+  margin-right: -20vw;
+  font-size: 1.5vw;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #root .box1 {
   width: 150vw;
   height: 70vh;
   background-color: bisque;
   border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root .box2 {
   width: 150vw;
-  height: 150vh;
+  height: 50vh;
   background-color: burlywood;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
-
+#root .box3 {
+  width: 150vw;
+  height: 50vh;
+  background-color: rgb(143, 86, 86);
+  flex-direction: column;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#root .box4 {
+  width: 150vw;
+  height: 50vh;
+  background-color: rgb(61, 129, 231);
+  flex-direction: column;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 #root .lay-con {
   width: 255vw;
   height: 50vh;
   border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+#root .lay-con-1 {
+  width: 255vw;
+  height: 50vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root .lay-con-2 {
+  width: 255vw;
+  height: 50vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root .title {
+  width: 16vw;
+  height: 5vh;
+  font-size: 1.5vw;
+  font-weight: 600;
+  flex-direction: column;
+  margin-top: -45vh;
+  margin-left: -228vw;
+  position: absolute;
+  z-index: 1;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#root .title-1 {
+  width: 16vw;
+  height: 5vh;
+  font-size: 1.5vw;
+  font-weight: 600;
+  flex-direction: column;
+  margin-left: -228vw;
+  margin-top: -45vh;
+  position: absolute;
+  z-index: 2;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#root .title-2 {
+  width: 16vw;
+  height: 5vh;
+  font-size: 1.5vw;
+  font-weight: 600;
+  flex-direction: column;
+  margin-left: -228vw;
+  margin-top: -45vh;
+  position: absolute;
+  z-index: 3;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }

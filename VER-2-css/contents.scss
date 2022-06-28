@@ -26,67 +26,42 @@
 
   .side {
 
-    width: 10vw;
+    width: 5vw;
     height: 100vh;
     background-color: salmon;
     position: fixed;
-    z-index: 1;
-    @include border();
+    z-index: 4;
 
   }
 
   .sidecon {
 
-    width: 10vw;
+    width: 5vw;
     height: 100vh;
     flex-direction: column;
-    @include border();
     @include flex(flex, flex-start, center);
-
   }
 
   .ham  {
-
-    width: 50px;
-    height: 50px;
     margin: 10vh;
-    margin-top: 2vh;
-    @include border();
+    margin-top: 6vh;
   }
-
   .home {
 
-    width: 50px;
-    height: 50px;
     margin: 3vh;
-
-    @include border();
   }
 
   .list {
-
-    width: 50px;
-    height: 50px;
     margin: 3vh;
-    @include border();
   }
-
   .contents {
 
-    width: 50px;
-    height: 50px;
     margin: 3vh;
-
-    @include border();
   }
 
   .setting {
 
-    width: 50px;
-    height: 50px;
     margin: 3vh;
-
-    @include border();
   }
 
   //--------------------------------------------------
@@ -133,57 +108,32 @@
 
   .title-1 {
 
-    width: 19vw;
+    width: 17vw;
     height: 5vh;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 1.5vw;
+    font-weight: 600;
     flex-direction: column;
     margin-top: -60vh;
-    margin-left: -185vw;
+    margin-left: -190vw;
     position: absolute;
     @include border();
-    @include flex(flex, flex-start, flex-start);
+    @include flex(flex, center, center);
 
   }
 
   .title-2 {
 
-    width: 19vw;
+    width: 15vw;
     height: 5vh;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 1.5vw;
+    font-weight: 600;
     flex-direction: column;
     margin-top: -60vh;
-    margin-left: -185vw;
+    margin-left: -190vw;
     position: absolute;
     @include border();
-    @include flex(flex, flex-start, flex-start);
-
-  }
-
-  //--------------------------------------------------
-
-  .lay {
-
-    width: 15vw;
-    height: 40vh;
-    margin: 0.2vw;
-    border-radius: 10px;
-    position: relative;
-    z-index: 0;
-    @include border();
     @include flex(flex, center, center);
-  }
 
-  .lay-1 {
 
-    width: 15vw;
-    height: 40vh;
-    margin: 0.2vw;
-    border-radius: 10px;
-    position: relative;
-    z-index: 0;
-    @include border();
-    @include flex(flex, center, center);
   }
 }
