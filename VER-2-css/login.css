@@ -34,7 +34,7 @@
   font-weight: 400;
 }
 #root .logtext {
-  width: 14vw;
+  width: 15vw;
   height: 3vh;
   font-size: 1vw;
   padding-left: 0.5vw;
@@ -49,7 +49,7 @@
   flex-direction: column;
 }
 #root .passtext {
-  width: 14vw;
+  width: 15vw;
   height: 3vh;
   font-size: 1vw;
   padding-left: 0.5vw;

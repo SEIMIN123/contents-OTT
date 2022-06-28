@@ -232,9 +232,3 @@
   justify-content: flex-start;
   align-items: flex-start;
 }
-#root .fa-solid {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
