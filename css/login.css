@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
@@ -13,20 +14,30 @@
     width: 100vw;
     height: 100vh;
     background-color: #B5DDFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   /* 전체 박스 */
   #back > div:nth-child(1) {
     width: 100vw;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   /* 로그인 감싸는 박스 */
   #back > div > div:nth-child(1) {
     width: 50vw;
@@ -36,12 +47,20 @@
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   /* 위쪽 로그인 */
   #back > div > div > div:nth-child(1) {
     width: 20vw;
@@ -52,28 +71,41 @@
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     margin-bottom: 100px;
   }
-
   /* 밑쪽 로그인 */
   #back > div > div > div:nth-child(2) {
     width: 30vw;
     height: 60vh;
     background-color: #B5DDFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }
-
   #back > div > div > div:nth-child(2) > div:nth-child(1) {
     width: 20vw;
     height: 7vw;
@@ -84,7 +116,6 @@
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }
-
   #back > div > div > div:nth-child(2) > div:nth-child(2) {
     width: 20vw;
     height: 7vw;
@@ -95,89 +126,108 @@
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }
-
   #back > div > div > div:nth-child(2) > div:nth-child(1) > sub {
     margin: 1.5vw;
-    color: rgb(75, 70, 70);
+    color: #4b4646;
     font-size: large;
     font-weight: bold;
   }
-
   #back > div > div > div:nth-child(2) > div:nth-child(2) > sub {
     margin: 1.5vw;
-    color: rgb(65, 62, 62);
+    color: #413e3e;
     font-size: large;
     font-weight: bold;
   }
-
   #back > div > div > div:nth-child(2) > div:nth-child(3) {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }
-
   #back > div > div > div:nth-child(2) > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   input {
     width: 15vw;
     font-size: 25px;
     border-radius: 15px;
     border: 0;
-    border: solid rgb(235, 228, 228);
+    border: solid #ebe4e4;
     padding-left: 20px;
-    outline: rgb(255, 254, 254);
+    outline: #fffefe;
     margin: 10px;
   }
-
   button {
     width: 10vw;
     height: 7vh;
     font-size: 25px;
     border: 0;
     border-radius: 15px;
-    color: rgb(110, 106, 106);
+    color: #6e6a6a;
     cursor: pointer;
-    box-shadow: 0 5px rgb(117, 114, 114);
+    -webkit-box-shadow: 0 5px #757272;
+            box-shadow: 0 5px #757272;
   }
-
   button:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
   }
-
   button:active {
+    -webkit-transition: 0.2s;
     transition: 0.2s;
-    box-shadow: 0 5px rgb(2, 1, 1);
-    transform: translateY(2px);
+    -webkit-box-shadow: 0 5px #020101;
+            box-shadow: 0 5px #020101;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
   }
 }
+
 @media all and (max-width: 800px) {
   #back {
     width: 100vw;
     height: 100vh;
     background-color: #B5DDFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   /* 전체 박스 */
   #back > div:nth-child(1) {
     width: 100vw;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   /* 로그인 감싸는 박스 */
   #back > div > div:nth-child(1) {
     width: 90vw;
@@ -187,12 +237,20 @@
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   /* 위쪽 로그인 */
   #back > div > div > div:nth-child(1) {
     width: 50vw;
@@ -200,60 +258,81 @@
     background-color: #B5DDFF;
     color: white;
     border-radius: 2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     margin: 5vh;
   }
-
   /* 밑쪽 로그인 */
   #back > div > div > div:nth-child(2) {
     width: 60vw;
     height: 100vh;
     background-color: #B5DDFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 3vh;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }
-
   #back > div > div > div:nth-child(2) > div:nth-child(1) > sub {
     text-align: center;
-    color: rgb(75, 70, 70);
+    color: #4b4646;
     font-size: large;
     font-weight: bold;
   }
-
   #back > div > div > div:nth-child(2) > div:nth-child(2) > sub {
     text-align: center;
-    color: rgb(65, 62, 62);
+    color: #413e3e;
     font-size: large;
     font-weight: bold;
   }
-
   #back > div > div > div:nth-child(2) > div:nth-child(3) {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }
-
   #back > div > div > div:nth-child(2) > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   input {
     width: 50vw;
     height: 7vw;
@@ -262,28 +341,29 @@
     font-size: 25px;
     padding-left: 4vw;
     border-radius: 15px;
-    border: solid rgb(235, 228, 228);
-    outline: rgb(255, 254, 254);
+    border: solid #ebe4e4;
+    outline: #fffefe;
   }
-
   button {
     width: 30vw;
     height: 7vh;
     font-size: 25px;
     border: 0;
     border-radius: 15px;
-    color: rgb(110, 106, 106);
+    color: #6e6a6a;
     cursor: pointer;
-    box-shadow: 0 5px rgb(117, 114, 114);
+    -webkit-box-shadow: 0 5px #757272;
+            box-shadow: 0 5px #757272;
   }
-
   button:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
   }
-
   button:active {
+    -webkit-transition: 0.2s;
     transition: 0.2s;
-    box-shadow: 0 5px rgb(2, 1, 1);
-    transform: translateY(2px);
+    -webkit-box-shadow: 0 5px #020101;
+            box-shadow: 0 5px #020101;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
   }
 }

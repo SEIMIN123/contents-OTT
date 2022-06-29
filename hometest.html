@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../VER-2-css/home.css">
+  <script src="https://kit.fontawesome.com/7986c55620.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="root">
+    <div class="side sideopen">
+      <div class="sidecon">
+        <div class="ham">
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </div>
+        <div class="home">
+          <i class="fa-solid fa-house fa-2x"></i>
+          <div class="hometext">홈</div>
+
+        </div>
+        <div class="list">
+          <i class="fa-solid fa-list fa-2x"></i>
+          <div class="listtext">리스트</div>
+
+        </div>
+        <div class="contents">
+          <i class="fa-solid fa-tv fa-2x"></i>
+          <div class="contentstext">내가 본 작품</div>
+
+        </div>
+        <div class="setting">
+          <i class="fa-solid fa-gear fa-2x"></i>
+          <div class="settingtext">설정</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="con">
+      <div class="box1"></div>
+
+      <div class="box2">
+        <div class="lay-con">
+          <div class="title">실시간 상위작품</div>
+          <i class="fa-solid fa-chevron-left fa-3x"></i>
+          <i class="fa-solid fa-chevron-right fa-3x"></i>
+
+        </div>
+      </div>
+
+      <div class="box3">
+        <div class="lay-con-1">
+          <div class="title-1">액션</div>
+          <i class="fa-solid fa-chevron-left fa-3x"></i>
+          <i class="fa-solid fa-chevron-right fa-3x"></i>
+
+        </div>
+      </div>
+
+      <div class="box4">
+        <div class="lay-con-2">
+          <div class="title-2">스릴러</div>
+          <i class="fa-solid fa-chevron-left fa-3x"></i>
+          <i class="fa-solid fa-chevron-right fa-3x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+<link rel="stylesheet" href="../VER-2-pic/lay/">
+
+<script>
+  const boxTwo = document.querySelector('.box2');
+  const boxThree = document.querySelector('.box3');
+  const boxFour = document.querySelector('.box4');
+  const layConOne = document.querySelector('.lay-con');
+  const layConTwo = document.querySelector('.lay-con-1');
+  const layConThree = document.querySelector('.lay-con-2');
+
+  console.log(boxTwo);
+  console.log(boxThree);
+  console.log(boxFour);
+  console.log(layConOne);
+  console.log(layConTwo);
+  console.log(layConThree);
+
+
+
+  let makepic1 = ["lay-1.png", "lay-2.png", "lay-3.png", "lay-4.png", "lay-5.png", "lay-6.png", "lay-7.png",
+    "lay-8.png", "lay-9.png", "lay-10.png", "lay-11.png"
+  ];
+
+  let makepic2 = ["lay-1.png", "lay-2.png", "lay-3.png", "lay-4.png", "lay-5.png", "lay-6.png", "lay-7.png",
+    "lay-8.png", "lay-9.png", "lay-10.png", "lay-11.png"
+  ];
+
+  let makepic3 = ["lay-1.png", "lay-2.png", "lay-3.png", "lay-4.png", "lay-5.png", "lay-6.png", "lay-7.png",
+    "lay-8.png", "lay-9.png", "lay-10.png", "lay-11.png"
+  ];
+  let data = 0;
+
+  for (let i = 0; i < makepic1.length; i++) {
+
+    const makeDivOne = document.createElement('div');
+    const img = document.createElement('img');
+
+    layConOne.appendChild(makeDivOne);
+    boxTwo.appendChild(layConOne);
+
+    img.setAttribute('src', `../VER-2-pic/lay/lay-${i+1}.png`);
+    makeDivOne.appendChild(img);
+
+    makeDivOne.style.width = "14vw";
+    makeDivOne.style.height = "18.5vw";
+    makeDivOne.style.borderRadius = "10px";
+    makeDivOne.style.margin = "0.3vw";
+    makeDivOne.style.marginBottom = "-1.5vw";
+    makeDivOne.style.display = "fixed";
+
+  }
+
+    //------------------------------------------------------------------
+    for (let i = 0; i < makepic2.length; i++) {
+
+    const makeDivTwo = document.createElement('div');
+    const img = document.createElement('img');
+
+    layConTwo.appendChild(makeDivTwo);
+    boxThree.appendChild(layConTwo);
+
+    img.setAttribute('src', `../VER-2-pic/lay/lay-${i+1}.png`);
+    makeDivTwo.appendChild(img);
+
+    makeDivTwo.style.width = "14vw";
+    makeDivTwo.style.height = "18.5vw";
+    makeDivTwo.style.borderRadius = "10px";
+    makeDivTwo.style.margin = "0.3vw";
+    makeDivTwo.style.marginBottom = "-1.5vw";
+    makeDivTwo.style.display = "fixed";
+
+    }
+
+    for (let i = 0; i < makepic3.length; i++) {
+
+    const makeDivThree = document.createElement('div');
+    const img = document.createElement('img');
+
+    layConThree.appendChild(makeDivThree);
+    boxFour.appendChild(layConThree);
+
+    img.setAttribute('src', `../VER-2-pic/lay/lay-${i+1}.png`);
+    makeDivThree.appendChild(img);
+
+    makeDivThree.style.width = "14vw";
+    makeDivThree.style.height = "18.5vw";
+    makeDivThree.style.borderRadius = "10px";
+    makeDivThree.style.margin = "0.3vw";
+    makeDivThree.style.marginBottom = "-1.5vw";
+    makeDivThree.style.display = "fixed";
+    }
+  //----------------------------------------------------------
+
+  const sideOpen = document.querySelector('.sideopen');
+  const ham = document.querySelector('.ham');
+
+  let data1 = true;
+
+  ham.addEventListener('click', () => {
+
+    if (data1 === true) {
+      data1 = false;
+
+      sideOpen.style.width = "18vw";
+      sideOpen.style.height = "100%";
+      sideOpen.style.display = "block";
+      sideOpen.style.transition = "0.5s";
+      sideOpen.style.trasnform = "translateX(3vw)";
+      sideOpen.style.backgroundColor = "#141414";
+
+    } else {
+      data1 = true;
+
+      sideOpen.style.width = "5vw";
+      sideOpen.style.backgroundColor = "#303030";
+    }
+  });
+</script>
+
+</html>

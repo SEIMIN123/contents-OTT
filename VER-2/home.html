@@ -45,26 +45,33 @@
       <div class="box2">
         <div class="lay-con">
           <div class="title">실시간 상위작품</div>
-        </div>
+          <i class="fa-solid fa-chevron-left fa-3x"></i>
+          <i class="fa-solid fa-chevron-right fa-3x"></i>
 
+        </div>
       </div>
 
       <div class="box3">
         <div class="lay-con-1">
           <div class="title-1">액션</div>
+          <i class="fa-solid fa-chevron-left fa-3x"></i>
+          <i class="fa-solid fa-chevron-right fa-3x"></i>
+
         </div>
       </div>
 
       <div class="box4">
         <div class="lay-con-2">
-          <div class="title-2">스릴러
-          </div>
+          <div class="title-2">스릴러</div>
+          <i class="fa-solid fa-chevron-left fa-3x"></i>
+          <i class="fa-solid fa-chevron-right fa-3x"></i>
         </div>
       </div>
     </div>
   </div>
   </div>
 </body>
+<link rel="stylesheet" href="../VER-2-pic/lay/">
 
 <script>
   const boxTwo = document.querySelector('.box2');
@@ -81,47 +88,80 @@
   console.log(layConTwo);
   console.log(layConThree);
 
-  let data = 0;
-  for (let i = 0; i < 6; i++) {
 
-    const makeDivOne = document.createElement("div");
-    const makeDivTwo = document.createElement("div");
-    const makeDivThree = document.createElement("div");
+
+  let makepic1 = ["lay-1.png", "lay-2.png", "lay-3.png", "lay-4.png", "lay-5.png", "lay-6.png", "lay-7.png",
+    "lay-8.png", "lay-9.png", "lay-10.png", "lay-11.png"
+  ];
+
+  let makepic2 = ["lay-1.png", "lay-2.png", "lay-3.png", "lay-4.png", "lay-5.png", "lay-6.png", "lay-7.png",
+    "lay-8.png", "lay-9.png", "lay-10.png", "lay-11.png"
+  ];
+
+  let makepic3 = ["lay-1.png", "lay-2.png", "lay-3.png", "lay-4.png", "lay-5.png", "lay-6.png", "lay-7.png",
+    "lay-8.png", "lay-9.png", "lay-10.png", "lay-11.png"
+  ];
+  let data = 0;
+
+  for (let i = 0; i < makepic1.length; i++) {
+
+    const makeDivOne = document.createElement('div');
+    const img = document.createElement('img');
 
     layConOne.appendChild(makeDivOne);
     boxTwo.appendChild(layConOne);
 
+    img.setAttribute('src', `../VER-2-pic/makepic1/lay-${i+1}.png`);
+    makeDivOne.appendChild(img);
+
+    makeDivOne.style.width = "14vw";
+    makeDivOne.style.height = "18.5vw";
+    makeDivOne.style.borderRadius = "10px";
+    makeDivOne.style.margin = "0.3vw";
+    makeDivOne.style.marginBottom = "-1.5vw";
+    makeDivOne.style.display = "fixed";
+
+  }
+
+    //------------------------------------------------------------------
+    for (let i = 0; i < makepic2.length; i++) {
+
+    const makeDivTwo = document.createElement('div');
+    const img = document.createElement('img');
+
     layConTwo.appendChild(makeDivTwo);
     boxThree.appendChild(layConTwo);
+
+    img.setAttribute('src', `../VER-2-pic/makepic2/lay-${i+1}.png`);
+    makeDivTwo.appendChild(img);
+
+    makeDivTwo.style.width = "14vw";
+    makeDivTwo.style.height = "18.5vw";
+    makeDivTwo.style.borderRadius = "10px";
+    makeDivTwo.style.margin = "0.3vw";
+    makeDivTwo.style.marginBottom = "-1.5vw";
+    makeDivTwo.style.display = "fixed";
+
+    }
+
+    for (let i = 0; i < makepic3.length; i++) {
+
+    const makeDivThree = document.createElement('div');
+    const img = document.createElement('img');
 
     layConThree.appendChild(makeDivThree);
     boxFour.appendChild(layConThree);
 
-    makeDivOne.style.width = "15vw";
-    makeDivOne.style.height = "20vw";
-    makeDivOne.style.border = "1px solid white";
-    makeDivOne.style.borderRadius = "10px";
-    makeDivOne.style.margin = "0.3vw";
-    makeDivOne.style.marginBottom = "-1.5vw";
+    img.setAttribute('src', `../VER-2-pic/makepic3/lay-${i+1}.png`);
+    makeDivThree.appendChild(img);
 
-
-    makeDivTwo.style.width = "15vw";
-    makeDivTwo.style.height = "20vw";
-    makeDivTwo.style.border = "1px solid white";
-    makeDivTwo.style.borderRadius = "10px";
-    makeDivTwo.style.margin = "0.3vw";
-    makeDivTwo.style.marginBottom = "-1.5vw";
-
-
-    makeDivThree.style.width = "15vw";
-    makeDivThree.style.height = "20vw";
-    makeDivThree.style.border = "1px solid white";
+    makeDivThree.style.width = "14vw";
+    makeDivThree.style.height = "18.5vw";
     makeDivThree.style.borderRadius = "10px";
     makeDivThree.style.margin = "0.3vw";
     makeDivThree.style.marginBottom = "-1.5vw";
-
-  }
-
+    makeDivThree.style.display = "fixed";
+    }
   //----------------------------------------------------------
 
   const sideOpen = document.querySelector('.sideopen');
@@ -139,14 +179,13 @@
       sideOpen.style.display = "block";
       sideOpen.style.transition = "0.5s";
       sideOpen.style.trasnform = "translateX(3vw)";
-      sideOpen.style.backgroundColor = "#808080";
+      sideOpen.style.backgroundColor = "#141414";
 
     } else {
-
       data1 = true;
 
       sideOpen.style.width = "5vw";
-      sideOpen.style.backgroundColor = "#505050";
+      sideOpen.style.backgroundColor = "#303030";
     }
   });
 </script>

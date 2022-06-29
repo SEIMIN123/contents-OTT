@@ -34,15 +34,13 @@
     const root = document.getElementById("root");
   
     const enclose = (tagName, content) => {
-      return `<${tagName}>${content}</${tagName}>`;
+      return `<${tagName}> ${content} </${tagName}>`;
     }
 
 
     const contentsNames = ["피카츄", "라이츄", "파이리", "꼬부기", "버터풀", "야도란"];
     /* 
-     <!--
-       todo : 위 배열에 값을 추가하거나 삭제하는 만큼 HTML 요소가 '동적'으로 변경된다.
-      -->
+    <!-- todo : 위 배열에 값을 추가하거나 삭제하는 만큼 HTML 요소가 '동적'으로 변경된다. -->
     */
 
 

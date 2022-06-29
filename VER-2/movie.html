@@ -25,7 +25,7 @@
         <div class="list">
           <i class="fa-solid fa-list fa-2x"></i>
           <div class="listtext">리스트</div>
-        
+
         </div>
         <div class="contents">
           <i class="fa-solid fa-tv fa-2x"></i>
@@ -41,17 +41,32 @@
     <div class="con">
       <div class="box1">
         <div class="movie">
-          <div>영상</div>
-          
+          <div></div>
+          <i class="fa-solid fa-plus fa-3x"></i>
+          <i class="fa-solid fa-heart fa-3x"></i>
+          <i class="fa-solid fa-arrow-up-from-bracket fa-3x"></i>
+
         </div>
         <div class="ep">
-          <div>에피1</div>
-          <div>에피2</div>
+          <div class="ep-1">
+            <div class="eptitle-1">요괴소년 호야 2기 2화</div>
+            <div class="eppic-1"></div>
+            <div class="eptext-1">여전히 아옹다옹 지내는 우시오와 아사코, 어느날, 아사코를 집으로 바래다 주던 우시오는 갑자기 자신을 모르는 사람 취급하는 아사코의 모습에 망연자실한다.
+            </div>
+          </div>
+          <div class="ep-2">
+            <div class="eptitle-2">요괴소년 호야 2기 3화</div>
+            <div class="eppic-2"></div>
+            <div class="eptext-2">오랜만에 효 씨와 만난 우시오. 효 씨는 자신의 정안으로 인해, 우시오에 대한 기억을 잃지 않을수
+              있었다. 그리고 그들 앞에 토라와 똑같이 생긴 요괴들이 나타나는데.</div>
+          </div>
         </div>
       </div>
       <div class="box2">
         <div class="lay-con">
           <div class="title">요괴소년 호야와 비슷한 컨텐츠</div>
+          <i class="fa-solid fa-chevron-left fa-3x"></i>
+          <i class="fa-solid fa-chevron-right fa-3x"></i>
         </div>
       </div>
     </div>
@@ -61,7 +76,7 @@
       const layConOne = document.querySelector('.lay-con');
 
       let data = 0;
-      for (let i = 0; i < 15; i++) {
+      for (let i = 0; i < 12; i++) {
 
         const makeDivOne = document.createElement("div");
         layConOne.appendChild(makeDivOne);
@@ -69,39 +84,40 @@
 
         makeDivOne.style.width = "15vw";
         makeDivOne.style.height = "20vw";
-        makeDivOne.style.border = "1px solid black";
+        makeDivOne.style.border = "1px solid white";
         makeDivOne.style.borderRadius = "10px";
-        makeDivOne.style.margin = "0.2vw";
+        makeDivOne.style.margin = "0.3vw";
+        makeDivOne.style.marginBottom = "-1.5vw";
+        makeDivOne.style.display = "fixed";
 
-        //----------------------------------------------------
-
-        const sideOpen = document.querySelector('.sideopen');
-        const ham = document.querySelector('.ham');
-
-        let data1 = true;
-
-        ham.addEventListener('click', () => {
-
-          if (data1 === true) {
-            data1 = false;
-
-            sideOpen.style.width = "18vw";
-            sideOpen.style.height = "100%";
-            sideOpen.style.display = "block";
-            sideOpen.style.transition = "0.5s";
-            sideOpen.style.trasnform = "translateX(3vw)";
-            sideOpen.style.backgroundColor = "#ccc";
-
-          } else {
-
-            data1 = true;
-
-            sideOpen.style.width = "5vw";
-            sideOpen.style.backgroundColor = "salmon";
-
-          }
-        });
       }
+
+      //----------------------------------------------------
+
+      const sideOpen = document.querySelector('.sideopen');
+      const ham = document.querySelector('.ham');
+
+      let data1 = true;
+
+      ham.addEventListener('click', () => {
+
+        if (data1 === true) {
+          data1 = false;
+
+          sideOpen.style.width = "18vw";
+          sideOpen.style.height = "100%";
+          sideOpen.style.display = "block";
+          sideOpen.style.transition = "0.5s";
+          sideOpen.style.trasnform = "translateX(3vw)";
+          sideOpen.style.backgroundColor = "#141414";
+
+        } else {
+          data1 = true;
+
+          sideOpen.style.width = "5vw";
+          sideOpen.style.backgroundColor = "#303030";
+        }
+      });
     </script>
 </body>
 

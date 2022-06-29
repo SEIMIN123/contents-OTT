@@ -19,7 +19,6 @@
 
   width: 100vw;
   height: 100vh;
-  @include border();
   @include flex(flex, flex-start, flex-start);
 
 
@@ -33,7 +32,6 @@
     bottom: 0;
     z-index: 4;
     overflow: hidden;
-    background-color: #484848;
 
 
   }
@@ -43,7 +41,8 @@
     width: 5vw;
     height: 100vh;
     flex-direction: column;
-    background-color: #484848;
+    background-color: #141414;
+    position: absolute;
 
     @include flex(flex, flex-start, center);
   }
@@ -52,7 +51,7 @@
 
     margin: 8vh;
     margin-left: 4vw;
-    color: #141414;
+    color: #484848;
     cursor: pointer;
     @include flex(flex, center, center);
 
@@ -61,7 +60,7 @@
   .home {
     margin: 2vh;
     margin-left: -4vw;
-    color: #141414;
+    color: #484848;
 
     @include flex(flex, center, center);
 
@@ -72,9 +71,9 @@
     width: 15vw;
     height: 10vh;
     margin-right: -20vw;
-    font-size: 1.5vw;
-    font-weight: 600;
-    color: #141414;
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: #fff;
 
     @include flex(flex, center, center);
 
@@ -83,7 +82,7 @@
   .list {
     margin: 2vh;
     margin-left: -4vw;
-    color: #141414;
+    color: #484848;
 
     @include flex(flex, center, center);
 
@@ -94,9 +93,9 @@
     width: 15vw;
     height: 10vh;
     margin-right: -20vw;
-    font-size: 1.5vw;
-    font-weight: 600;
-    color: #141414;
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: #fff;
 
     @include flex(flex, center, center);
 
@@ -106,7 +105,7 @@
 
     margin: 2vh;
     margin-left: -4vw;
-    color: #141414;
+    color: #484848;
 
     @include flex(flex, center, center);
   }
@@ -116,9 +115,9 @@
     width: 15vw;
     height: 10vh;
     margin-right: -20vw;
-    font-size: 1.5vw;
-    font-weight: 600;
-    color: #141414;
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: #fff;
 
     @include flex(flex, center, center);
 
@@ -128,7 +127,7 @@
 
     margin: 2vh;
     margin-left: -4vw;
-    color: #141414;
+    color: #484848;
 
     @include flex(flex, center, center);
   }
@@ -138,9 +137,9 @@
     width: 15vw;
     height: 10vh;
     margin-right: -20vw;
-    font-size: 1.5vw;
-    font-weight: 600;
-    color: #141414;
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: #fff;
 
     @include flex(flex, center, center);
 
@@ -150,14 +149,13 @@
 
   .box1 {
 
-    width: 100vw;
+    width: 170vw;
     height: 70vh;
-    background: url(../VER-2-pic/image\ 15.png);
+    background: url(../VER-2-pic/main.png);
     background-size: contain;
-    background-position: 4.9vw center;
-    background-attachment: initial;
+    background-position: 4.9vw top;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    @include border();
     @include flex(flex, center, center);
 
   }
@@ -167,7 +165,6 @@
     width: 100vw;
     height: 50vh;
     flex-direction: column;
-    @include border();
     @include flex(flex, flex-start, flex-start);
 
   }
@@ -177,7 +174,6 @@
     width: 100vw;
     height: 50vh;
     flex-direction: column;
-    @include border();
     @include flex(flex, flex-start, flex-start);
   }
 
@@ -186,35 +182,31 @@
     width: 100vw;
     height: 50vh;
     flex-direction: column;
-    @include border();
     @include flex(flex, flex-start, flex-start);
   }
 
   //------------------------------------------------------------
 
   .lay-con {
-    width: 100vw;
+    width: 170vw;
     height: 50vh;
     background-color: #000;
-    @include border();
     @include flex(flex, center, center);
 
   }
 
   .lay-con-1 {
-    width: 100vw;
+    width: 170vw;
     height: 50vh;
     background-color: #000;
-    @include border();
     @include flex(flex, center, center);
 
   }
 
   .lay-con-2 {
-    width: 100vw;
+    width: 170vw;
     height: 50vh;
     background-color: #000;
-    @include border();
     @include flex(flex, center, center);
 
   }
@@ -229,11 +221,10 @@
     font-size: 1.5vw;
     font-weight: 600;
     flex-direction: column;
-    margin-top: -45vh;
-    margin-left: -70vw;
+    margin-top: -41vh;
+    margin-left: -140vw;
     position: absolute;
     z-index: 1;
-    @include border();
     @include flex(flex, flex-start, flex-start);
 
   }
@@ -247,10 +238,9 @@
     font-weight: 600;
     flex-direction: column;
     margin-top: -45vh;
-    margin-left: -70vw;
+    margin-left: -140vw;
     position: absolute;
     z-index: 1;
-    @include border();
     @include flex(flex, flex-start, flex-start);
 
   }
@@ -264,12 +254,28 @@
     font-weight: 600;
     flex-direction: column;
     margin-top: -45vh;
-    margin-left: -70vw;
+    margin-left: -140vw;
     position: absolute;
     z-index: 1;
     @include border();
     @include flex(flex, flex-start, flex-start);
 
+  }
+
+  .fa-chevron-left {
+    color: #fff;
+    z-index: 1;
+    margin: 5vw;
+    margin-right: -3vw;
+
+
+  }
+
+  .fa-chevron-right {
+    color: #fff;
+    position:absolute;
+    margin: 5vw;
+    margin-right: -155vw;
   }
 
 }

@@ -1,37 +1,51 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #root {
   width: 100vw;
   height: 100vh;
   border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 #root .sidebar {
   width: 100vw;
   height: 100vh;
 }
+
 #root .sidebar > div:nth-child(1) {
   width: 10vw;
   height: 100vh;
-  background-color: rgb(31, 31, 31);
+  background-color: #1f1f1f;
   position: fixed;
   z-index: 999;
   margin-left: -185px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 #root .sidebar > div:nth-child(1):hover {
   margin-left: 0px;
 }
+
 #root .sidebar > div:nth-child(1):hover:before {
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   position: absolute;
 }
+
 #root .sidebar > div:nth-child(1) > ul > li {
   color: white;
   line-height: 5vw;
@@ -39,29 +53,49 @@
   font-weight: bolder;
   font-size: 20px;
 }
+
 #root .sidebar > div:nth-child(1) > ul > li:hover {
-  color: rgb(179, 179, 179);
+  color: #b3b3b3;
   cursor: pointer;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 #root #box {
   width: 100vw;
   height: 100vh;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 #root #header-1 {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(36, 146, 146);
+  background-color: #249292;
   border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 #root #header-1 > div {
   width: 100vw;
   height: 100vh;
@@ -69,49 +103,82 @@
   cursor: pointer;
   border: 1px solid black;
 }
+
 #root #main-1 {
   width: 100vw;
   height: 100vh;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 #root #main-1 > div {
   margin: 20px;
   border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 #root #main-1 > .lay {
   width: 13vw;
   height: 18vh;
   background-size: cover;
   cursor: pointer;
 }
+
 #root #footer-1 {
   width: 100vw;
   height: 100vh;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 #root #footer-1 > div {
   margin: 20px;
   border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 #root #footer-1 > .lay {
   width: 13vw;
   height: 18vh;
   cursor: pointer;
 }
+
 #root .modal {
   width: 40vw;
   height: 80vh;
@@ -120,55 +187,80 @@
   top: 35%;
   left: 45%;
   margin: -250px 0 0 -250px;
-  background-color: rgb(110, 93, 93);
+  background-color: #6e5d5d;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 #root .close {
   width: 3vw;
   height: 5vh;
   margin-left: 37vw;
   background-color: white;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px solid black;
 }
-#root [data-modal=modalset-1] {
+
+#root [data-modal="modalset-1"] {
   background: url(https://hayabusa.io/adcross/adx/abm/15b026e7-7c50-4a22-8c85-227b12271da7.png?background=000000&fit=fill&format=webp&height=216&quality=60&width=384);
 }
-#root [data-modal=modalset-2] {
+
+#root [data-modal="modalset-2"] {
   background: url(https://hayabusa.io/adcross/adx/abm/06c65478-ae53-4491-9412-5ebd6f4d3948.png?background=000000&fit=fill&format=webp&height=216&quality=60&width=384);
 }
-#root [data-modal=modalset-3] {
+
+#root [data-modal="modalset-3"] {
   background: url(https://hayabusa.io/adcross/adx/abm/de7fd5c5-ff39-4383-b1dc-911e45e021fb.png?background=000000&fit=fill&format=webp&height=216&quality=60&width=384);
 }
-#root [data-modal=modalset-4] {
+
+#root [data-modal="modalset-4"] {
   background: url(https://hayabusa.io/abema/series/87-1191/thumb.v1647493204.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
 }
-#root [data-modal=modalset-5] {
+
+#root [data-modal="modalset-5"] {
   background: url(https://hayabusa.io/abema/series/87-954/thumb.v1647596235.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
 }
-#root [data-modal=modalset-6] {
+
+#root [data-modal="modalset-6"] {
   background: url(https://abm.hayabusa.media/series/162-7zft5piyb4e/thumb.png%3Fversion%3D1636093350?background=000000&fit=fill&format=webp&height=216&mode=fast&quality=60&width=384);
 }
-#root [data-modal=modalset-7] {
+
+#root [data-modal="modalset-7"] {
   background: url(https://hayabusa.io/abema/series/87-1173/thumb.v1648090504.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
 }
-#root [data-modal=modalset-8] {
+
+#root [data-modal="modalset-8"] {
   background: url(https://abm.hayabusa.media/series/568-4/thumb.png%3Fversion%3D1627288143?background=000000&fit=fill&format=webp&height=216&mode=fast&quality=60&width=384);
 }
-#root [data-modal=modalset-9] {
+
+#root [data-modal="modalset-9"] {
   background: url(https://hayabusa.io/abema/series/87-1140/thumb.v1647494703.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
 }
-#root [data-modal=modalset-10] {
+
+#root [data-modal="modalset-10"] {
   background: url(https://abm.hayabusa.media/series/90-1318/thumb.png%3Fversion%3D1628171406?background=000000&fit=fill&format=webp&height=216&mode=fast&quality=60&width=384);
 }
-#root [data-modal=modalset-11] {
+
+#root [data-modal="modalset-11"] {
   background: url(https://abm.hayabusa.media/series/90-793/thumb.png%3Fversion%3D1627287915?background=000000&fit=fill&format=webp&height=216&mode=fast&quality=60&width=384);
 }
-#root [data-modal=modalset-12] {
+
+#root [data-modal="modalset-12"] {
   background: url(https://abm.hayabusa.media/series/90-1608/thumb.png%3Fversion%3D1638525523?background=000000&fit=fill&format=webp&height=216&mode=fast&quality=60&width=384);
 }
