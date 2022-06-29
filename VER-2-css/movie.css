@@ -200,8 +200,9 @@
 }
 
 #root .box1 {
-  width: 100vw;
+  width: 167vw;
   height: 90vh;
+  background-color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,7 +215,7 @@
 }
 
 #root .box2 {
-  width: 100vw;
+  width: 167vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,8 +243,8 @@
 }
 
 #root .movie > div {
-  width: 735px;
-  height: 439px;
+  width: 38vw;
+  height: 45vh;
   background: url(../VER-2-pic/movie.jpg);
   margin-right: -11vw;
   border-radius: 30px;
@@ -275,6 +276,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-size: contain;
+  background-position: 4.9vw top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,7 +410,7 @@
 }
 
 #root .lay-con {
-  width: 100vw;
+  width: 167vw;
   height: 55vh;
   background-color: #000;
   display: -webkit-box;
@@ -430,7 +435,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: -45vh;
-  margin-left: -65vw;
+  margin-left: -130vw;
   position: absolute;
   z-index: 1;
   display: -webkit-box;
@@ -447,7 +452,6 @@
 #root .fa-chevron-left {
   color: #fff;
   margin: 0.5vw;
-  margin-right: -100vw;
 }
 
 #root .fa-chevron-right {
@@ -455,5 +459,4 @@
   position: absolute;
   margin: 0.5vw;
   margin-top: 2vh;
-  margin-right: -93vw;
 }

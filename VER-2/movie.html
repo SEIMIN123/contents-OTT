@@ -74,19 +74,22 @@
     <script>
       const boxTwo = document.querySelector('.box2');
       const layConOne = document.querySelector('.lay-con');
-
+      let makepic1 = ["lay-1.png", "lay-2.png", "lay-3.png", "lay-4.png", "lay-5.png", "lay-6.png", "lay-7.png", "lay-8.png", "lay-9.png", "lay-10.png", "lay-11.png"];
       let data = 0;
-      for (let i = 0; i < 12; i++) {
+      for (let i = 0; i < makepic1.length; i++) {
 
         const makeDivOne = document.createElement("div");
+        const img = document.createElement('img');
         layConOne.appendChild(makeDivOne);
         boxTwo.appendChild(layConOne);
 
-        makeDivOne.style.width = "15vw";
-        makeDivOne.style.height = "20vw";
-        makeDivOne.style.border = "1px solid white";
+        img.setAttribute('src', `../VER-2-pic/makepic1/lay-${i+1}.png`);
+        makeDivOne.appendChild(img);
+
+        makeDivOne.style.width = "12vw";
+        makeDivOne.style.height = "17vw";
         makeDivOne.style.borderRadius = "10px";
-        makeDivOne.style.margin = "0.3vw";
+        makeDivOne.style.margin = "1vw";
         makeDivOne.style.marginBottom = "-1.5vw";
         makeDivOne.style.display = "fixed";
 
