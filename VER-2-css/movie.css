@@ -253,7 +253,6 @@
 #root .fa-plus {
   color: #fff;
   margin-bottom: -40vw;
-  margin-left: -5vw;
 }
 
 #root .fa-heart {
@@ -269,7 +268,7 @@
 }
 
 #root .ep {
-  width: 50vw;
+  width: vw;
   height: 90vh;
   background-color: #0c0c0c;
   -webkit-box-orient: vertical;
@@ -295,6 +294,7 @@
   width: 50vw;
   height: 45vh;
   margin: 1vh;
+  margin-left: -2vw;
   border-radius: 30px;
   background-color: #5c5c5c;
   display: -webkit-box;
@@ -332,9 +332,11 @@
 }
 
 #root .eptext-1 {
-  width: 30vw;
-  height: 10vh;
+  width: 32vw;
+  height: 30vh;
   color: #fff;
+  background-color: #333333;
+  border-radius: 10px;
   margin-right: -17vw;
   position: absolute;
   font-size: 1vw;
@@ -354,6 +356,7 @@
   width: 50vw;
   height: 45vh;
   margin: 1vh;
+  margin-left: -2vw;
   border-radius: 30px;
   background-color: #5c5c5c;
   display: -webkit-box;
@@ -391,9 +394,11 @@
 }
 
 #root .eptext-2 {
-  width: 30vw;
-  height: 10vh;
+  width: 32vw;
+  height: 30vh;
   color: #fff;
+  background-color: #333333;
+  border-radius: 10px;
   margin-right: -17vw;
   position: absolute;
   font-size: 1vw;
@@ -450,13 +455,49 @@
 }
 
 #root .fa-chevron-left {
+  width: 2vw;
+  height: 20vh;
   color: #fff;
-  margin: 0.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .fa-chevron-left:hover {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 10px;
 }
 
 #root .fa-chevron-right {
+  width: 2vw;
+  height: 20vh;
   color: #fff;
   position: absolute;
-  margin: 0.5vw;
-  margin-top: 2vh;
+  margin-right: -25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .fa-chevron-right:hover {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 10px;
 }

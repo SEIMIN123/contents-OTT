@@ -25,7 +25,7 @@
         <div class="list">
           <i class="fa-solid fa-list fa-2x"></i>
           <div class="listtext">리스트</div>
-        
+
         </div>
         <div class="contents">
           <i class="fa-solid fa-tv fa-2x"></i>
@@ -42,27 +42,16 @@
     <div class="box1">
       <div class="lay-con">
         <div class="title-1">내가 보고 있던 콘텐츠</div>
+        <i class="fa-solid fa-chevron-left fa-3x"></i>
+        <i class="fa-solid fa-chevron-right fa-3x"></i>
       </div>
     </div>
 
     <div class="box2">
       <div class="lay-con-1">
         <div class="title-2">내 취향인 콘텐츠</div>
-        <div class="lay-1" data-lay="16"></div>
-        <div class="lay-1" data-lay="17"></div>
-        <div class="lay-1" data-lay="18"></div>
-        <div class="lay-1" data-lay="19"></div>
-        <div class="lay-1" data-lay="20"></div>
-        <div class="lay-1" data-lay="21"></div>
-        <div class="lay-1" data-lay="22"></div>
-        <div class="lay-1" data-lay="23"></div>
-        <div class="lay-1" data-lay="24"></div>
-        <div class="lay-1" data-lay="25"></div>
-        <div class="lay-1" data-lay="26"></div>
-        <div class="lay-1" data-lay="27"></div>
-        <div class="lay-1" data-lay="28"></div>
-        <div class="lay-1" data-lay="29"></div>
-        <div class="lay-1" data-lay="30"></div>
+        <i class="fa-solid fa-chevron-left fa-3x"></i>
+        <i class="fa-solid fa-chevron-right fa-3x"></i>
       </div>
     </div>
   </div>
@@ -72,60 +61,83 @@
     const layConOne = document.querySelector('.lay-con');
     const boxTwo = document.querySelector('.box2');
     const layConTwo = document.querySelector('.lay-con-1');
-  
+
+    let makepic1 = ["lay-1.png", "lay-2.png", "lay-3.png", "lay-4.png", "lay-5.png", "lay-6.png", "lay-7.png",
+      "lay-8.png", "lay-9.png"
+    ];
+
+    let makepic2 = ["lay-1.png", "lay-2.png", "lay-3.png", "lay-4.png", "lay-5.png", "lay-6.png", "lay-7.png",
+      "lay-8.png", "lay-9.png"];
+
     let data = 0;
-    for (let i = 0; i < 15; i++) {
-  
-      const makeDivOne = document.createElement("div");
-      const makeDivTwo = document.createElement("div");
+
+    for (let i = 0; i < makepic1.length; i++) {
+
+      const makeDivOne = document.createElement('div');
+      const img = document.createElement('img');
 
       layConOne.appendChild(makeDivOne);
       boxOne.appendChild(layConOne);
 
+      img.setAttribute('src', `../VER-2-pic/makepic1/lay-${i+1}.png`);
+      makeDivOne.appendChild(img);
+
+      makeDivOne.style.width = "14vw";
+      makeDivOne.style.height = "18.5vw";
+      makeDivOne.style.borderRadius = "10px";
+      makeDivOne.style.margin = "0.3vw";
+      makeDivOne.style.marginBottom = "-1.5vw";
+      makeDivOne.style.display = "fixed";
+
+    }
+
+    for (let i = 0; i < makepic2.length; i++) {
+
+      const makeDivTwo = document.createElement('div');
+      const img = document.createElement('img');
+
       layConTwo.appendChild(makeDivTwo);
       boxTwo.appendChild(layConTwo);
-  
-      makeDivOne.style.width = "15vw";
-      makeDivOne.style.height = "20vw";
-      makeDivOne.style.border = "1px solid black";
-      makeDivOne.style.borderRadius = "10px";
-      makeDivOne.style.margin = "0.2vw";
 
-      makeDivTwo.style.width = "15vw";
-      makeDivTwo.style.height = "20vw";
-      makeDivTwo.style.border = "1px solid black";
+      img.setAttribute('src', `../VER-2-pic/makepic2/lay-${i+1}.png`);
+      makeDivTwo.appendChild(img);
+
+      makeDivTwo.style.width = "14vw";
+      makeDivTwo.style.height = "18.5vw";
       makeDivTwo.style.borderRadius = "10px";
-      makeDivTwo.style.margin = "0.2vw";
+      makeDivTwo.style.margin = "0.3vw";
+      makeDivTwo.style.marginBottom = "-1.5vw";
+      makeDivTwo.style.display = "fixed";
 
-  //----------------------------------------------------
+    }
 
-  const sideOpen = document.querySelector('.sideopen');
-        const ham = document.querySelector('.ham');
+    //----------------------------------------------------
 
-        let data1 = true;
+    const sideOpen = document.querySelector('.sideopen');
+    const ham = document.querySelector('.ham');
 
-        ham.addEventListener('click', () => {
+    let data1 = true;
 
-          if (data1 === true) {
-            data1 = false;
+    ham.addEventListener('click', () => {
 
-            sideOpen.style.width = "18vw";
-            sideOpen.style.height = "100%";
-            sideOpen.style.display = "block";
-            sideOpen.style.transition = "0.5s";
-            sideOpen.style.trasnform = "translateX(3vw)";
-            sideOpen.style.backgroundColor = "#ccc";
+      if (data1 === true) {
+        data1 = false;
 
-          } else {
+        sideOpen.style.width = "18vw";
+        sideOpen.style.height = "100%";
+        sideOpen.style.display = "block";
+        sideOpen.style.transition = "0.5s";
+        sideOpen.style.trasnform = "translateX(3vw)";
+        sideOpen.style.backgroundColor = "#141414";
 
-            data1 = true;
+      } else {
+        data1 = true;
 
-            sideOpen.style.width = "5vw";
-            sideOpen.style.backgroundColor = "salmon";
-
-          }
-        });
+        sideOpen.style.width = "5vw";
+        sideOpen.style.backgroundColor = "#303030";
       }
+    });
   </script>
 </body>
+
 </html>

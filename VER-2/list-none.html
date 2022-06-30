@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../VER-2-css/list.css">
+  <link rel="stylesheet" href="../VER-2-css/list-none.css">
   <script src="https://kit.fontawesome.com/7986c55620.js" crossorigin="anonymous"></script>
 </head>
 
@@ -25,7 +25,7 @@
         <div class="list">
           <i class="fa-solid fa-list fa-2x"></i>
           <div class="listtext">리스트</div>
-        
+
         </div>
         <div class="contents">
           <i class="fa-solid fa-tv fa-2x"></i>
@@ -41,40 +41,29 @@
 
     <div class="box1">
       <div class="lay-con">
-        <div class="box2"></div>
         <div class="title-1">MY LIST</div>
-        <i class="fa-solid fa-chevron-left fa-3x"></i>
-        <i class="fa-solid fa-chevron-right fa-3x"></i>
+        <div class="box2">
+          <div class="title-2">등록된 리스트가 없습니다.</div>
+          <div class="list-box">
+            <div class="list-pic">
+            </div>
+            <div class="list-box-1"></div>
+            <div class="list-box-2"></div>
+            <div class="list-box-3">
+              <div class="textbox">원하는 콘텐츠를 추가해보세요</div>
+              <div class="tribox"></div>
+              <i class="fa-solid fa-plus fa-2x"></i>
+              <i class="fa-solid fa-heart fa-2x"></i>
+              <i class="fa-solid fa-arrow-up-from-bracket fa-2x"></i>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
 
     <script>
-      const boxTwo = document.querySelector('.box2');
-
-      let makepic2 = ["lay-1.png", "lay-2.png", "lay-3.png", "lay-4.png", "lay-5.png", "lay-6.png"];
-      let data = 0;
-      for (let i = 0; i < makepic2.length; i++) {
-
-        const makeDivOne = document.createElement("div");
-        const img = document.createElement('img');
-        boxTwo.appendChild(makeDivOne);
-
-        img.setAttribute('src', `../VER-2-pic/makepic2/lay-${i+1}.png`);
-        makeDivOne.appendChild(img);
-
-        makeDivOne.style.width = "12vw";
-        makeDivOne.style.height = "17vw";
-        makeDivOne.style.borderRadius = "10px";
-        makeDivOne.style.margin = "1vw";
-        makeDivOne.style.marginBottom = "-1.5vw";
-        makeDivOne.style.display = "fixed";
-
-      }
-
-  //---------------------------------------------------------
-  
-  const sideOpen = document.querySelector('.sideopen');
+      const sideOpen = document.querySelector('.sideopen');
       const ham = document.querySelector('.ham');
 
       let data1 = true;

@@ -170,8 +170,6 @@
     height: 90vh;
     background-color: #0c0c0c;
 
-
-
     @include flex(flex, center, center);
 
   }
@@ -190,7 +188,6 @@
 
     color: #fff;
     margin-bottom: -40vw;
-    margin-left: -5vw;
   }
 
   .fa-heart {
@@ -208,7 +205,7 @@
 
   .ep {
 
-    width: 50vw;
+    width: vw;
     height: 90vh;
     background-color: #0c0c0c;
     flex-direction: column;
@@ -225,6 +222,7 @@
     width: 50vw;
     height: 45vh;
     margin: 1vh;
+    margin-left: -2vw;
     border-radius: 30px;
     background-color: #5c5c5c;
     @include flex(flex, center, center);
@@ -254,9 +252,11 @@
 
   .eptext-1 {
 
-    width: 30vw;
-    height: 10vh;
+    width: 32vw;
+    height: 30vh;
     color: #fff;
+    background-color: #333333;
+    border-radius: 10px;
     margin-right: -17vw;
     position: absolute;
     font-size: 1vw;
@@ -269,6 +269,7 @@
     width: 50vw;
     height: 45vh;
     margin: 1vh;
+    margin-left: -2vw;
     border-radius: 30px;
     background-color: #5c5c5c;
     @include flex(flex, center, center);
@@ -297,10 +298,11 @@
   }
 
   .eptext-2 {
-
-    width: 30vw;
-    height: 10vh;
+    width: 32vw;
+    height: 30vh;
     color: #fff;
+    background-color: #333333;
+    border-radius: 10px;
     margin-right: -17vw;
     position: absolute;
     font-size: 1vw;
@@ -335,15 +337,39 @@
   }
 
   .fa-chevron-left {
+    width: 2vw;
+    height: 20vh;
     color: #fff;
-    margin: 0.5vw;
+    @include flex(flex, center, center);
+
   }
+
+  .fa-chevron-left:hover {
+
+    background-color: rgba(100,100,100,0.4);
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 10px;
+
+  }
+
+
 
   .fa-chevron-right {
+    width: 2vw;
+    height: 20vh;
     color: #fff;
     position: absolute;
-    margin: 0.5vw;
-    margin-top: 2vh;
+    margin-right: -25vw;
+    @include flex(flex, center, center);
   }
 
+  .fa-chevron-right:hover {
+
+    background-color: rgba(100,100,100,0.4);
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 10px;
+
+  }
 }

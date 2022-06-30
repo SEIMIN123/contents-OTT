@@ -17,12 +17,10 @@
 
 #root {
 
-  width: 150vw;
+  width: 100vw;
   height: 100vh;
-  flex-direction: column;
   @include border();
   @include flex(flex, flex-start, flex-start);
-
 
   .side {
 
@@ -147,8 +145,6 @@
 
   }
 
-  //--------------------------------------------------
-
   .box1 {
 
     width: 167vw;
@@ -160,26 +156,22 @@
 
   .box2 {
 
-    width: 167vw;
-    height: 100vh;
-    background-color: #000;
-    @include flex(flex, flex-start, flex-start);
+    width: 90vw;
+    height: 90vh;
+    position: absolute;
+    margin-right: -4vw;
+    background-color: #181817;
+    border-radius: 30px;
+    @include flex(flex, center, center);
 
   }
 
   //--------------------------------------------------
 
   .lay-con {
-    width: 150vw;
-    height: 70vh;
-    @include border();
-    @include flex(flex, center, center);
-
-  }
-
-  .lay-con-1 {
-    width: 150vw;
-    height: 70vh;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
     @include border();
     @include flex(flex, center, center);
 
@@ -189,72 +181,158 @@
 
   .title-1 {
 
-    width: 17vw;
+    width: 19vw;
     height: 5vh;
+    color: #fff;
     font-size: 1.5vw;
     font-weight: 600;
     flex-direction: column;
-    margin-top: -60vh;
-    margin-left: -116vw;
+    margin-top: -95vh;
+    margin-left: -65vw;
     position: absolute;
-    color: #fff;
-    @include border();
-    @include flex(flex, center, center);
+    @include flex(flex, flex-start, flex-start);
 
   }
 
   .title-2 {
 
-    width: 15vw;
+    width: 19vw;
     height: 5vh;
+    color: #fff;
     font-size: 1.5vw;
     font-weight: 600;
     flex-direction: column;
-    margin-top: -60vh;
-    margin-left: -119vw;
+    margin-top: -80vh;
+    margin-left: -65vw;
     position: absolute;
-    color: #fff;
-    @include border();
+    @include flex(flex, flex-start, flex-start);
+
+  }
+
+  .list-box {
+
+    width: 38vw;
+    height: 85vh;
+    border-radius: 20px;
+    flex-direction: column;
+    background-color: #494949;
     @include flex(flex, center, center);
 
   }
 
-  .fa-chevron-left {
-    width: 2vw;
-    height: 20vh;
-    color: #fff;
-    margin-left: -4vw;
+  .list-pic {
+
+    width: 35vw;
+    height: 35vh;
+    margin: 5vh;
+    margin-top: -18vh;
+    border-radius: 15px;
+    background: url(../VER-2-pic/list.png);
+    background-size: contain;
+    background-position: center center;
+    background-attachment: initial;
+    background-repeat: no-repeat;
+    @include flex(flex, flex-start, flex-start);
+
+
+  }
+
+  .list-box-1 {
+
+    width: 31vw;
+    height: 5vh;
+    background-color: #757575;
+    border-radius: 5px;
+  }
+
+  .list-box-2 {
+
+    width: 20vw;
+    height: 5vh;
+    background-color: #757575;
+    margin: 2vh;
+    margin-left: -10vw;
+    border-radius: 5px;
+
+  }
+
+  .list-box-3 {
+
+    width: 13vw;
+    height: 13vh;
+    background-color: #272727;
+    margin: 5vw;
+    margin-right: -15vw;
+    margin-bottom: -15vh;
+    border-radius: 15px;
     @include flex(flex, center, center);
 
   }
 
-  
-  .fa-chevron-left:hover {
+  .textbox {
 
-    background-color: rgba(100,100,100,0.4);
+    width: 20vw;
+    height: 10vh;
+    background-color: #675E5E;
     color: #fff;
-    transition: 0.5s;
-    border-radius: 10px;
-
-  }
-
-  .fa-chevron-right {
-    width: 2vw;
-    height: 20vh;
-    color: #fff;
+    font-size: 1.3vw;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 15px;
     position: absolute;
-    margin-top: 2vh;
-    margin-right: -43vw;
+    margin-top: -30vh;
+    margin-left: -10vw;
+    z-index: 1;
     @include flex(flex, center, center);
 
   }
 
-  .fa-chevron-right:hover {
+  .tribox {
 
-    background-color: rgba(100,100,100,0.4);
+    width: 5vw;
+    height: 10vh;
+    background-color: #675E5E;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: -25vh;
+    margin-left: -8vw;
+    transform: rotate(45deg);
+  }
+
+  .fa-plus {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
     color: #fff;
-    transition: 0.5s;
-    border-radius: 10px;
+    border: 10px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#272727, #272727), 
+    linear-gradient(to right, red 0%,  orange 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    @include flex(flex, center, center);
 
   }
+
+  .fa-heart {
+
+    width: 2vw;
+    height: 3.5vh;
+    color: #fff;
+    margin: 1vw;
+    @include flex(flex, center, center);
+
+  }
+
+  .fa-arrow-up-from-bracket {
+
+    width: 2vw;
+    height: 3.5vh;
+    color: #fff;
+    margin: 1vw;
+    @include flex(flex, center, center);
+
+  }
+
 }
