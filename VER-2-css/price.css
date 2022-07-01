@@ -27,7 +27,6 @@
 #root .side {
   width: 5vw;
   height: 100%;
-  background-color: salmon;
   position: fixed;
   top: 0;
   left: 0;
@@ -43,6 +42,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #141414;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,6 +58,7 @@
 #root .ham {
   margin: 8vh;
   margin-left: 4vw;
+  color: #484848;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,6 +74,7 @@
 #root .home {
   margin: 2vh;
   margin-left: -4vw;
+  color: #484848;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,8 +90,9 @@
   width: 15vw;
   height: 10vh;
   margin-right: -20vw;
-  font-size: 1.5vw;
-  font-weight: 600;
+  font-size: 1.3vw;
+  font-weight: 400;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,6 +107,7 @@
 #root .list {
   margin: 2vh;
   margin-left: -4vw;
+  color: #484848;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,8 +123,9 @@
   width: 15vw;
   height: 10vh;
   margin-right: -20vw;
-  font-size: 1.5vw;
-  font-weight: 600;
+  font-size: 1.3vw;
+  font-weight: 400;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,6 +140,7 @@
 #root .contents {
   margin: 2vh;
   margin-left: -4vw;
+  color: #484848;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,8 +156,9 @@
   width: 15vw;
   height: 10vh;
   margin-right: -20vw;
-  font-size: 1.5vw;
-  font-weight: 600;
+  font-size: 1.3vw;
+  font-weight: 400;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,6 +173,7 @@
 #root .setting {
   margin: 2vh;
   margin-left: -4vw;
+  color: #484848;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,8 +189,9 @@
   width: 15vw;
   height: 10vh;
   margin-right: -20vw;
-  font-size: 1.5vw;
-  font-weight: 600;
+  font-size: 1.3vw;
+  font-weight: 400;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,7 +206,6 @@
 #root .box1 {
   width: 100vw;
   height: 100vh;
-  background-color: burlywood;
   border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,6 +221,7 @@
 #root .con {
   width: 100vw;
   height: 100vh;
+  background-color: #070707;
   border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,9 +241,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #232323;
   margin: 1vw;
-  margin-top: -50vh;
-  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: -47vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,9 +263,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #232323;
   margin: 1vw;
-  margin-top: -50vh;
-  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: -47vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,9 +285,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #232323;
   margin: 1vw;
-  margin-top: -50vh;
-  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: -47vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,17 +302,19 @@
 
 #root .text {
   margin: 1vh;
+  color: #fff;
 }
 
 #root .text-1 {
   font-size: 1vw;
   margin: 1vh;
+  color: #fff;
 }
 
 #root .btn {
   width: 20vw;
   height: 24vh;
-  border: 1px solid black;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,8 +329,17 @@
 #root .btn > div {
   width: 10vw;
   height: 10vh;
-  margin: 1vw;
-  border: 1px solid black;
+  margin: 0.1vw;
+  background-color: #434343;
+  color: #fff;
+  font-size: 1vw;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,4 +349,64 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#root .smalltext {
+  font-size: 15px;
+  color: #777;
+}
+
+#root .sale {
+  width: 3vw;
+  height: 5.8vh;
+  position: absolute;
+  font-size: 0.8vw;
+  font-weight: 600;
+  color: #fff;
+  background-color: #F43D3D;
+  border-radius: 50%;
+  z-index: 999;
+  margin-left: -27.5vw;
+  margin-top: -90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .dis {
+  width: 2vw;
+  height: 2.5vh;
+  background-color: #B93F3F;
+  position: absolute;
+  margin-top: -7.5vh;
+  margin-left: -7.8vw;
+  border-radius: 3px;
+  font-size: 0.7vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .set {
+  width: 80vw;
+  height: 47vh;
+  position: absolute;
+  margin-bottom: -50vh;
+  background: url(../VER-2-pic/set.png);
+  background-size: contain;
+  background-position: center center;
+  background-attachment: initial;
+  background-repeat: no-repeat;
 }

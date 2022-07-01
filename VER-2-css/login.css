@@ -58,9 +58,9 @@
 #root .logtext {
   width: 15vw;
   height: 3vh;
-  font-size: 1vw;
   padding-left: 0.5vw;
   border-radius: 5px;
+  font-size: 1.3vw;
 }
 
 #root .password {
@@ -78,18 +78,23 @@
 #root .passtext {
   width: 15vw;
   height: 3vh;
-  font-size: 1vw;
   padding-left: 0.5vw;
   border-radius: 5px;
+  letter-spacing: 5px;
+  font-size: 1.3vw;
 }
 
 #root .start {
-  width: 8vw;
-  height: 4vh;
-  border-radius: 5px;
-  margin: 5vh;
+  width: 7vw;
+  height: 5vh;
+  margin: 1.5vw;
   font-size: 1vw;
-  font-weight: 400;
+  font-weight: 600;
+  border-radius: 10px;
+  color: #fff;
+  border: 0;
+  -webkit-box-shadow: 0px 5px 5px #070707;
+          box-shadow: 0px 5px 5px #070707;
   background-color: rgba(255, 255, 255, 0.7);
   border: 1px solid black;
   display: -webkit-box;
@@ -101,6 +106,21 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#root .start:hover {
+  background-color: #666666;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#root .start:active {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0 5px #020101;
+          box-shadow: 0 5px #020101;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
 }
 
 #root .forgot {

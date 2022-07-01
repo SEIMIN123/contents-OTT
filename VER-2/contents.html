@@ -67,7 +67,8 @@
     ];
 
     let makepic2 = ["lay-1.png", "lay-2.png", "lay-3.png", "lay-4.png", "lay-5.png", "lay-6.png", "lay-7.png",
-      "lay-8.png", "lay-9.png"];
+      "lay-8.png", "lay-9.png"
+    ];
 
     let data = 0;
 
@@ -89,6 +90,23 @@
       makeDivOne.style.marginBottom = "-1.5vw";
       makeDivOne.style.display = "fixed";
 
+      let data = true;
+      makeDivOne.addEventListener('mouseover', () => {
+
+        if (data === true) {
+
+          data = false;
+          makeDivOne.style.transform = 'translateY(-20px)';
+          makeDivOne.style.transition = '1s';
+        } else {
+
+          data = true;
+          makeDivOne.style.transform = 'translateY(0px)';
+          makeDivOne.style.transition = '1s';
+
+        }
+      });
+
     }
 
     for (let i = 0; i < makepic2.length; i++) {
@@ -108,6 +126,23 @@
       makeDivTwo.style.margin = "0.3vw";
       makeDivTwo.style.marginBottom = "-1.5vw";
       makeDivTwo.style.display = "fixed";
+
+      let data1 = true;
+      makeDivTwo.addEventListener('mouseover', () => {
+
+        if (data1 === true) {
+
+          data1 = false;
+          makeDivTwo.style.transform = 'translateY(-20px)';
+          makeDivTwo.style.transition = '1s';
+        } else {
+
+          data1 = true;
+          makeDivTwo.style.transform = 'translateY(0px)';
+          makeDivTwo.style.transition = '1s';
+
+        }
+      });
 
     }
 

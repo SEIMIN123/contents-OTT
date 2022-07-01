@@ -42,9 +42,9 @@
       <div class="box1">
         <div class="movie">
           <div></div>
-          <i class="fa-solid fa-plus fa-3x"></i>
-          <i class="fa-solid fa-heart fa-3x"></i>
-          <i class="fa-solid fa-arrow-up-from-bracket fa-3x"></i>
+          <i class="fa-solid fa-plus fa-2x"></i>
+          <i class="fa-solid fa-heart fa-2x"></i>
+          <i class="fa-solid fa-arrow-up-from-bracket fa-2x"></i>
 
         </div>
         <div class="ep">
@@ -74,7 +74,9 @@
     <script>
       const boxTwo = document.querySelector('.box2');
       const layConOne = document.querySelector('.lay-con');
-      let makepic1 = ["lay-1.png", "lay-2.png", "lay-3.png", "lay-4.png", "lay-5.png", "lay-6.png", "lay-7.png", "lay-8.png", "lay-9.png", "lay-10.png", "lay-11.png"];
+      let makepic1 = ["lay-1.png", "lay-2.png", "lay-3.png", "lay-4.png", "lay-5.png", "lay-6.png", "lay-7.png",
+        "lay-8.png", "lay-9.png", "lay-10.png", "lay-11.png"
+      ];
       let data = 0;
       for (let i = 0; i < makepic1.length; i++) {
 
@@ -92,6 +94,23 @@
         makeDivOne.style.margin = "1vw";
         makeDivOne.style.marginBottom = "-1.5vw";
         makeDivOne.style.display = "fixed";
+
+        let data1 = true;
+        makeDivOne.addEventListener('mouseover', () => {
+
+          if (data1 === true) {
+
+            data1 = false;
+            makeDivOne.style.transform = 'translateY(-20px)';
+            makeDivOne.style.transition = '1s';
+          } else {
+
+            data1 = true;
+            makeDivOne.style.transform = 'translateY(0px)';
+            makeDivOne.style.transition = '1s';
+
+          }
+        });
 
       }
 

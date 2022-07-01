@@ -25,7 +25,7 @@
         <div class="list">
           <i class="fa-solid fa-list fa-2x"></i>
           <div class="listtext">리스트</div>
-        
+
         </div>
         <div class="contents">
           <i class="fa-solid fa-tv fa-2x"></i>
@@ -70,11 +70,27 @@
         makeDivOne.style.marginBottom = "-1.5vw";
         makeDivOne.style.display = "fixed";
 
+        let data = true;
+        makeDivOne.addEventListener('mouseover', () => {
+
+          if (data === true) {
+
+            data = false;
+            makeDivOne.style.transform = 'translateY(-20px)';
+            makeDivOne.style.transition = '1s';
+          } else {
+
+            data = true;
+            makeDivOne.style.transform = 'translateY(0px)';
+            makeDivOne.style.transition = '1s';
+
+          }
+        });
       }
 
-  //---------------------------------------------------------
-  
-  const sideOpen = document.querySelector('.sideopen');
+      //---------------------------------------------------------
+
+      const sideOpen = document.querySelector('.sideopen');
       const ham = document.querySelector('.ham');
 
       let data1 = true;

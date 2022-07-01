@@ -245,6 +245,7 @@
     position: absolute;
     margin-top: 2vh;
     margin-right: -43vw;
+    z-index: 1;
     @include flex(flex, center, center);
 
   }

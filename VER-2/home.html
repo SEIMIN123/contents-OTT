@@ -121,10 +121,26 @@
     makeDivOne.style.marginBottom = "-1.5vw";
     makeDivOne.style.display = "fixed";
 
+    let data1 = true;
+    makeDivOne.addEventListener('mouseover', () => {
+
+      if (data1 === true) {
+
+        data1 = false;
+        makeDivOne.style.transform = 'translateY(-20px)';
+        makeDivOne.style.transition = '1s';
+      } else {
+
+        data1 = true;
+        makeDivOne.style.transform = 'translateY(0px)';
+        makeDivOne.style.transition = '1s';
+
+      }
+    });
   }
 
-    //------------------------------------------------------------------
-    for (let i = 0; i < makepic2.length; i++) {
+  //------------------------------------------------------------------
+  for (let i = 0; i < makepic2.length; i++) {
 
     const makeDivTwo = document.createElement('div');
     const img = document.createElement('img');
@@ -142,9 +158,26 @@
     makeDivTwo.style.marginBottom = "-1.5vw";
     makeDivTwo.style.display = "fixed";
 
-    }
 
-    for (let i = 0; i < makepic3.length; i++) {
+    let data2 = true;
+    makeDivTwo.addEventListener('mouseover', () => {
+
+      if (data2 === true) {
+
+        data2 = false;
+        makeDivTwo.style.transform = 'translateY(-20px)';
+        makeDivTwo.style.transition = '1s';
+      } else {
+
+        data2 = true;
+        makeDivTwo.style.transform = 'translateY(0px)';
+        makeDivTwo.style.transition = '1s';
+      }
+    });
+
+  }
+
+  for (let i = 0; i < makepic3.length; i++) {
 
     const makeDivThree = document.createElement('div');
     const img = document.createElement('img');
@@ -161,7 +194,23 @@
     makeDivThree.style.margin = "0.3vw";
     makeDivThree.style.marginBottom = "-1.5vw";
     makeDivThree.style.display = "fixed";
-    }
+
+    let data3 = true;
+    makeDivThree.addEventListener('mouseover', () => {
+
+      if (data3 === true) {
+
+        data3 = false;
+        makeDivThree.style.transform = 'translateY(-20px)';
+        makeDivThree.style.transition = '1s';
+      } else {
+
+        data3 = true;
+        makeDivThree.style.transform = 'translateY(0px)';
+        makeDivThree.style.transition = '1s';
+      }
+    });
+  }
   //----------------------------------------------------------
 
   const sideOpen = document.querySelector('.sideopen');
@@ -188,7 +237,6 @@
       sideOpen.style.backgroundColor = "#303030";
     }
   });
-  
 </script>
 
 </html>

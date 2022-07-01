@@ -423,6 +423,7 @@
   height: 20vh;
   color: #fff;
   position: absolute;
+  z-index: 1;
   margin: 5vw;
   margin-right: -17vw;
   display: -webkit-box;

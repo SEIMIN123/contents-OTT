@@ -25,7 +25,7 @@
         <div class="list">
           <i class="fa-solid fa-list fa-2x"></i>
           <div class="listtext">리스트</div>
-        
+
         </div>
         <div class="contents">
           <i class="fa-solid fa-tv fa-2x"></i>
@@ -40,7 +40,11 @@
     </div>
 
     <div class="box1">
+      <div class="set"></div>
       <div class="con">
+        <div class="sale">추천</div>
+
+
         <div class="con-1">
           <h1 class="text">Premium</h1>
           <h3 class="text-1">실시간 TV + TV 프로그램 + 영화(개별구매) 제외</h3>
@@ -48,10 +52,15 @@
           <h3 class="text-1">동시 시청 4명</h3>
           <h3 class="text-1">모든 디바이스</h3>
           <div class="btn">
-            <div></div>
-            <div></div>
+            <div>월간 이용권 <br>월 13,900원</div>
+            <div>연간 이용권 <br>월 100,000원 <br>
+              <div class="dis">40%</div>
+              <div class="smalltext">(월 8,333원에 이용)</div>
+            </div>
           </div>
         </div>
+
+
         <div class="con-2">
           <h1 class="text">Standard</h1>
           <h3 class="text-1">실시간 + TV 프로그램 + 영화(개별구매) 제외</h3>
@@ -59,52 +68,60 @@
           <h3 class="text-1">동시 시청 2명</h3>
           <h3 class="text-1">모든 디바이스</h3>
           <div class="btn">
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-          <div class="con-3">
-            <h1 class="text">Basic</h1>
-            <h3 class="text-1">실시간 + TV 프로그램 + 영화(개별구매) 제외</h3>
-            <h3 class="text-1">720p 화질</h3>
-            <h3 class="text-1">동시 시청 1명</h3>
-            <h3 class="text-1">모바일 + PC</h3>
-            <div class="btn">
-              <div></div>
-              <div></div>
+            <div>월간 이용권 <br>월 10,900원</div>
+            <div>연간 이용권 <br>연 78,400원 <br>
+              <div class="dis">40%</div>
+              <div class="smalltext">(월 6,533원에 이용)</div>
             </div>
           </div>
+        </div>
+
+
+        <div class="con-3">
+          <h1 class="text">Basic</h1>
+          <h3 class="text-1">실시간 + TV 프로그램 + 영화(개별구매) 제외</h3>
+          <h3 class="text-1">720p 화질</h3>
+          <h3 class="text-1">동시 시청 1명</h3>
+          <h3 class="text-1">모바일 + PC</h3>
+          <div class="btn">
+            <div>월간 이용권 <br> 월 7,900원</div>
+            <div>연간 이용권 <br> 월 56,800원 <br>
+              <div class="dis">40%</div>
+              <div class="smalltext">(월 4,733원에 이용)</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <script>
-  const sideOpen = document.querySelector('.sideopen');
-        const ham = document.querySelector('.ham');
+    const sideOpen = document.querySelector('.sideopen');
+    const ham = document.querySelector('.ham');
 
-        let data1 = true;
+    let data1 = true;
 
-        ham.addEventListener('click', () => {
+    ham.addEventListener('click', () => {
 
-          if (data1 === true) {
-            data1 = false;
+      if (data1 === true) {
+        data1 = false;
 
-            sideOpen.style.width = "18vw";
-            sideOpen.style.height = "100%";
-            sideOpen.style.display = "block";
-            sideOpen.style.transition = "0.5s";
-            sideOpen.style.trasnform = "translateX(3vw)";
-            sideOpen.style.backgroundColor = "#ccc";
+        sideOpen.style.width = "18vw";
+        sideOpen.style.height = "100%";
+        sideOpen.style.display = "block";
+        sideOpen.style.transition = "0.5s";
+        sideOpen.style.trasnform = "translateX(3vw)";
+        sideOpen.style.backgroundColor = "#141414";
 
-          } else {
+      } else {
+        data1 = true;
 
-            data1 = true;
+        sideOpen.style.width = "5vw";
+        sideOpen.style.backgroundColor = "#303030";
+      }
+    });
 
-            sideOpen.style.width = "5vw";
-            sideOpen.style.backgroundColor = "salmon";
-
-          }
-        });
-    </script>
+    
+  </script>
 </body>
 
 </html>

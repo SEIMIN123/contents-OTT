@@ -28,13 +28,13 @@
 
     width: 5vw;
     height: 100%;
-    background-color: salmon;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     z-index: 4;
     overflow: hidden;
+
 
   }
 
@@ -43,13 +43,17 @@
     width: 5vw;
     height: 100vh;
     flex-direction: column;
+    background-color: #141414;
+    position: absolute;
+
     @include flex(flex, flex-start, center);
   }
 
   .ham {
-    
+
     margin: 8vh;
     margin-left: 4vw;
+    color: #484848;
     cursor: pointer;
     @include flex(flex, center, center);
 
@@ -58,6 +62,8 @@
   .home {
     margin: 2vh;
     margin-left: -4vw;
+    color: #484848;
+
     @include flex(flex, center, center);
 
   }
@@ -66,66 +72,80 @@
 
     width: 15vw;
     height: 10vh;
-    margin-right: -20vw; 
-    font-size: 1.5vw;
-    font-weight: 600;
+    margin-right: -20vw;
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: #fff;
+
     @include flex(flex, center, center);
 
   }
 
-    .list {
-      margin: 2vh;
-      margin-left: -4vw;
-      @include flex(flex, center, center);
+  .list {
+    margin: 2vh;
+    margin-left: -4vw;
+    color: #484848;
 
-    }
+    @include flex(flex, center, center);
 
-    .listtext {
+  }
 
-      width: 15vw;
-      height: 10vh;
-      margin-right: -20vw; 
-      font-size: 1.5vw;
-      font-weight: 600;
-      @include flex(flex, center, center);
-  
-    }
+  .listtext {
 
-    .contents {
+    width: 15vw;
+    height: 10vh;
+    margin-right: -20vw;
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: #fff;
 
-      margin: 2vh;
-      margin-left: -4vw;
-      @include flex(flex, center, center);
-    }
+    @include flex(flex, center, center);
 
-    .contentstext {
+  }
 
-      width: 15vw;
-      height: 10vh;
-      margin-right: -20vw; 
-      font-size: 1.5vw;
-      font-weight: 600;
-      @include flex(flex, center, center);
-  
-    }
+  .contents {
 
-    .setting {
+    margin: 2vh;
+    margin-left: -4vw;
+    color: #484848;
 
-      margin: 2vh;
-      margin-left: -4vw;
-      @include flex(flex, center, center);
-    }
+    @include flex(flex, center, center);
+  }
 
-    .settingtext {
+  .contentstext {
 
-      width: 15vw;
-      height: 10vh;
-      margin-right: -20vw; 
-      font-size: 1.5vw;
-      font-weight: 600;
-      @include flex(flex, center, center);
-  
-    }
+    width: 15vw;
+    height: 10vh;
+    margin-right: -20vw;
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: #fff;
+
+    @include flex(flex, center, center);
+
+  }
+
+  .setting {
+
+    margin: 2vh;
+    margin-left: -4vw;
+    color: #484848;
+
+    @include flex(flex, center, center);
+  }
+
+  .settingtext {
+
+    width: 15vw;
+    height: 10vh;
+    margin-right: -20vw;
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: #fff;
+
+    @include flex(flex, center, center);
+
+  }
 
   //--------------------------------------------------
 
@@ -133,7 +153,7 @@
 
     width: 100vw;
     height: 100vh;
-    background-color: burlywood;
+    background-color: #070707;
     @include border();
     @include flex(flex, center, center);
 
@@ -144,6 +164,9 @@
     width: 40vw;
     height: 98vh;
     flex-direction: column;
+    border-radius: 10px;
+    background-color: #232323;
+
     @include border();
     @include flex(flex, center, center);
 
@@ -154,60 +177,172 @@
     width: 35vw;
     height: 20vw;
     flex-direction: column;
+    border-radius: 5px;
     @include border();
     @include flex(flex, flex-start, flex-start);
-    
+
   }
 
   .email {
+    font-size: 1.7vw;
+    margin: 2vh;
+    color: #fff;
+    @include flex(flex, flex-start, flex-start);
 
-    margin: 3vh;
+  }
+
+  .etext {
+
+    width: 269px;
+    height: 24px;
+    margin: 1vw;
+    border-radius: 5px;
+    padding-left: 0.5vw;
+    font-size: 1vw;
+    background-color: #474747;
+    border: 0;
+    color: #fff;
+
   }
 
   .password {
+    font-size: 1.7vw;
+    margin: 2vh;
+    color: #fff;
+    @include flex(flex, flex-start, flex-start);
 
-    margin: 3vh;
   }
+
+  .ptext {
+
+    width: 269px;
+    height: 24px;
+    margin: 1vw;
+    border-radius: 5px;
+    padding-left: 0.5vw;
+    font-size: 1.3vw;
+    background-color: #474747;
+    border: 0;
+    color: #fff;
+    letter-spacing: 5px;
+
+  }
+
+
+  //-----------------------------------------------------
 
   .con-2 {
 
     width: 35vw;
     height: 5vw;
+    border-radius: 5px;
     @include border();
+    @include flex(flex, flex-start, flex-start);
+
   }
 
-  .con-2 > button {
-
+  .con-2>button {
+    width: 7vw;
+    height: 5vh;
     margin: 1.5vw;
+    font-size: 1vw;
+    font-weight: 600;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #393939;
+    border: 0;
+    box-shadow: 0px 5px 5px #070707;
+  }
+
+  .con-2>button:hover {
+
+    background-color: #666666;
+
+  }
+
+  .con-2>button:active {
+
+    transition: 0.2s;
+    box-shadow: 0 5px rgb(2, 1, 1);
+    transform: translateY(2px);
   }
 
   .con-3 {
 
     width: 35vw;
     height: 23vw;
-
+    border-radius: 5px;
     @include border();
   }
+
+  .con-3>button {
+
+    width: 7vw;
+    height: 5vh;
+    margin: 1.5vw;
+    font-size: 1vw;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #393939;
+    color: #fff;
+    border: 0;
+    box-shadow: 0px 5px 5px #070707;
+  }
+
+  .con-3>button:hover {
+
+    background-color: #666666;
+
+  }
+
+  .con-3>button:active {
+
+    transition: 0.2s;
+    box-shadow: 0 5px rgb(2, 1, 1);
+    transform: translateY(2px);
+  }
+
 
   .ticket {
 
     margin: 3vh;
+    font-size: 2vw;
+    font-weight: 600;
+    color: #fff;
   }
+
   .ticket-1 {
 
+    width: 4vw;
+    height: 4vh;
     margin: 3vh;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
   }
+
   .ticket-2 {
-
+    width: 4vw;
+    height: 4vh;
     margin: 3vh;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+
   }
+
   .ticket-3 {
-
+    width: 4vw;
+    height: 4vh;
     margin: 3vh;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+
   }
 
-  .con-3 > button {
 
-    margin: 1.5vw;
-  }
 }

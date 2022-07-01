@@ -253,6 +253,7 @@
 #root .fa-plus {
   color: #fff;
   margin-bottom: -40vw;
+  margin-left: 2vw;
 }
 
 #root .fa-heart {
@@ -268,7 +269,7 @@
 }
 
 #root .ep {
-  width: vw;
+  width: 45vw;
   height: 90vh;
   background-color: #0c0c0c;
   -webkit-box-orient: vertical;
@@ -292,7 +293,7 @@
 
 #root .ep-1 {
   width: 50vw;
-  height: 45vh;
+  height: 35vh;
   margin: 1vh;
   margin-left: -2vw;
   border-radius: 30px;
@@ -318,7 +319,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: -37vh;
+  margin-top: -25vh;
   margin-left: -30vw;
 }
 
@@ -333,7 +334,7 @@
 
 #root .eptext-1 {
   width: 32vw;
-  height: 30vh;
+  height: 15vh;
   color: #fff;
   background-color: #333333;
   border-radius: 10px;
@@ -354,7 +355,7 @@
 
 #root .ep-2 {
   width: 50vw;
-  height: 45vh;
+  height: 35vh;
   margin: 1vh;
   margin-left: -2vw;
   border-radius: 30px;
@@ -380,7 +381,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: -37vh;
+  margin-top: -25vh;
   margin-left: -30vw;
 }
 
@@ -395,7 +396,7 @@
 
 #root .eptext-2 {
   width: 32vw;
-  height: 30vh;
+  height: 15vh;
   color: #fff;
   background-color: #333333;
   border-radius: 10px;
@@ -483,6 +484,7 @@
   color: #fff;
   position: absolute;
   margin-right: -25vw;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
