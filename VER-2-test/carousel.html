@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/7986c55620.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .box {
+
+    width: 165vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+
+  .lay-con {
+
+    width: 170vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fa-chevron-left {
+    width: 2vw;
+    height: 20vh;
+    color: #fff;
+    z-index: 1;
+    margin: 5vw;
+    margin-left: -150vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+  }
+
+  .fa-chevron-left:hover {
+
+    background-color: rgba(100, 100, 100, 0.4);
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 10px;
+
+  }
+
+  .fa-chevron-right {
+    width: 2vw;
+    height: 20vh;
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    margin: 5vw;
+    margin-right: -30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .fa-chevron-right:hover {
+
+    background-color: rgba(100, 100, 100, 0.4);
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 10px;
+  }
+</style>
+
+<body>
+
+  <div class="box">
+    <div class="lay-con">
+      <i class="fa-solid fa-chevron-left fa-3x"></i>
+      <i class="fa-solid fa-chevron-right fa-3x"></i>
+    </div>
+
+  </div>
+  <script>
+    const boxTwo = document.querySelector('.box');
+    const layConOne = document.querySelector('.lay-con');
+    const prev = document.querySelector('.fa-chevron-left');
+    const next = document.querySelector('.fa-chevron-right');
+
+    let makepic1 = ["lay-1.png", "lay-2.png", "lay-3.png", "lay-4.png", "lay-5.png", "lay-6.png", "lay-7.png",
+      "lay-8.png", "lay-9.png", "lay-10.png", "lay-11.png"
+    ];
+
+
+    let data = 0;
+    for (let i = 0; i < makepic1.length; i++) {
+
+      const makeDivOne = document.createElement("div");
+      const img = document.createElement('img');
+      layConOne.appendChild(makeDivOne);
+      boxTwo.appendChild(layConOne);
+
+      img.setAttribute('src', `../VER-2-pic/makepic1/lay-${i+1}.png`);
+      makeDivOne.appendChild(img);
+
+      makeDivOne.style.width = "12vw";
+      makeDivOne.style.height = "17vw";
+      makeDivOne.style.borderRadius = "10px";
+      makeDivOne.style.margin = "1vw";
+      makeDivOne.style.marginBottom = "-1.5vw";
+
+
+      prev.addEventListener('click', () => {
+
+        for (let i = 0; i < makepic1.length; i++) {
+          makeDivOne.style.transform = "translateX(0vw)";
+          makeDivOne.style.transition = "1s";
+          console.log(prev);
+        }
+      });
+
+      next.addEventListener('click', () => {
+
+        for (let i = 0; i < makepic1.length; i++) {
+            makeDivOne.style.transform = "translateX(-80vw)";
+            makeDivOne.style.transition = "1s";
+            console.log(next);
+
+          }
+      });
+
+    }
+  </script>
+</body>
+
+</html>
