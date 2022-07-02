@@ -65,7 +65,7 @@
     position: absolute;
     z-index: 1;
     margin: 5vw;
-    margin-right: -30vw;
+    margin-right: -15vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,24 +118,43 @@
       makeDivOne.style.margin = "1vw";
       makeDivOne.style.marginBottom = "-1.5vw";
 
-
+      let data1 = true;
       prev.addEventListener('click', () => {
 
         for (let i = 0; i < makepic1.length; i++) {
-          makeDivOne.style.transform = "translateX(0vw)";
-          makeDivOne.style.transition = "1s";
-          console.log(prev);
+
+          if (data1 === true) {
+            data1 = false;
+            makeDivOne.style.transform = "translateX(0vw)";
+            makeDivOne.style.transition = "1s";
+            console.log(prev);
+          } else {
+            data1 = true;
+            makeDivOne.style.transform = "translateX(0vw)";
+            makeDivOne.style.transition = "1s";
+          }
         }
       });
 
+      let data2 = true;
       next.addEventListener('click', () => {
 
         for (let i = 0; i < makepic1.length; i++) {
-            makeDivOne.style.transform = "translateX(-80vw)";
-            makeDivOne.style.transition = "1s";
-            console.log(next);
 
+          if (data2 === true) {
+
+            data2 = false;
+
+            makeDivOne.style.transform = "translateX(-65vw)";
+            makeDivOne.style.transition = "1s";
+          } else {
+
+            data2 = true;
+            makeDivOne.style.transform = "translateX(0vw)";
+            makeDivOne.style.transition = "1s";
           }
+
+        }
       });
 
     }

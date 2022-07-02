@@ -2,91 +2,75 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 @-webkit-keyframes side {
   3% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   25% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   28% {
-    -webkit-transform: translateX(-110vw);
-            transform: translateX(-110vw);
+    transform: translateX(-110vw);
   }
   100% {
-    -webkit-transform: translateX(-110vw);
-            transform: translateX(-110vw);
+    transform: translateX(-110vw);
   }
 }
 @keyframes side {
   3% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   25% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   28% {
-    -webkit-transform: translateX(-110vw);
-            transform: translateX(-110vw);
+    transform: translateX(-110vw);
   }
   100% {
-    -webkit-transform: translateX(-110vw);
-            transform: translateX(-110vw);
+    transform: translateX(-110vw);
   }
 }
-
 /* PC (해상도 1024px)*/
 @media all and (min-width: 1024px) {
   body {
-    background-color: #313131;
+    background-color: rgb(49, 49, 49);
   }
+
   #con {
     width: 100vw;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
   }
+
   /* --------------------------------------------------------- */
   /*  사이드 바  */
   #con > div:nth-child(1) {
     width: 10vw;
     height: 100vh;
-    background-color: #1f1f1f;
+    background-color: rgb(31, 31, 31);
     position: fixed;
     z-index: 999;
     margin-left: -185px;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
+
   #con > div:nth-child(1):hover {
     margin-left: 0px;
   }
+
   #con > div:nth-child(1):hover:before {
-    -webkit-transition: 0.5s;
     transition: 0.5s;
     position: absolute;
   }
+
   #con > div:nth-child(1) > ul > li {
     color: white;
     line-height: 5vw;
@@ -94,98 +78,92 @@
     font-weight: bolder;
     font-size: 20px;
   }
+
   #con > div:nth-child(1) > ul > li:hover {
-    color: #b3b3b3;
+    color: rgb(179, 179, 179);
     cursor: pointer;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
+
   /* ---------------------------------------------------- */
   /* 메인 전체박스 */
   .box {
     width: 100vw;
     height: 100vh;
   }
+
   header {
     width: 110vw;
     height: 100vh;
-    background-color: #313131;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    background-color: rgb(49, 49, 49);
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
   }
+
   header:hover {
     cursor: pointer;
   }
+
   .card {
     width: 110vw;
     height: 100vh;
     overflow: hidden;
     position: absolute;
   }
+
   .card::after {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 900;
   }
+
   .card-1 {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 7;
-    -webkit-transform: translateX(110vw);
-            transform: translateX(110vw);
+    transform: translateX(110vw);
     background-image: url(https://t1.daumcdn.net/cfile/tistory/21496633592181AA20);
     background-size: cover;
     -webkit-animation: side 28s cubic-bezier(0, 0, 0, 0.97) infinite;
             animation: side 28s cubic-bezier(0, 0, 0, 0.97) infinite;
   }
+
   .card-1.card-two {
     z-index: 6;
     background-image: url(https://images7.alphacoders.com/120/thumb-1920-1206753.png);
     -webkit-animation-delay: 7s;
             animation-delay: 7s;
   }
+
   .card-1.card-three {
     z-index: 5;
     background-image: url(https://blog.kakaocdn.net/dn/bdGpPT/btrnjehup91/CqWMPU4imIPWkKSi2kH130/img.jpg);
     -webkit-animation-delay: 14s;
             animation-delay: 14s;
   }
+
   .card-1.card-four {
     z-index: 4;
     background-image: url(https://blog.kakaocdn.net/dn/cqaBIQ/btriRLp6mW0/8fdFflTlVz2099cbuB3uLk/img.jpg);
     -webkit-animation-delay: 21s;
             animation-delay: 21s;
   }
+
   main {
     width: 110vw;
     height: 70vh;
-    background-color: #313131;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    background-color: rgb(49, 49, 49);
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     background-size: cover;
   }
+
   main > section {
     width: 300px;
     height: 200px;
@@ -195,34 +173,29 @@
     border-bottom-right-radius: 20px;
     margin: 20px;
   }
+
   .menu {
     width: 120vw;
     color: white;
     margin-left: 50px;
   }
+
   section:hover {
     cursor: pointer;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
-    -webkit-transform: translate(3px, 3px);
-            transform: translate(3px, 3px);
+    transform: translate(3px, 3px);
   }
+
   footer {
     width: 110vw;
     height: 70vh;
-    background-color: #313131;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    background-color: rgb(49, 49, 49);
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
+
   footer > section {
     width: 300px;
     height: 200px;
@@ -232,99 +205,126 @@
     border-bottom-right-radius: 20px;
     margin: 20px;
   }
+
   .menu1 {
     width: 120vw;
     color: white;
     margin-left: 55px;
   }
+
   #modal_btn {
     background-size: cover;
   }
+
   .img-1 {
     background: url(https://hayabusa.io/adcross/adx/abm/15b026e7-7c50-4a22-8c85-227b12271da7.png?background=000000&fit=fill&format=webp&height=216&quality=60&width=384);
   }
+
   .img-2 {
     background: url(http://pic.filecast.co.kr/25/c1/25c178506b01b29d14add8a0c8344c00.jpg);
   }
+
   .img-3 {
     background: url(https://hayabusa.io/adcross/adx/abm/de7fd5c5-ff39-4383-b1dc-911e45e021fb.png?background=000000&fit=fill&format=webp&height=216&quality=60&width=384);
   }
+
   .img-4 {
     background: url(https://hayabusa.io/abema/series/87-1191/thumb.v1647493204.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
   }
+
   .img-5 {
     background: url(https://hayabusa.io/abema/series/87-954/thumb.v1647596235.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
   }
+
   .img-6 {
     background: url(https://abm.hayabusa.media/series/162-7zft5piyb4e/thumb.png%3Fversion%3D1636093350?background=000000&fit=fill&format=webp&height=216&mode=fast&quality=60&width=384);
   }
+
   .img-7 {
     background: url(https://hayabusa.io/abema/series/87-1173/thumb.v1648090504.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
   }
+
   .img-8 {
     background: url(https://abm.hayabusa.media/series/568-4/thumb.png%3Fversion%3D1627288143?background=000000&fit=fill&format=webp&height=216&mode=fast&quality=60&width=384);
   }
+
   .img-9 {
     background: url(https://hayabusa.io/abema/series/87-1140/thumb.v1647494703.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
   }
+
   .img-10 {
     background: url(https://abm.hayabusa.media/series/90-1318/thumb.png%3Fversion%3D1628171406?background=000000&fit=fill&format=webp&height=216&mode=fast&quality=60&width=384);
   }
+
   .img-11 {
     background: url(https://abm.hayabusa.media/series/90-793/thumb.png%3Fversion%3D1627287915?background=000000&fit=fill&format=webp&height=216&mode=fast&quality=60&width=384);
   }
+
   .img-12 {
     background: url(https://abm.hayabusa.media/series/90-1608/thumb.png%3Fversion%3D1638525523?background=000000&fit=fill&format=webp&height=216&mode=fast&quality=60&width=384);
   }
+
   /* ------------------------------------------------------ */
   .jpg-1 {
     background: url(https://hayabusa.io/abema/series/199-6/thumb.v1646666408.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
     background-size: cover;
   }
+
   .jpg-2 {
     background: url(https://hayabusa.io/abema/series/420-1/thumb.v1648211668.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
     background-size: cover;
   }
+
   .jpg-3 {
     background: url(https://hayabusa.io/abema/series/30-5/thumb.v1648797502.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
     background-size: cover;
   }
+
   .jpg-4 {
     background: url(https://hayabusa.io/abema/series/26-75/thumb.v1648436510.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
     background-size: cover;
   }
+
   .jpg-5 {
     background: url(https://hayabusa.io/abema/series/536-1/thumb.v1649063922.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
     background-size: cover;
   }
+
   .jpg-6 {
     background: url(https://hayabusa.io/abema/series/203-2/thumb.v1649152504.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
     background-size: cover;
   }
+
   .jpg-7 {
     background: url(https://hayabusa.io/abema/series/189-30/thumb.v1649064305.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
     background-size: cover;
   }
+
   .jpg-8 {
     background: url(https://hayabusa.io/adcross/adx/abm/41a64b54-e454-4d25-aef1-bd2bbe52766b.jpg?background=000000&fit=fill&format=webp&height=216&quality=60&width=384);
     background-size: cover;
   }
+
   .jpg-9 {
     background: url(https://hayabusa.io/abema/series/194-25/thumb.v1648645204.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
     background-size: cover;
   }
+
   .jpg-10 {
     background: url(https://hayabusa.io/abema/series/25-73/thumb.v1648788076.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
     background-size: cover;
   }
+
   .jpg-11 {
     background: url(https://hayabusa.io/adcross/adx/abm/9df21892-3046-447c-abc2-0bd633eb8176.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
     background-size: cover;
   }
+
   .jpg-12 {
     background: url(https://hayabusa.io/abema/series/5-28/thumb.v1646140843.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
     background-size: cover;
   }
+
   #modal {
     width: 40vw;
     height: 85vh;
@@ -335,47 +335,40 @@
     background-color: rgba(0, 0, 0, 0.9);
     display: none;
     z-index: 10;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
+
   .modalcon {
     width: 40vw;
     height: 85vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
+
   .modalbox {
     width: 40vw;
     height: 42vh;
   }
+
   .modalbox1 {
     width: 40vw;
     height: 42vh;
   }
+
   .modalbox1 > h2 {
     color: #fff;
     margin: 20px;
   }
+
   .modalbox1 > p {
     color: #fff;
     margin: 20px;
     font-size: 19px;
   }
+
   #modal_close {
     width: 26px;
     height: 26px;
@@ -383,6 +376,7 @@
     top: -30px;
     right: 0;
   }
+
   #modal_close > a {
     display: block;
     width: 100%;
@@ -390,48 +384,41 @@
     background: url(https://img.icons8.com/metro/26/000000/close-window.png);
   }
 }
-
 @media all and (max-width: 800px) {
   body {
-    background-color: #313131;
+    background-color: rgb(49, 49, 49);
   }
+
   #con {
     width: 100vw;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
   }
+
   /* --------------------------------------------------------- */
   /*  사이드 바  */
   #con > div:nth-child(1) {
     width: 45vw;
     height: 100vh;
-    background-color: #1f1f1f;
+    background-color: rgb(31, 31, 31);
     position: fixed;
     z-index: 999;
     margin-left: -41vw;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
+
   #con > div:nth-child(1):hover {
     margin-left: 0px;
   }
+
   #con > div:nth-child(1):hover:before {
-    -webkit-transition: 0.5s;
     transition: 0.5s;
     position: absolute;
   }
+
   #con > div:nth-child(1) > ul > li {
     color: white;
     line-height: 5vw;
@@ -441,35 +428,29 @@
     font-size: 20px;
     list-style: none;
   }
+
   #con > div:nth-child(1) > ul > li:hover {
-    color: #b3b3b3;
-    -webkit-transition: 0.5s;
+    color: rgb(179, 179, 179);
     transition: 0.5s;
   }
+
   /* ---------------------------------------------------- */
   /* 메인 전체박스 */
   .box {
     width: 100vw;
     height: 100vh;
   }
+
   header {
     width: 100vw;
     height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-color: #313131;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    flex-direction: column;
+    background-color: rgb(49, 49, 49);
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
+
   .card {
     width: 100%;
     height: 50vh;
@@ -480,17 +461,16 @@
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .card::after {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 900;
   }
+
   .card-1 {
     width: 100%;
     height: 100%;
@@ -498,8 +478,7 @@
     z-index: 7;
     margin-top: -5vh;
     background-size: cover;
-    -webkit-transform: translateX(110vw);
-            transform: translateX(110vw);
+    transform: translateX(110vw);
     background-image: url(https://t1.daumcdn.net/cfile/tistory/21496633592181AA20);
     background-size: contain;
     background-position: center center;
@@ -508,44 +487,40 @@
     -webkit-animation: side 28s cubic-bezier(0, 0, 0, 0.97) infinite;
             animation: side 28s cubic-bezier(0, 0, 0, 0.97) infinite;
   }
+
   .card-1.card-two {
     z-index: 6;
     background-image: url(https://images7.alphacoders.com/120/thumb-1920-1206753.png);
     -webkit-animation-delay: 7s;
             animation-delay: 7s;
   }
+
   .card-1.card-three {
     z-index: 5;
     background-image: url(https://blog.kakaocdn.net/dn/bdGpPT/btrnjehup91/CqWMPU4imIPWkKSi2kH130/img.jpg);
     -webkit-animation-delay: 14s;
             animation-delay: 14s;
   }
+
   .card-1.card-four {
     z-index: 4;
     background-image: url(https://blog.kakaocdn.net/dn/cqaBIQ/btriRLp6mW0/8fdFflTlVz2099cbuB3uLk/img.jpg);
     -webkit-animation-delay: 21s;
             animation-delay: 21s;
   }
+
   main {
     width: 100vw;
     height: 250vh;
-    background-color: #313131;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    background-color: rgb(49, 49, 49);
+    flex-direction: column;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
     margin-top: -60vh;
   }
+
   main > section {
     width: 60vw;
     height: 60vh;
@@ -555,38 +530,31 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
+
   .menu {
     width: 120vw;
     color: white;
     margin-right: -30vw;
   }
+
   section:hover {
     cursor: pointer;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
-    -webkit-transform: translate(3px, 3px);
-            transform: translate(3px, 3px);
+    transform: translate(3px, 3px);
   }
+
   footer {
     width: 100vw;
     height: 330vh;
-    background-color: #313131;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    background-color: rgb(49, 49, 49);
+    flex-direction: column;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
     margin-bottom: -250vh;
   }
+
   footer > section {
     width: 300px;
     height: 200px;
@@ -596,102 +564,129 @@
     border-bottom-right-radius: 20px;
     margin: 10px;
   }
+
   .menu1 {
     width: 100vw;
     color: white;
     margin-right: -10vw;
   }
+
   #modal_btn {
     background-size: contain;
     background-position: center center;
     background-attachment: local;
     background-repeat: no-repeat;
   }
+
   .img-1 {
     background: url(https://hayabusa.io/adcross/adx/abm/15b026e7-7c50-4a22-8c85-227b12271da7.png?background=000000&fit=fill&format=webp&height=216&quality=60&width=384);
   }
+
   .img-2 {
     background: url(http://pic.filecast.co.kr/25/c1/25c178506b01b29d14add8a0c8344c00.jpg);
   }
+
   .img-3 {
     background: url(https://hayabusa.io/adcross/adx/abm/de7fd5c5-ff39-4383-b1dc-911e45e021fb.png?background=000000&fit=fill&format=webp&height=216&quality=60&width=384);
   }
+
   .img-4 {
     background: url(https://hayabusa.io/abema/series/87-1191/thumb.v1647493204.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
   }
+
   .img-5 {
     background: url(https://hayabusa.io/abema/series/87-954/thumb.v1647596235.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
   }
+
   .img-6 {
     background: url(https://abm.hayabusa.media/series/162-7zft5piyb4e/thumb.png%3Fversion%3D1636093350?background=000000&fit=fill&format=webp&height=216&mode=fast&quality=60&width=384);
   }
+
   .img-7 {
     background: url(https://hayabusa.io/abema/series/87-1173/thumb.v1648090504.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
   }
+
   .img-8 {
     background: url(https://abm.hayabusa.media/series/568-4/thumb.png%3Fversion%3D1627288143?background=000000&fit=fill&format=webp&height=216&mode=fast&quality=60&width=384);
   }
+
   .img-9 {
     background: url(https://hayabusa.io/abema/series/87-1140/thumb.v1647494703.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
   }
+
   .img-10 {
     background: url(https://abm.hayabusa.media/series/90-1318/thumb.png%3Fversion%3D1628171406?background=000000&fit=fill&format=webp&height=216&mode=fast&quality=60&width=384);
   }
+
   .img-11 {
     background: url(https://abm.hayabusa.media/series/90-793/thumb.png%3Fversion%3D1627287915?background=000000&fit=fill&format=webp&height=216&mode=fast&quality=60&width=384);
   }
+
   .img-12 {
     background: url(https://abm.hayabusa.media/series/90-1608/thumb.png%3Fversion%3D1638525523?background=000000&fit=fill&format=webp&height=216&mode=fast&quality=60&width=384);
   }
+
   /* ------------------------------------------------------ */
   .jpg-1 {
     background: url(https://hayabusa.io/abema/series/199-6/thumb.v1646666408.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
     background-size: cover;
   }
+
   .jpg-2 {
     background: url(https://hayabusa.io/abema/series/420-1/thumb.v1648211668.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
     background-size: cover;
   }
+
   .jpg-3 {
     background: url(https://hayabusa.io/abema/series/30-5/thumb.v1648797502.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
     background-size: cover;
   }
+
   .jpg-4 {
     background: url(https://hayabusa.io/abema/series/26-75/thumb.v1648436510.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
     background-size: cover;
   }
+
   .jpg-5 {
     background: url(https://hayabusa.io/abema/series/536-1/thumb.v1649063922.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
     background-size: cover;
   }
+
   .jpg-6 {
     background: url(https://hayabusa.io/abema/series/203-2/thumb.v1649152504.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
     background-size: cover;
   }
+
   .jpg-7 {
     background: url(https://hayabusa.io/abema/series/189-30/thumb.v1649064305.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
     background-size: cover;
   }
+
   .jpg-8 {
     background: url(https://hayabusa.io/adcross/adx/abm/41a64b54-e454-4d25-aef1-bd2bbe52766b.jpg?background=000000&fit=fill&format=webp&height=216&quality=60&width=384);
     background-size: cover;
   }
+
   .jpg-9 {
     background: url(https://hayabusa.io/abema/series/194-25/thumb.v1648645204.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
     background-size: cover;
   }
+
   .jpg-10 {
     background: url(https://hayabusa.io/abema/series/25-73/thumb.v1648788076.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
     background-size: cover;
   }
+
   .jpg-11 {
     background: url(https://hayabusa.io/adcross/adx/abm/9df21892-3046-447c-abc2-0bd633eb8176.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
     background-size: cover;
   }
+
   .jpg-12 {
     background: url(https://hayabusa.io/abema/series/5-28/thumb.v1646140843.png?background=000000&fit=fill&format=webp&height=216&quality=60&version=0&width=384);
     background-size: cover;
   }
+
   #modal {
     width: 100vw;
     height: 50vh;
@@ -700,47 +695,40 @@
     background-color: rgba(0, 0, 0, 0.9);
     z-index: 10;
     display: none;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
+
   .modalcon {
     width: 100vw;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
+
   .modalbox {
     width: 100vw;
     height: 100vh;
     margin-right: -30vw;
   }
+
   #back {
     width: auto;
     height: 100%;
   }
+
   .modalbox1 {
     width: 100vw;
     height: 100vh;
   }
+
   .modalbox1 > h2 {
     color: #fff;
     margin: 20px;
   }
+
   .modalbox1 > p {
     width: 100vw;
     height: 20vh;
@@ -748,6 +736,7 @@
     margin: 20px;
     font-size: 19px;
   }
+
   #modal_close {
     width: 26px;
     height: 26px;
@@ -755,6 +744,7 @@
     top: -30px;
     right: 0;
   }
+
   #modal_close > a {
     display: block;
     width: 100%;
