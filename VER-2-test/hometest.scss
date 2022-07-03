@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin flex ($d, $j, $a) {
+
+  display: ($d);
+  justify-content: ($j);
+  align-items: ($a);
+}
+
+@mixin border {
+  border: 1px solid black;
+}
+
+#root {
+
+  width: 100vw;
+  height: 100vh;
+  @include flex(flex, flex-start, flex-start);
+
+
+  .side {
+
+    width: 5vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 4;
+    overflow: hidden;
+
+
+  }
+
+  .sidecon {
+
+    width: 5vw;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #141414;
+    position: absolute;
+
+    @include flex(flex, flex-start, center);
+  }
+
+  .ham {
+
+    margin: 8vh;
+    margin-left: 4vw;
+    color: #484848;
+    cursor: pointer;
+    @include flex(flex, center, center);
+
+  }
+
+  .home {
+    margin: 2vh;
+    margin-left: -4vw;
+    color: #484848;
+
+    @include flex(flex, center, center);
+
+  }
+
+  .hometext {
+
+    width: 15vw;
+    height: 10vh;
+    margin-right: -20vw;
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: #fff;
+
+    @include flex(flex, center, center);
+
+  }
+
+  .list {
+    margin: 2vh;
+    margin-left: -4vw;
+    color: #484848;
+
+    @include flex(flex, center, center);
+
+  }
+
+  .listtext {
+
+    width: 15vw;
+    height: 10vh;
+    margin-right: -20vw;
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: #fff;
+
+    @include flex(flex, center, center);
+
+  }
+
+  .contents {
+
+    margin: 2vh;
+    margin-left: -4vw;
+    color: #484848;
+
+    @include flex(flex, center, center);
+  }
+
+  .contentstext {
+
+    width: 15vw;
+    height: 10vh;
+    margin-right: -20vw;
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: #fff;
+
+    @include flex(flex, center, center);
+
+  }
+
+  .setting {
+
+    margin: 2vh;
+    margin-left: -4vw;
+    color: #484848;
+
+    @include flex(flex, center, center);
+  }
+
+  .settingtext {
+
+    width: 15vw;
+    height: 10vh;
+    margin-right: -20vw;
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: #fff;
+
+    @include flex(flex, center, center);
+
+  }
+
+  //------------------------------------------------------------
+
+  .box1 {
+
+    width: 170vw;
+    height: 70vh;
+    background: url(../VER-2-pic/main.png);
+    background-size: contain;
+    background-position: 4.9vw top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    @include flex(flex, center, center);
+
+  }
+
+  .box2 {
+
+    width: 100vw;
+    height: 50vh;
+    flex-direction: column;
+    @include flex(flex, flex-start, flex-start);
+
+  }
+
+  .box3 {
+
+    width: 100vw;
+    height: 50vh;
+    flex-direction: column;
+    @include flex(flex, flex-start, flex-start);
+  }
+
+  .box4 {
+
+    width: 100vw;
+    height: 50vh;
+    flex-direction: column;
+    @include flex(flex, flex-start, flex-start);
+  }
+
+  //------------------------------------------------------------
+
+  .lay-con {
+    width: 170vw;
+    height: 50vh;
+    background-color: #000;
+    @include flex(flex, center, center);
+
+  }
+
+  .lay-con-1 {
+    width: 170vw;
+    height: 50vh;
+    background-color: #000;
+    @include flex(flex, center, center);
+
+  }
+
+  .lay-con-2 {
+    width: 170vw;
+    height: 50vh;
+    background-color: #000;
+    @include flex(flex, center, center);
+
+  }
+
+  //------------------------------------------------------------
+
+  .title {
+
+    width: 16vw;
+    height: 5vh;
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: 600;
+    flex-direction: column;
+    margin-top: -41vh;
+    margin-left: -140vw;
+    position: absolute;
+    z-index: 1;
+    @include flex(flex, flex-start, flex-start);
+
+  }
+
+  .title-1 {
+
+    width: 16vw;
+    height: 5vh;
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: 600;
+    flex-direction: column;
+    margin-top: -45vh;
+    margin-left: -140vw;
+    position: absolute;
+    z-index: 1;
+    @include flex(flex, flex-start, flex-start);
+
+  }
+
+  .title-2 {
+
+    width: 16vw;
+    height: 5vh;
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: 600;
+    flex-direction: column;
+    margin-top: -45vh;
+    margin-left: -140vw;
+    position: absolute;
+    z-index: 1;
+    @include border();
+    @include flex(flex, flex-start, flex-start);
+
+  }
+
+  .fa-chevron-left {
+    width: 2vw;
+    height: 20vh;
+    color: #fff;
+    z-index: 1;
+    margin: 5vw;
+    margin-right: -3vw;
+    @include flex(flex, center, center);
+  }
+
+  .fa-chevron-left:hover {
+
+    background-color: rgba(100,100,100,0.4);
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 10px;
+
+  }
+
+  .fa-chevron-right {
+    width: 2vw;
+    height: 20vh;
+    color: #fff;
+    position:absolute;
+    z-index: 1;
+    margin: 5vw;
+    margin-right: -17vw;
+    @include flex(flex, center, center);
+
+  }
+
+  .fa-chevron-right:hover {
+
+    background-color: rgba(100,100,100,0.4);
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 10px;
+  }
+
+}

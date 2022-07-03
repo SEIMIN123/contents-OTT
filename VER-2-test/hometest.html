@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../VER-2-css/home.css">
+  <link rel="stylesheet" href="../VER-2-test/hometest.css">
   <script src="https://kit.fontawesome.com/7986c55620.js" crossorigin="anonymous"></script>
 </head>
 
@@ -80,6 +80,8 @@
   const layConOne = document.querySelector('.lay-con');
   const layConTwo = document.querySelector('.lay-con-1');
   const layConThree = document.querySelector('.lay-con-2');
+  const prev = document.querySelector('.fa-chevron-left');
+  const next = document.querySelector('.fa-chevron-right');
 
   console.log(boxTwo);
   console.log(boxThree);
@@ -87,6 +89,8 @@
   console.log(layConOne);
   console.log(layConTwo);
   console.log(layConThree);
+
+
 
   let makepic1 = ["lay-1.png", "lay-2.png", "lay-3.png", "lay-4.png", "lay-5.png", "lay-6.png", "lay-7.png",
     "lay-8.png", "lay-9.png", "lay-10.png", "lay-11.png"
@@ -99,6 +103,7 @@
   let makepic3 = ["lay-1.png", "lay-2.png", "lay-3.png", "lay-4.png", "lay-5.png", "lay-6.png", "lay-7.png",
     "lay-8.png", "lay-9.png", "lay-10.png", "lay-11.png"
   ];
+
   let data = 0;
 
   for (let i = 0; i < makepic1.length; i++) {
@@ -109,7 +114,7 @@
     layConOne.appendChild(makeDivOne);
     boxTwo.appendChild(layConOne);
 
-    img.setAttribute('src', `../VER-2-pic/lay/lay-${i+1}.png`);
+    img.setAttribute('src', `../VER-2-pic/makepic1/lay-${i+1}.png`);
     makeDivOne.appendChild(img);
 
     makeDivOne.style.width = "14vw";
@@ -117,8 +122,61 @@
     makeDivOne.style.borderRadius = "10px";
     makeDivOne.style.margin = "0.3vw";
     makeDivOne.style.marginBottom = "-1.5vw";
-    makeDivOne.style.display = "fixed";
 
+    makeDivOne.addEventListener('mouseover', () => {
+
+      if (data1 === true) {
+
+        data1 = false;
+        makeDivOne.style.transform = 'translateY(-20px)';
+        makeDivOne.style.transition = '1s';
+      } else {
+
+        data1 = true;
+        makeDivOne.style.transform = 'translateY(0px)';
+        makeDivOne.style.transition = '1s';
+
+      }
+    });
+
+    let data2 = true;
+    prev.addEventListener('click', () => {
+
+      for (let i = 0; i < makepic1.length; i++) {
+
+        if (data2 === true) {
+          data2 = false;
+          makeDivOne.style.transform = "translateX(0vw)";
+          makeDivOne.style.transition = "1s";
+          console.log(prev);
+        } else {
+          data2 = true;
+          makeDivOne.style.transform = "translateX(0vw)";
+          makeDivOne.style.transition = "1s";
+        }
+      }
+    });
+
+    let data3 = true;
+    next.addEventListener('click', () => {
+
+      for (let i = 0; i < makepic1.length; i++) {
+
+        if (data3 === true) {
+
+          data3 = false;
+
+          makeDivOne.style.transform = "translateX(-65vw)";
+          makeDivOne.style.transition = "1s";
+        } else {
+
+          data3 = true;
+          makeDivOne.style.transform = "translateX(0vw)";
+          makeDivOne.style.transition = "1s";
+        }
+
+      }
+    });
   }
 
   //------------------------------------------------------------------
@@ -130,7 +188,7 @@
     layConTwo.appendChild(makeDivTwo);
     boxThree.appendChild(layConTwo);
 
-    img.setAttribute('src', `../VER-2-pic/lay/lay-${i+1}.png`);
+    img.setAttribute('src', `../VER-2-pic/makepic2/lay-${i+1}.png`);
     makeDivTwo.appendChild(img);
 
     makeDivTwo.style.width = "14vw";
@@ -140,9 +198,24 @@
     makeDivTwo.style.marginBottom = "-1.5vw";
     makeDivTwo.style.display = "fixed";
 
-  }
 
-  //------------------------------------------------------------------
+    let data2 = true;
+    makeDivTwo.addEventListener('mouseover', () => {
+
+      if (data2 === true) {
+
+        data2 = false;
+        makeDivTwo.style.transform = 'translateY(-20px)';
+        makeDivTwo.style.transition = '1s';
+      } else {
+
+        data2 = true;
+        makeDivTwo.style.transform = 'translateY(0px)';
+        makeDivTwo.style.transition = '1s';
+      }
+    });
+
+  }
 
   for (let i = 0; i < makepic3.length; i++) {
 
@@ -152,7 +225,7 @@
     layConThree.appendChild(makeDivThree);
     boxFour.appendChild(layConThree);
 
-    img.setAttribute('src', `../VER-2-pic/lay/lay-${i+1}.png`);
+    img.setAttribute('src', `../VER-2-pic/makepic3/lay-${i+1}.png`);
     makeDivThree.appendChild(img);
 
     makeDivThree.style.width = "14vw";
@@ -161,6 +234,22 @@
     makeDivThree.style.margin = "0.3vw";
     makeDivThree.style.marginBottom = "-1.5vw";
     makeDivThree.style.display = "fixed";
+
+    let data3 = true;
+    makeDivThree.addEventListener('mouseover', () => {
+
+      if (data3 === true) {
+
+        data3 = false;
+        makeDivThree.style.transform = 'translateY(-20px)';
+        makeDivThree.style.transition = '1s';
+      } else {
+
+        data3 = true;
+        makeDivThree.style.transform = 'translateY(0px)';
+        makeDivThree.style.transition = '1s';
+      }
+    });
   }
   //----------------------------------------------------------
 
