@@ -70,7 +70,6 @@
   margin: 2vh;
   margin-left: -4vw;
   color: #484848;
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,6 +88,7 @@
   font-size: 1.3vw;
   font-weight: 400;
   color: #fff;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,7 +104,6 @@
   margin: 2vh;
   margin-left: -4vw;
   color: #484848;
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,6 +122,7 @@
   font-size: 1.3vw;
   font-weight: 400;
   color: #fff;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,7 +138,6 @@
   margin: 2vh;
   margin-left: -4vw;
   color: #484848;
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,6 +156,7 @@
   font-size: 1.3vw;
   font-weight: 400;
   color: #fff;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,7 +172,6 @@
   margin: 2vh;
   margin-left: -4vw;
   color: #484848;
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,6 +190,7 @@
   font-size: 1.3vw;
   font-weight: 400;
   color: #fff;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

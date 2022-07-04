@@ -15,105 +15,233 @@
   border: 1px solid black;
 }
 
-#root {
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {}
 
-  width: 100vw;
-  height: 100vh;
-  flex-direction: column;
-  background: url(../VER-2-pic/background.png);
-  @include border();
-  @include flex(flex, center, center);
-
-  .atv {
-
-    width: 11.5vw;
-    height: 14vh;
-    color: #fff;
-    font-size: 50px;
-    font-weight: 400;
-    font-family: 'Kumar One', cursive;
-    @include flex(flex, center, center);
-
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@mixin mobile {
+  @media all and (max-width:800px) {
+    @content;
   }
+}
 
-  .login {
+@mixin pc {
 
-    width: 15vw;
-    height: 13vh;
-    color: #fff;
-    font-size: 24px;
+  /* PC (해상도 1024px)*/
+  @media all and (min-width:1024px) {
+    @content;
+  }
+}
+
+
+@include pc {
+  #root {
+
+    width: 100vw;
+    height: 100vh;
     flex-direction: column;
-    font-weight: 400;
-  }
-
-  .logtext {
-
-    width: 15vw;
-    height: 3vh;
-    padding-left: 0.5vw;
-    border-radius: 5px;
-    font-size: 1.3vw;
-
-
-  }
-
-  .password {
-
-    width: 15vw;
-    height: 13vh;
-    color: #fff;
-    font-size: 24px;
-    font-weight: 400;
-    flex-direction: column;
-    
-  }
-
-  .passtext {
-
-    width: 15vw;
-    height: 3vh;
-    padding-left: 0.5vw;
-    border-radius: 5px;
-    letter-spacing: 5px;
-    font-size: 1.3vw;
-
-
-  }
-
-  .start {
-
-    width: 7vw;
-    height: 5vh;
-    margin: 1.5vw;
-    font-size: 1vw;
-    font-weight: 600;
-    border-radius: 10px;
-    color: #fff;
-    border: 0;
-    box-shadow: 0px 5px 5px #070707;
-    background-color: rgba(255,255,255,0.7);
-    cursor: pointer;
+    background: url(../VER-2-pic/background.png);
     @include border();
     @include flex(flex, center, center);
 
+    .atv {
+
+      width: 11.5vw;
+      height: 14vh;
+      color: #fff;
+      font-size: 50px;
+      font-weight: 400;
+      font-family: 'Kumar One', cursive;
+      @include flex(flex, center, center);
+
+    }
+
+    .login {
+
+      width: 15vw;
+      height: 13vh;
+      color: #fff;
+      font-size: 24px;
+      flex-direction: column;
+      font-weight: 400;
+    }
+
+    .logtext {
+
+      width: 15vw;
+      height: 3vh;
+      padding-left: 0.5vw;
+      border-radius: 5px;
+      font-size: 1.3vw;
+
+
+    }
+
+    .password {
+
+      width: 15vw;
+      height: 13vh;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 400;
+      flex-direction: column;
+
+    }
+
+    .passtext {
+
+      width: 15vw;
+      height: 3vh;
+      padding-left: 0.5vw;
+      border-radius: 5px;
+      letter-spacing: 5px;
+      font-size: 1.3vw;
+
+
+    }
+
+    .start {
+
+      width: 7vw;
+      height: 5vh;
+      margin: 1.5vw;
+      font-size: 1vw;
+      font-weight: 600;
+      border-radius: 10px;
+      color: #fff;
+      border: 0;
+      box-shadow: 0px 5px 5px #070707;
+      background-color: rgba(255, 255, 255, 0.7);
+      cursor: pointer;
+      @include border();
+      @include flex(flex, center, center);
+
+    }
+
+    .start:hover {
+
+      background-color: #666666;
+      transition: 0.3s;
+
+    }
+
+    .start:active {
+
+      transition: 0.2s;
+      box-shadow: 0 5px rgb(2, 1, 1);
+      transform: translateY(2px);
+    }
+
+    .forgot {
+      font-size: 1vw;
+      color: rgba(255, 255, 255, 0.5);
+    }
   }
+}
 
-  .start:hover {
+@include mobile {
 
-    background-color: #666666;
-    transition: 0.3s;
+  #root {
 
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    background: url(../VER-2-pic/background.png);
+    @include border();
+    @include flex(flex, center, center);
+
+    .atv {
+
+      width: 11.5vw;
+      height: 14vh;
+      color: #fff;
+      font-size: 50px;
+      font-weight: 400;
+      font-family: 'Kumar One', cursive;
+      @include flex(flex, center, center);
+
+    }
+
+    .login {
+
+      width: 20vw;
+      height: 13vh;
+      color: #fff;
+      font-size: 24px;
+      flex-direction: column;
+      font-weight: 400;
+      @include flex(flex, center, center);
+
+    }
+
+    .logtext {
+
+      width: 40vw;
+      height: 3vh;
+      padding-left: 0.5vw;
+      border-radius: 5px;
+      font-size: 1.3vw;
+      @include flex(flex, center, center);
+
+    }
+
+    .password {
+
+      width: 25vw;
+      height: 13vh;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 400;
+      flex-direction: column;
+      @include flex(flex, center, center);
+    }
+
+    .passtext {
+
+      width: 40vw;
+      height: 3vh;
+      padding-left: 0.5vw;
+      border-radius: 5px;
+      letter-spacing: 5px;
+      font-size: 1.3vw;
+      @include flex(flex, center, center);
+    }
+
+    .start {
+
+      width: 15vw;
+      height: 5vh;
+      margin: 1.5vw;
+      font-size: 1vw;
+      font-weight: 600;
+      border-radius: 10px;
+      color: #fff;
+      border: 0;
+      box-shadow: 0px 5px 5px #070707;
+      background-color: rgba(255, 255, 255, 0.7);
+      cursor: pointer;
+      @include border();
+      @include flex(flex, center, center);
+
+    }
+
+    .start:hover {
+
+      background-color: #666666;
+      transition: 0.3s;
+
+    }
+
+    .start:active {
+
+      transition: 0.2s;
+      box-shadow: 0 5px rgb(2, 1, 1);
+      transform: translateY(2px);
+    }
+
+    .forgot {
+      font-size: 1vw;
+      color: rgba(255, 255, 255, 0.5);
+    }
   }
-
-  .start:active {
-
-    transition: 0.2s;
-    box-shadow: 0 5px rgb(2, 1, 1);
-    transform: translateY(2px);
-  }
-
-  .forgot {
-    font-size: 1vw;
-    color: rgba(255,255,255,0.5);
-  };
 }
