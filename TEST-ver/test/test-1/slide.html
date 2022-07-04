@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0;}
+
+    #root {
+
+      width: 100vw;
+      height: 100vh;
+      border: 1px solid black;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slide {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slide > div{
+
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      background-color: antiquewhite;
+      margin: 10px;
+      display: block;
+      position:relative;
+      
+    }
+
+    .arrow-left, .arrow-right {
+    position: relative;
+    border:1px solid #000;
+    width:100px;
+    height:100px;
+    margin-right:5px;
+}
+
+    .arrow-left, .arrow-right:hover {
+
+      cursor: pointer;
+}
+
+    .arrow-left::after {
+      width: 50px;
+      height: 50px;
+      border-top: 5px solid #000;
+      border-right: 5px solid #000;
+      position: absolute;
+      top: 20px;
+      left: 35px; 
+      content: '';
+      transform: rotate(225deg);
+}
+
+    .arrow-right::after {
+      width: 50px; 
+      height: 50px;
+      border-top: 5px solid #000;
+      border-right: 5px solid #000;
+      position: absolute;
+      top: 20px; 
+      left: 10px; 
+      content: '';
+      transform: rotate(45deg);
+}
+
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <span class="arrow-left"></span>
+    <div class="slide">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    <span class="arrow-right"></span>
+  </div>
+
+  <script>
+
+    const root = document.getElementById('root');
+    const arrowLeft = document.getElementsByClassName('.arrow-left'); 
+    const arrowRight = document.getElementsByClassName('.arrow-right');
+    
+    console.log(arrowLeft);
+    console.log(arrowRight);
+
+    root.addEventListener('click', () => {
+
+
+    });
+  </script>
+</body>
+</html>

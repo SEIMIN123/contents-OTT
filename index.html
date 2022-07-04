@@ -6,23 +6,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./VER-2-css/login.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumar+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div id="root">
-    <div class="box">
-      <div class="text">
-        <h1>
-          ATV<br>
-          <br>
-          일본 애니메이션,영화,예능,드라마,음악,OST를 한곳에!
-        </h1>
-      </div>
-        <button class="btn">로그인</button>
+    <div class="atv">ATV</div>
+    <div class="login">로그인
+      <input type="text" class="logtext"> </input>
     </div>
+    <div class="password">비밀번호
+      <input type="password" class="passtext"> </input>
+    </div>
+    <button class="start">시작하기</button>
+    <div class="forgot">이메일 찾기 / 비밀번호 찾기</div>
   </div>
-  <script src="./js/main.js"></script>
+  <link rel="stylesheet" href="./VER-2/home.html">
+  <script>
+    const btn = document.querySelector('.start');
+    btn.addEventListener('click', function () {
+      let page = './VER-2/home.html';
+      location.href = page;
+    });
+  </script>
 </body>
 
 </html>

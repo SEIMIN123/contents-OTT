@@ -34,8 +34,6 @@
     bottom: 0;
     z-index: 4;
     overflow: hidden;
-
-
   }
 
   .sidecon {
@@ -45,7 +43,6 @@
     flex-direction: column;
     background-color: #141414;
     position: absolute;
-
     @include flex(flex, flex-start, center);
   }
 
@@ -76,7 +73,7 @@
     font-size: 1.3vw;
     font-weight: 400;
     color: #fff;
-
+    cursor: pointer;
     @include flex(flex, center, center);
 
   }
@@ -98,6 +95,7 @@
     font-size: 1.3vw;
     font-weight: 400;
     color: #fff;
+    cursor: pointer;
 
     @include flex(flex, center, center);
 
@@ -120,6 +118,7 @@
     font-size: 1.3vw;
     font-weight: 400;
     color: #fff;
+    cursor: pointer;
 
     @include flex(flex, center, center);
 
@@ -142,6 +141,7 @@
     font-size: 1.3vw;
     font-weight: 400;
     color: #fff;
+    cursor: pointer;
 
     @include flex(flex, center, center);
 
@@ -149,18 +149,18 @@
 
   //--------------------------------------------------
 
-  .box1 {
 
-    width: 167vw;
+  .box1 {
+    width: 240vw;
     height: 100vh;
-    background-color: #000;
+    flex-direction: column;
     @include flex(flex, flex-start, flex-start);
 
   }
 
   .box2 {
 
-    width: 167vw;
+    width: 240vw;
     height: 100vh;
     background-color: #000;
     @include flex(flex, flex-start, flex-start);
@@ -170,16 +170,16 @@
   //--------------------------------------------------
 
   .lay-con {
-    width: 150vw;
+    width: 240vw;
     height: 70vh;
-    @include border();
+    background-color: #000;
     @include flex(flex, center, center);
 
   }
 
   .lay-con-1 {
-    width: 150vw;
-    height: 70vh;
+    width: 240vw;
+    height: 50vh;
     @include border();
     @include flex(flex, center, center);
 
@@ -195,7 +195,7 @@
     font-weight: 600;
     flex-direction: column;
     margin-top: -60vh;
-    margin-left: -116vw;
+    margin-left: -210vw;
     position: absolute;
     color: #fff;
     @include border();
@@ -211,7 +211,7 @@
     font-weight: 600;
     flex-direction: column;
     margin-top: -60vh;
-    margin-left: -119vw;
+    margin-left: -212vw;
     position: absolute;
     color: #fff;
     @include border();
@@ -224,14 +224,15 @@
     height: 20vh;
     color: #fff;
     margin-left: -4vw;
+    z-index: 1;
     @include flex(flex, center, center);
 
   }
 
-  
+
   .fa-chevron-left:hover {
 
-    background-color: rgba(100,100,100,0.4);
+    background-color: rgba(100, 100, 100, 0.4);
     color: #fff;
     transition: 0.5s;
     border-radius: 10px;
@@ -244,7 +245,7 @@
     color: #fff;
     position: absolute;
     margin-top: 2vh;
-    margin-right: -43vw;
+    margin-left: -46vw;
     z-index: 1;
     @include flex(flex, center, center);
 
@@ -252,10 +253,20 @@
 
   .fa-chevron-right:hover {
 
-    background-color: rgba(100,100,100,0.4);
+    background-color: rgba(100, 100, 100, 0.4);
     color: #fff;
     transition: 0.5s;
     border-radius: 10px;
 
   }
+  .lay {
+
+  cursor: pointer;
+}
+  .lay:hover {
+
+    transform: translateY(-20px);
+    transition: 0.5s;
+  }
+
 }

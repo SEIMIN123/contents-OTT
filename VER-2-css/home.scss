@@ -61,6 +61,7 @@
     margin: 2vh;
     margin-left: -4vw;
     color: #484848;
+    cursor: pointer;
 
     @include flex(flex, center, center);
 
@@ -74,7 +75,6 @@
     font-size: 1.3vw;
     font-weight: 400;
     color: #fff;
-
     @include flex(flex, center, center);
 
   }
@@ -83,6 +83,7 @@
     margin: 2vh;
     margin-left: -4vw;
     color: #484848;
+    cursor: pointer;
 
     @include flex(flex, center, center);
 
@@ -106,6 +107,7 @@
     margin: 2vh;
     margin-left: -4vw;
     color: #484848;
+    cursor: pointer;
 
     @include flex(flex, center, center);
   }
@@ -128,6 +130,7 @@
     margin: 2vh;
     margin-left: -4vw;
     color: #484848;
+    cursor: pointer;
 
     @include flex(flex, center, center);
   }
@@ -149,20 +152,21 @@
 
   .box1 {
 
-    width: 170vw;
-    height: 70vh;
+    width: 227vw;
+    height: 65vh;
     background: url(../VER-2-pic/main.png);
     background-size: contain;
     background-position: 4.9vw top;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    cursor: pointer;
     @include flex(flex, center, center);
 
   }
 
   .box2 {
 
-    width: 100vw;
+    width: 227vw;
     height: 50vh;
     flex-direction: column;
     @include flex(flex, flex-start, flex-start);
@@ -171,7 +175,7 @@
 
   .box3 {
 
-    width: 100vw;
+    width: 215vw;
     height: 50vh;
     flex-direction: column;
     @include flex(flex, flex-start, flex-start);
@@ -179,7 +183,7 @@
 
   .box4 {
 
-    width: 100vw;
+    width: 215vw;
     height: 50vh;
     flex-direction: column;
     @include flex(flex, flex-start, flex-start);
@@ -188,24 +192,24 @@
   //------------------------------------------------------------
 
   .lay-con {
-    width: 170vw;
-    height: 50vh;
+    width: 227vw;
+    height: 100vh;
     background-color: #000;
     @include flex(flex, center, center);
 
   }
 
   .lay-con-1 {
-    width: 170vw;
-    height: 50vh;
+    width: 227vw;
+    height: 100vh;
     background-color: #000;
     @include flex(flex, center, center);
 
   }
 
   .lay-con-2 {
-    width: 170vw;
-    height: 50vh;
+    width: 227vw;
+    height: 100vh;
     background-color: #000;
     @include flex(flex, center, center);
 
@@ -222,7 +226,7 @@
     font-weight: 600;
     flex-direction: column;
     margin-top: -41vh;
-    margin-left: -140vw;
+    margin-left: -198vw;
     position: absolute;
     z-index: 1;
     @include flex(flex, flex-start, flex-start);
@@ -238,7 +242,8 @@
     font-weight: 600;
     flex-direction: column;
     margin-top: -45vh;
-    margin-left: -140vw;
+    margin-left: -198vw;
+
     position: absolute;
     z-index: 1;
     @include flex(flex, flex-start, flex-start);
@@ -254,7 +259,7 @@
     font-weight: 600;
     flex-direction: column;
     margin-top: -45vh;
-    margin-left: -140vw;
+    margin-left: -198vw;
     position: absolute;
     z-index: 1;
     @include border();
@@ -274,7 +279,7 @@
 
   .fa-chevron-left:hover {
 
-    background-color: rgba(100,100,100,0.4);
+    background-color: rgba(100, 100, 100, 0.4);
     color: #fff;
     transition: 0.5s;
     border-radius: 10px;
@@ -285,20 +290,34 @@
     width: 2vw;
     height: 20vh;
     color: #fff;
-    position:absolute;
-    z-index: 1;
+    position: absolute;
+    z-index: 999;
     margin: 5vw;
-    margin-right: -17vw;
+    margin-left: -30vw;
     @include flex(flex, center, center);
 
   }
 
   .fa-chevron-right:hover {
 
-    background-color: rgba(100,100,100,0.4);
+    background-color: rgba(100, 100, 100, 0.4);
     color: #fff;
     transition: 0.5s;
     border-radius: 10px;
   }
+
+  .lay {
+
+    cursor: pointer;
+  }
+
+  .lay:hover {
+    transform: translateY(-20px);
+    transition: 0.5s;
+  }
+
+
+
+
 
 }

@@ -76,7 +76,7 @@
     font-size: 1.3vw;
     font-weight: 400;
     color: #fff;
-
+    cursor: pointer;
     @include flex(flex, center, center);
 
   }
@@ -98,6 +98,7 @@
     font-size: 1.3vw;
     font-weight: 400;
     color: #fff;
+    cursor: pointer;
 
     @include flex(flex, center, center);
 
@@ -120,6 +121,7 @@
     font-size: 1.3vw;
     font-weight: 400;
     color: #fff;
+    cursor: pointer;
 
     @include flex(flex, center, center);
 
@@ -142,6 +144,7 @@
     font-size: 1.3vw;
     font-weight: 400;
     color: #fff;
+    cursor: pointer;
 
     @include flex(flex, center, center);
 
@@ -342,6 +345,21 @@
     color: #fff;
     cursor: pointer;
 
+  }
+
+  .pro {
+
+    cursor: pointer;
+  }
+
+  .logout {
+
+    cursor: pointer;
+  }
+
+  .pricebtn {
+
+    cursor: pointer;
   }
 
 

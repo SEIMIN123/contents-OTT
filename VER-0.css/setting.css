@@ -1,0 +1,472 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+/* PC (해상도 1024px)*/
+@media all and (min-width: 1024px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    background-color: #B5DDFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #root .box {
+    width: 40vw;
+    height: 98vh;
+    background-color: #fff;
+    border-radius: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #root .email {
+    width: 30vw;
+    height: 25vh;
+    margin: 10px;
+    background-color: #B5DDFF;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #root .email > h2 {
+    width: 15vw;
+    height: 4vh;
+    font-size: 2vw;
+    color: #fff;
+    text-align: center;
+    margin: 3vh;
+  }
+  #root .emailinput {
+    width: 13vw;
+    height: 3.5vh;
+    margin: 2vh;
+    padding-left: 1vw;
+    border-radius: 30px;
+    border: 0;
+  }
+  #root .emailbtn {
+    width: 10vw;
+    height: 5vh;
+    margin: 2vh;
+    font-size: 1.2vw;
+    border-radius: 30px;
+    border: 0;
+    color: #918e8e;
+    -webkit-box-shadow: 0 5px #948e8e;
+            box-shadow: 0 5px #948e8e;
+    cursor: pointer;
+  }
+  #root .emailbtn:hover {
+    background-color: #e2dddd;
+  }
+  #root .emailbtn:active {
+    color: #7c7676;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-box-shadow: 0 5px #636060;
+            box-shadow: 0 5px #636060;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  #root .password {
+    width: 30vw;
+    height: 25vh;
+    margin: 10px;
+    background-color: #B5DDFF;
+    border-radius: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #root .password > h2 {
+    width: 15vw;
+    height: 4vh;
+    color: #fff;
+    font-size: 2vw;
+    text-align: center;
+    margin: 3vh;
+  }
+  #root .passwordinput {
+    width: 13vw;
+    height: 3.5vh;
+    margin: 2vh;
+    padding-left: 1vw;
+    border-radius: 30px;
+    border: 0;
+  }
+  #root .passwordbtn {
+    width: 10vw;
+    height: 5vh;
+    margin: 2vh;
+    font-size: 1.2vw;
+    border-radius: 30px;
+    border: 0;
+    color: #918e8e;
+    -webkit-box-shadow: 0 5px #948e8e;
+            box-shadow: 0 5px #948e8e;
+    cursor: pointer;
+  }
+  #root .passwordbtn:hover {
+    background-color: #e2dddd;
+  }
+  #root .passwordbtn:active {
+    color: #7c7676;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-box-shadow: 0 5px #636060;
+            box-shadow: 0 5px #636060;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  #root .ticket {
+    width: 30vw;
+    height: 25vh;
+    margin: 10px;
+    background-color: #B5DDFF;
+    border-radius: 30px;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #root .pri {
+    color: #fff;
+    font-size: 1.8vw;
+  }
+  #root .cha {
+    color: #fff;
+    font-size: 1.5vw;
+  }
+  #root .cha:hover {
+    font-size: 1.5vw;
+    color: #ee5050;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  #root .logout {
+    width: 30vw;
+    height: 20vh;
+    margin: 10px;
+    background-color: #B5DDFF;
+    border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #root .logoutbtn {
+    width: 10vw;
+    height: 5vh;
+    font-size: 1.3vw;
+    border-radius: 30px;
+    border: 0;
+    color: #918e8e;
+    -webkit-box-shadow: 0 5px #948e8e;
+            box-shadow: 0 5px #948e8e;
+    cursor: pointer;
+  }
+  #root .logoutbtn:hover {
+    background-color: #e2dddd;
+  }
+  #root .logoutbtn:active {
+    color: #7c7676;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-box-shadow: 0 5px #636060;
+            box-shadow: 0 5px #636060;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+}
+
+@media all and (max-width: 800px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    background-color: #B5DDFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #root .box {
+    width: 85vw;
+    height: 98vh;
+    background-color: #fff;
+    border-radius: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #root .email {
+    width: 60vw;
+    height: 25vh;
+    margin: 2vh;
+    background-color: #B5DDFF;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #root .email > h2 {
+    width: 30vw;
+    height: 4vh;
+    margin: 1vh;
+    font-size: 4vw;
+    color: #fff;
+    text-align: center;
+  }
+  #root .emailinput {
+    width: 40vw;
+    height: 3.5vh;
+    margin: 1vh;
+    padding-left: 4vw;
+    border-radius: 30px;
+    border: 0;
+  }
+  #root .emailbtn {
+    width: 30vw;
+    height: 3vh;
+    margin: 1vh;
+    font-size: 3vw;
+    border-radius: 30px;
+    border: 0;
+    color: #918e8e;
+    -webkit-box-shadow: 0 5px #948e8e;
+            box-shadow: 0 5px #948e8e;
+    cursor: pointer;
+  }
+  #root .emailbtn:hover {
+    background-color: #e2dddd;
+  }
+  #root .emailbtn:active {
+    color: #7c7676;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-box-shadow: 0 5px #636060;
+            box-shadow: 0 5px #636060;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  #root .password {
+    width: 60vw;
+    height: 25vh;
+    margin: 2vh;
+    background-color: #B5DDFF;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #root .password > h2 {
+    width: 30vw;
+    height: 4vh;
+    margin: 1vh;
+    font-size: 4vw;
+    color: #fff;
+    text-align: center;
+  }
+  #root .passwordinput {
+    width: 40vw;
+    height: 3.5vh;
+    margin: 1vh;
+    padding-left: 4vw;
+    border-radius: 30px;
+    border: 0;
+  }
+  #root .passwordbtn {
+    width: 30vw;
+    height: 3vh;
+    margin: 1vh;
+    font-size: 3vw;
+    border-radius: 30px;
+    border: 0;
+    color: #918e8e;
+    -webkit-box-shadow: 0 5px #948e8e;
+            box-shadow: 0 5px #948e8e;
+    cursor: pointer;
+  }
+  #root .passwordbtn:hover {
+    background-color: #e2dddd;
+  }
+  #root .passwordbtn:active {
+    color: #7c7676;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-box-shadow: 0 5px #636060;
+            box-shadow: 0 5px #636060;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  #root .ticket {
+    width: 60vw;
+    height: 25vh;
+    margin: 10px;
+    background-color: #B5DDFF;
+    border-radius: 30px;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #root .pri {
+    color: #fff;
+    font-size: 3.7vw;
+  }
+  #root .cha {
+    color: #fff;
+    font-size: 3.5vw;
+  }
+  #root .cha:hover {
+    font-size: 3.5vw;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: #ee5050;
+    cursor: pointer;
+  }
+  #root .logout {
+    width: 60vw;
+    height: 20vh;
+    margin: 10px;
+    background-color: #B5DDFF;
+    border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #root .logoutbtn {
+    width: 35vw;
+    height: 5vh;
+    font-size: 5vw;
+    border-radius: 30px;
+    border: 0;
+    color: #918e8e;
+    -webkit-box-shadow: 0 5px #948e8e;
+            box-shadow: 0 5px #948e8e;
+    cursor: pointer;
+  }
+  #root .logoutbtn:hover {
+    background-color: #e2dddd;
+  }
+  #root .logoutbtn:active {
+    color: #7c7676;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-box-shadow: 0 5px #636060;
+            box-shadow: 0 5px #636060;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+}

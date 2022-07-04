@@ -48,16 +48,15 @@
           <input class="ptext" type="password"></input>
         </div>
         <div class="con-2">
-          <button>변경하기</button>
-          <button>로그아웃</button>
+          <button class="pro">변경하기</button>
+          <button class="logout">로그아웃</button>
         </div>
         <div class="con-3">
           <h2 class="ticket">이용권</h2>
           <h3 class="ticket-1">Basic</h2>
             <h3 class="ticket-2">Standard</h2>
               <h3 class="ticket-3">Premium</h2>
-                <button>변경하기</button>
-
+                <button class="pricebtn">변경하기</button>
         </div>
       </div>
       <script>
@@ -87,7 +86,7 @@
         });
 
         //------------------------------------------------------------
-        
+
         const conThree = document.querySelector('.con-3');
         const ticketOne = document.querySelector('.ticket-1');
         const ticketTwo = document.querySelector('.ticket-2');
@@ -145,6 +144,50 @@
             ticketTwo.style.color = "#fff";
             ticketThree.style.color = "#D63D3D";
           }
+        });
+
+        //-----------------------------------------------------------
+
+        const home = document.querySelector('.hometext');
+        home.addEventListener('click', function () {
+          let page = '../VER-2/home.html';
+          location.href = page;
+        });
+
+        const list = document.querySelector('.listtext');
+        list.addEventListener('click', function () {
+          let page = '../VER-2/list-none.html';
+          location.href = page;
+        });
+
+        const contents = document.querySelector('.contentstext');
+        contents.addEventListener('click', function () {
+          let page = '../VER-2/contents.html';
+          location.href = page;
+        });
+
+        const setting = document.querySelector('.settingtext');
+        setting.addEventListener('click', function () {
+          let page = '../VER-2/setting.html';
+          location.href = page;
+        });
+
+        const priceBtn = document.querySelector('.pricebtn');
+        priceBtn.addEventListener('click', function () {
+          let page = '../VER-2/price.html';
+          location.href = page;
+        });
+
+        const logout = document.querySelector('.logout');
+        logout.addEventListener('click', function () {
+          let page = '../index.html';
+          location.href = page;
+        });
+
+        const btn1 = document.querySelector('.pro');
+        btn1.addEventListener('click', function () {
+          let page = 'https://seimin123.github.io/portfolio/html/portfolio-7.html';
+          location.href = page;
         });
       </script>
 </body>

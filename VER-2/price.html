@@ -120,7 +120,31 @@
       }
     });
 
-    
+    //-----------------------------------------------------------
+
+    const home = document.querySelector('.hometext');
+    home.addEventListener('click', function () {
+      let page = '../VER-2/home.html';
+      location.href = page;
+    });
+
+    const list = document.querySelector('.listtext');
+    list.addEventListener('click', function () {
+      let page = '../VER-2/list-none.html';
+      location.href = page;
+    });
+
+    const contents = document.querySelector('.contentstext');
+    contents.addEventListener('click', function () {
+      let page = '../VER-2/contents.html';
+      location.href = page;
+    });
+
+    const setting = document.querySelector('.settingtext');
+    setting.addEventListener('click', function () {
+      let page = '../VER-2/setting.html';
+      location.href = page;
+    });
   </script>
 </body>
 

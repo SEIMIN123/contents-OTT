@@ -149,8 +149,8 @@
 
   .box1 {
 
-    width: 170vw;
-    height: 70vh;
+    width: 227vw;
+    height: 65vh;
     background: url(../VER-2-pic/main.png);
     background-size: contain;
     background-position: 4.9vw top;
@@ -162,7 +162,7 @@
 
   .box2 {
 
-    width: 100vw;
+    width: 227vw;
     height: 50vh;
     flex-direction: column;
     @include flex(flex, flex-start, flex-start);
@@ -171,7 +171,7 @@
 
   .box3 {
 
-    width: 100vw;
+    width: 215vw;
     height: 50vh;
     flex-direction: column;
     @include flex(flex, flex-start, flex-start);
@@ -179,7 +179,7 @@
 
   .box4 {
 
-    width: 100vw;
+    width: 215vw;
     height: 50vh;
     flex-direction: column;
     @include flex(flex, flex-start, flex-start);
@@ -188,24 +188,24 @@
   //------------------------------------------------------------
 
   .lay-con {
-    width: 170vw;
-    height: 50vh;
+    width: 227vw;
+    height: 100vh;
     background-color: #000;
     @include flex(flex, center, center);
 
   }
 
   .lay-con-1 {
-    width: 170vw;
-    height: 50vh;
+    width: 227vw;
+    height: 100vh;
     background-color: #000;
     @include flex(flex, center, center);
 
   }
 
   .lay-con-2 {
-    width: 170vw;
-    height: 50vh;
+    width: 227vw;
+    height: 100vh;
     background-color: #000;
     @include flex(flex, center, center);
 
@@ -222,7 +222,7 @@
     font-weight: 600;
     flex-direction: column;
     margin-top: -41vh;
-    margin-left: -140vw;
+    margin-left: -198vw;
     position: absolute;
     z-index: 1;
     @include flex(flex, flex-start, flex-start);
@@ -238,7 +238,8 @@
     font-weight: 600;
     flex-direction: column;
     margin-top: -45vh;
-    margin-left: -140vw;
+    margin-left: -198vw;
+
     position: absolute;
     z-index: 1;
     @include flex(flex, flex-start, flex-start);
@@ -254,7 +255,7 @@
     font-weight: 600;
     flex-direction: column;
     margin-top: -45vh;
-    margin-left: -140vw;
+    margin-left: -198vw;
     position: absolute;
     z-index: 1;
     @include border();
@@ -286,9 +287,9 @@
     height: 20vh;
     color: #fff;
     position:absolute;
-    z-index: 1;
+    z-index: 999;
     margin: 5vw;
-    margin-right: -17vw;
+    margin-left: -30vw;
     @include flex(flex, center, center);
 
   }
@@ -300,5 +301,12 @@
     transition: 0.5s;
     border-radius: 10px;
   }
+
+  .lay:hover {
+    transform: translateY(-20px);
+    transition: 0.5s;
+  }
+
+
 
 }

@@ -42,16 +42,16 @@
     <div class="box1">
       <div class="lay-con">
         <div class="title-1">내가 보고 있던 콘텐츠</div>
-        <i class="fa-solid fa-chevron-left fa-3x"></i>
-        <i class="fa-solid fa-chevron-right fa-3x"></i>
+        <i class="fa-solid fa-chevron-left fa-3x" id="left-1"></i>
+        <i class="fa-solid fa-chevron-right fa-3x" id="right-1"></i>
       </div>
     </div>
 
     <div class="box2">
       <div class="lay-con-1">
         <div class="title-2">내 취향인 콘텐츠</div>
-        <i class="fa-solid fa-chevron-left fa-3x"></i>
-        <i class="fa-solid fa-chevron-right fa-3x"></i>
+        <i class="fa-solid fa-chevron-left fa-3x" id="left-2"></i>
+        <i class="fa-solid fa-chevron-right fa-3x" id="right-2"></i>
       </div>
     </div>
   </div>
@@ -61,13 +61,18 @@
     const layConOne = document.querySelector('.lay-con');
     const boxTwo = document.querySelector('.box2');
     const layConTwo = document.querySelector('.lay-con-1');
+    const prev1 = document.getElementById('left-1');
+    const next1 = document.getElementById('right-1');
+    const prev2 = document.getElementById('left-2');
+    const next2 = document.getElementById('right-2');
 
     let makepic1 = ["lay-1.png", "lay-2.png", "lay-3.png", "lay-4.png", "lay-5.png", "lay-6.png", "lay-7.png",
-      "lay-8.png", "lay-9.png"
+      "lay-8.png", "lay-9.png", "lay-10.png", "lay-11.png", "lay-12.png", "lay-13.png", "lay-14.png", "lay-15.png"
     ];
 
+
     let makepic2 = ["lay-1.png", "lay-2.png", "lay-3.png", "lay-4.png", "lay-5.png", "lay-6.png", "lay-7.png",
-      "lay-8.png", "lay-9.png"
+      "lay-8.png", "lay-9.png", "lay-10.png", "lay-11.png", "lay-12.png", "lay-13.png", "lay-14.png", "lay-15.png"
     ];
 
     let data = 0;
@@ -75,6 +80,7 @@
     for (let i = 0; i < makepic1.length; i++) {
 
       const makeDivOne = document.createElement('div');
+      makeDivOne.classList.add('lay');
       const img = document.createElement('img');
 
       layConOne.appendChild(makeDivOne);
@@ -90,28 +96,49 @@
       makeDivOne.style.marginBottom = "-1.5vw";
       makeDivOne.style.display = "fixed";
 
-      let data = true;
-      makeDivOne.addEventListener('mouseover', () => {
+      let data2 = true;
+      prev1.addEventListener('click', () => {
 
-        if (data === true) {
+        for (let i = 0; i < makepic1.length; i++) {
 
-          data = false;
-          makeDivOne.style.transform = 'translateY(-20px)';
-          makeDivOne.style.transition = '1s';
-        } else {
+          if (data2 === true) {
+            data2 = false;
+            makeDivOne.style.transform = "translateX(0vw)";
+            makeDivOne.style.transition = "1s";
+            console.log(prev);
+          } else {
+            data2 = true;
+            makeDivOne.style.transform = "translateX(0vw)";
+            makeDivOne.style.transition = "1s";
+          }
+        }
+      });
+      let data3 = true;
+      next1.addEventListener('click', () => {
 
-          data = true;
-          makeDivOne.style.transform = 'translateY(0px)';
-          makeDivOne.style.transition = '1s';
+        for (let i = 0; i < makepic1.length; i++) {
+
+          if (data3 === true) {
+
+            data3 = false;
+
+            makeDivOne.style.transform = "translateX(-128vw)";
+            makeDivOne.style.transition = "1s";
+          } else {
+
+            data3 = true;
+            makeDivOne.style.transform = "translateX(0vw)";
+            makeDivOne.style.transition = "1s";
+          }
 
         }
       });
-
     }
 
     for (let i = 0; i < makepic2.length; i++) {
 
       const makeDivTwo = document.createElement('div');
+      makeDivTwo.classList.add('lay');
       const img = document.createElement('img');
 
       layConTwo.appendChild(makeDivTwo);
@@ -127,23 +154,42 @@
       makeDivTwo.style.marginBottom = "-1.5vw";
       makeDivTwo.style.display = "fixed";
 
-      let data1 = true;
-      makeDivTwo.addEventListener('mouseover', () => {
+      let data4 = true;
+      prev2.addEventListener('click', () => {
 
-        if (data1 === true) {
+        for (let i = 0; i < makepic2.length; i++) {
 
-          data1 = false;
-          makeDivTwo.style.transform = 'translateY(-20px)';
-          makeDivTwo.style.transition = '1s';
-        } else {
-
-          data1 = true;
-          makeDivTwo.style.transform = 'translateY(0px)';
-          makeDivTwo.style.transition = '1s';
-
+          if (data4 === true) {
+            data4 = false;
+            makeDivTwo.style.transform = "translateX(0vw)";
+            makeDivTwo.style.transition = "1s";
+            console.log(prev);
+          } else {
+            data4 = true;
+            makeDivTwo.style.transform = "translateX(0vw)";
+            makeDivTwo.style.transition = "1s";
+          }
         }
       });
+      let data5 = true;
+      next2.addEventListener('click', () => {
 
+        for (let i = 0; i < makepic2.length; i++) {
+
+          if (data5 === true) {
+
+            data5 = false;
+
+            makeDivTwo.style.transform = "translateX(-128vw)";
+            makeDivTwo.style.transition = "1s";
+          } else {
+
+            data5 = true;
+            makeDivTwo.style.transform = "translateX(0vw)";
+            makeDivTwo.style.transition = "1s";
+          }
+        }
+      });
     }
 
     //----------------------------------------------------
@@ -171,6 +217,32 @@
         sideOpen.style.width = "5vw";
         sideOpen.style.backgroundColor = "#303030";
       }
+    });
+
+    //------------------------------------------------------------
+
+    const home = document.querySelector('.hometext');
+    home.addEventListener('click', function () {
+      let page = '../VER-2/home.html';
+      location.href = page;
+    });
+
+    const list = document.querySelector('.listtext');
+    list.addEventListener('click', function () {
+      let page = '../VER-2/list-none.html';
+      location.href = page;
+    });
+
+    const contents = document.querySelector('.contentstext');
+    contents.addEventListener('click', function () {
+      let page = '../VER-2/contents.html';
+      location.href = page;
+    });
+
+    const setting = document.querySelector('.settingtext');
+    setting.addEventListener('click', function () {
+      let page = '../VER-2/setting.html';
+      location.href = page;
     });
   </script>
 </body>

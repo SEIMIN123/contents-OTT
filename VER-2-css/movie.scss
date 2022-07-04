@@ -19,8 +19,8 @@
 
   width: 100vw;
   height: 100vh;
-  @include border();
   @include flex(flex, flex-start, flex-start);
+
 
   .side {
 
@@ -61,6 +61,7 @@
     margin: 2vh;
     margin-left: -4vw;
     color: #484848;
+    cursor: pointer;
 
     @include flex(flex, center, center);
 
@@ -74,7 +75,6 @@
     font-size: 1.3vw;
     font-weight: 400;
     color: #fff;
-
     @include flex(flex, center, center);
 
   }
@@ -83,6 +83,7 @@
     margin: 2vh;
     margin-left: -4vw;
     color: #484848;
+    cursor: pointer;
 
     @include flex(flex, center, center);
 
@@ -106,6 +107,7 @@
     margin: 2vh;
     margin-left: -4vw;
     color: #484848;
+    cursor: pointer;
 
     @include flex(flex, center, center);
   }
@@ -128,6 +130,7 @@
     margin: 2vh;
     margin-left: -4vw;
     color: #484848;
+    cursor: pointer;
 
     @include flex(flex, center, center);
   }
@@ -146,19 +149,31 @@
   }
 
   //-------------------------------------------------
+.con {
 
+  width: 100vw;
+  height: 100vh;
+  background-color: #0c0c0c;
+  flex-direction: column;
+  @include flex(flex, flex-start, flex-start);
+
+
+}
   .box1 {
 
-    width: 167vw;
+    width: 100vw;
     height: 90vh;
-    background-color: #000;
+    background-color: #0c0c0c;
+    z-index: 1;
     @include flex(flex, flex-start, flex-start);
 
   }
 
   .box2 {
 
-    width: 167vw;
+    width: 227vw;
+    height: 100vh;
+    background-color: #0c0c0c;
     @include flex(flex, flex-start, flex-start);
   }
 
@@ -166,10 +181,9 @@
 
   .movie {
 
-    width: 50vw;
+    width: 100vw;
     height: 90vh;
     background-color: #0c0c0c;
-
     @include flex(flex, center, center);
 
   }
@@ -179,7 +193,7 @@
     width: 38vw;
     height: 45vh;
     background: url(../VER-2-pic/movie.jpg);    
-    margin-right: -11vw;
+    margin-right: -10vw;
     border-radius: 30px;
 
   }
@@ -189,7 +203,7 @@
     color: #fff;
     margin-bottom: -40vw;
     margin-left: 2vw;
-
+    cursor: pointer;
   }
 
   .fa-heart {
@@ -202,12 +216,11 @@
     color: #fff;
     margin-bottom: -40vw;
     margin-left: 2vw;
-
   }
 
   .ep {
 
-    width: 45vw;
+    width: 50vw;
     height: 90vh;
     background-color: #0c0c0c;
     flex-direction: column;
@@ -316,8 +329,8 @@
   //-----------------------------------------------
 
   .lay-con {
-    width: 167vw;
-    height: 55vh;
+    width: 220vw;
+    height: 50vh;
     background-color: #000;
     @include flex(flex, center, center);
 
@@ -325,25 +338,28 @@
 
   .title {
 
-    width: 22vw;
+    width: 21.5vw;
     height: 5vh;
     color: #fff;
     font-size: 1.5vw;
     font-weight: 600;
     flex-direction: column;
-    margin-top: -45vh;
-    margin-left: -130vw;
+    margin-top: -41vh;
+    margin-left: -185vw;
     position: absolute;
     z-index: 1;
     @include flex(flex, flex-start, flex-start);
+
   }
 
   .fa-chevron-left {
     width: 2vw;
     height: 20vh;
     color: #fff;
+    z-index: 1;
+    margin: 5vw;
+    margin-right: 0vw;
     @include flex(flex, center, center);
-
   }
   .fa-chevron-left:hover {
 
@@ -358,11 +374,12 @@
     width: 2vw;
     height: 20vh;
     color: #fff;
-    position: absolute;
-    margin-right: -25vw;
-    z-index: 1;
-
+    position:absolute;
+    z-index: 999;
+    margin: 5vw;
+    margin-left: -25vw;
     @include flex(flex, center, center);
+
   }
 
   .fa-chevron-right:hover {

@@ -75,7 +75,7 @@
     font-size: 1.3vw;
     font-weight: 400;
     color: #fff;
-
+    cursor: pointer;
     @include flex(flex, center, center);
 
   }
@@ -97,6 +97,7 @@
     font-size: 1.3vw;
     font-weight: 400;
     color: #fff;
+    cursor: pointer;
 
     @include flex(flex, center, center);
 
@@ -119,6 +120,7 @@
     font-size: 1.3vw;
     font-weight: 400;
     color: #fff;
+    cursor: pointer;
 
     @include flex(flex, center, center);
 
@@ -141,6 +143,7 @@
     font-size: 1.3vw;
     font-weight: 400;
     color: #fff;
+    cursor: pointer;
 
     @include flex(flex, center, center);
 
@@ -233,5 +236,16 @@
     transition: 0.5s;
     border-radius: 10px;
 
+  }
+
+  .lay {
+
+    cursor: pointer;
+  }
+
+  .lay:hover {
+
+    transform: translateY(-20px);
+    transition: 1s;
   }
 }

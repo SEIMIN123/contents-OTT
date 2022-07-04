@@ -1,0 +1,556 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin flex ($d, $j, $a) {
+
+  display: ($d);
+  justify-content: ($j);
+  align-items: ($a);
+}
+
+@mixin border {
+  border: 1px solid black;
+}
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {}
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@mixin mobile {
+  @media all and (max-width:800px) {
+    @content;
+  }
+}
+
+@mixin pc {
+
+  /* PC (해상도 1024px)*/
+  @media all and (min-width:1024px) {
+    @content;
+  }
+}
+
+@include pc {
+  body {
+
+    background-color: rgb(49, 49, 49);
+
+
+  }
+
+
+  #con {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+
+  }
+
+  /* --------------------------------------------------------- */
+
+  /*  사이드 바  */
+
+  #con>div:nth-child(1) {
+
+    width: 10vw;
+    height: 100vh;
+    background-color: rgb(49, 49, 49);
+    position: fixed;
+    margin-left: -160px;
+    transition: 0.5s;
+
+
+  }
+
+  #con>div:nth-child(1):hover {
+    margin-left: 0px;
+
+  }
+
+  #con>div:nth-child(1):hover:before {
+    transition: 0.5s;
+    position: absolute;
+
+  }
+
+  #con>div:nth-child(1)>ul>li {
+
+    color: white;
+    list-style: none;
+    line-height: 5vw;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+
+  #con>div:nth-child(1)>ul>li:hover {
+    color: rgb(179, 179, 179);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  /* ---------------------------------------------------- */
+
+  /* 메인 세부화면 */
+
+  .lay {
+
+    width: 100vw;
+    height: 100vh;
+
+  }
+
+  .lay>section {
+
+    width: 100vw;
+    height: 100vh;
+    margin-left: 2vw;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+
+  }
+
+  .lay>section:nth-child(1) {
+    width: 100vw;
+    height: 100vh;
+    background: url(../pic/main-1.png);
+    background-size: cover;
+
+  }
+
+  .lay>section:nth-child(1):hover {
+
+    cursor: pointer;
+
+  }
+
+  .lay>section:nth-child(2) {
+
+    width: 100vw;
+    height: 30vh;
+    background-color: rgb(66, 66, 66);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+  }
+
+  .lay>section:nth-child(2)>h1 {
+
+    font-size: 1.3vw;
+  }
+
+
+  /* ----------------------------------------------------- */
+
+  /* 가수 정보 */
+
+  .lay>section:nth-child(3) {
+    width: 100vw;
+    height: 35vh;
+    background-color: rgb(66, 66, 66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lay>section:nth-child(3)>div {
+
+    width: 20vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+
+    border-radius: 30px;
+    margin: 10vw;
+  }
+
+  .lay>section:nth-child(3)>div:hover {
+
+    cursor: pointer;
+    transition: 0.5s;
+    transform: translate(3px, 3px);
+  }
+
+  .lay>section:nth-child(3)>div:nth-child(1) {
+
+    background: url(https://image.yes24.com/momo/TopCate0010/hani/L_1174219.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: initial;
+    background-repeat: no-repeat;
+
+
+  }
+
+  .lay>section:nth-child(3)>div:nth-child(2) {
+
+    background: url(https://t1.daumcdn.net/cfile/tistory/1974B737509B8ECB09);
+    ;
+
+    background-size: cover;
+    background-position: center center;
+    background-attachment: initial;
+    background-repeat: no-repeat;
+  }
+
+
+  /* ------------------------------------------------------ */
+
+  /* 하단 추천작품 레이아웃 */
+
+  .lay>section:nth-child(4) {
+    width: 100vw;
+    height: 50vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+  }
+
+  .lay>section:nth-child(4)>div {
+
+    width: 15vw;
+    height: 40vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: 20px;
+  }
+
+  .lay>section:nth-child(4)>div:hover {
+
+    cursor: pointer;
+    transition: 0.5s;
+    transform: translate(3px, 3px);
+  }
+
+  .lay>section:nth-child(4)>div:nth-child(1) {
+
+    background: url(https://an2-img.amz.wtchn.net/image/v2/YH8i43pDiJFWRUCOb8BpJw.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk56STVlREV3T0RCeE9EQWlYU3dpY0NJNklpOTJNaTl6ZEc5eVpTOXBiV0ZuWlM4eE5qUTFNRGMzTlRVM01URTFOVFV6T0RRMkluMC5XUlNXX2VwVkVHQWxmcmdQU1MyVmM0ejhUUTFuTzgxNmgyQWVMbGVmdmZz);
+    background-size: cover;
+
+  }
+
+  .lay>section:nth-child(4)>div:nth-child(2) {
+
+    background: url(https://an2-img.amz.wtchn.net/image/v2/uphrzC9T_Wdm1Dstq-U28A.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk56STVlREV3T0RCeE9EQWlYU3dpY0NJNklpOTJNaTl6ZEc5eVpTOXBiV0ZuWlM4eE5qUXdNalEyTXpBMU9EY3dPVFEyTURrM0luMC51V2dBSXM0VER1M2tDdmF1Q3ZNZTFVTjQ3VlY1M1ZxLWtSVDhoXzZ6ZmxB);
+    background-size: cover;
+
+  }
+
+  .lay>section:nth-child(4)>div:nth-child(3) {
+
+    background: url(https://an2-img.amz.wtchn.net/image/v2/u0tKltiL3XcPp5xmMJRC8Q.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk56STVlREV3T0RCeE9EQWlYU3dpY0NJNklpOTJNaTl6ZEc5eVpTOXBiV0ZuWlM4eE5qTXhNREV5T1Rnd05UVTVNVFkwTVRjeUluMC5EQmNfaHFFcDBpclBmck9GdnJsSzhySUVCN3V5clJvVEhxMThJNno3WW13);
+    background-size: cover;
+
+  }
+
+  .lay>section:nth-child(4)>div:nth-child(4) {
+
+    background: url(https://an2-img.amz.wtchn.net/image/v2/7ZdwKaVwigZsocrfF8IGtg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk56STVlREV3T0RCeE9EQWlYU3dpY0NJNklpOTJNaTl6ZEc5eVpTOXBiV0ZuWlM4eE5qTXhNRGcyTlRBMk9UVXlNVEV5TnpnNUluMC44d2JBWEN4T0F3V1hJQjZYYU1ETmoyNkJIZzlOY2NTTWhCU1JfQzc5bmlF);
+    background-size: cover;
+
+  }
+
+  .lay>section:nth-child(4)>div:nth-child(5) {
+
+    background: url(https://an2-img.amz.wtchn.net/image/v2/PHUfGPYtliuSNLkhVgmE_g.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk56STVlREV3T0RCeE9EQWlYU3dpY0NJNklpOTJNaTl6ZEc5eVpTOXBiV0ZuWlM4eE5qTTFNakk0TURFNU5qVTRPVE01TkRNNUluMC43c2EweHBDbmFLMGxhWXNfajlGbnR3amN2UVJGQzhDYnpwb1lLMmlVWXdz);
+
+    background-size: cover;
+
+  }
+
+  .lay>section:nth-child(4)>div:nth-child(6) {
+
+    background: url(https://an2-img.amz.wtchn.net/image/v2/TqccPIvpQvygjEzy3CgHZw.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk56STVlREV3T0RCeE9EQWlYU3dpY0NJNklpOTJNaTl6ZEc5eVpTOXBiV0ZuWlM4eE5qUXhNemN5TkRJM05EZzFOVFU0TVRnNUluMC5GRmdJRkctUHBCY0dsb0thYklOTHVBUFhaTENaN21pMlhUZ1c5X082UnNn);
+
+    background-size: cover;
+
+  }
+}
+
+@include mobile {
+  body {
+
+    background-color: rgb(49, 49, 49);
+  }
+
+  s #con {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+
+  }
+
+  /* --------------------------------------------------------- */
+
+  /*  사이드 바  */
+
+
+  #con>div:nth-child(1) {
+
+    width: 45vw;
+    height: 100vh;
+    background-color: rgb(31, 31, 31);
+    position: fixed;
+    z-index: 999;
+    margin-left: -41vw;
+    transition: 0.5s;
+    margin-top: -1.2vh;
+
+  }
+
+  #con>div:nth-child(1):hover {
+    margin-left: 0px;
+  }
+
+  #con>div:nth-child(1):hover:before {
+    transition: 0.5s;
+    position: absolute;
+
+  }
+
+  #con>div:nth-child(1)>ul>li {
+
+    color: white;
+    line-height: 5vw;
+    text-align: center;
+    font-weight: bolder;
+    margin: 5vh;
+    font-size: 20px;
+    list-style: none;
+  }
+
+  #con>div:nth-child(1)>ul>li:hover {
+    color: rgb(179, 179, 179);
+    transition: 0.5s;
+  }
+
+
+  /* ---------------------------------------------------- */
+
+  /* 메인 세부화면 */
+
+  .lay {
+
+    width: 100vw;
+    height: 150vh;
+
+  }
+
+  .lay>section {
+
+    width: 100vw;
+    height: 100vh;
+    margin-left: 2vw;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+
+  }
+
+  .lay>section:nth-child(1) {
+    width: 100vw;
+    height: 30vh;
+    background: url(../pic/main-1.png);
+    background-size: contain;
+    background-position: center center;
+    background-attachment: initial;
+    background-repeat: no-repeat;
+
+  }
+
+  .lay>section:nth-child(2) {
+
+    width: 100vw;
+    height: 40vh;
+    background-color: rgb(66, 66, 66);
+    color: #fff;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  /* ----------------------------------------------------- */
+
+  /* 가수 정보 */
+
+  .lay>section:nth-child(3) {
+    width: 100vw;
+    height: 35vh;
+    background-color: rgb(66, 66, 66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lay>section:nth-child(3)>div {
+
+    width: 40vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vw;
+
+
+  }
+
+  .lay>section:nth-child(3)>div:hover {
+
+    transition: 0.5s;
+    transform: translate(3px, 3px);
+  }
+
+  .lay>section:nth-child(3)>div:nth-child(1) {
+
+    background: url(https://image.yes24.com/momo/TopCate0010/hani/L_1174219.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: initial;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+
+
+  }
+
+  .lay>section:nth-child(3)>div:nth-child(2) {
+
+    background: url(https://t1.daumcdn.net/cfile/tistory/1974B737509B8ECB09);
+    ;
+
+    background-size: cover;
+    background-position: center center;
+    background-attachment: initial;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+  }
+
+  /* ------------------------------------------------------ */
+
+  /* 하단 추천작품 레이아웃 */
+
+  .lay>section:nth-child(4) {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .lay>section:nth-child(4)>div {
+
+    width: 40vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-size: contain;
+    background-position: center center;
+    background-attachment: initial;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    margin: 20px;
+  }
+
+  .lay>section:nth-child(4)>div:hover {
+
+    transition: 0.5s;
+    transform: translate(3px, 3px);
+  }
+
+  .lay>section:nth-child(4)>div:nth-child(1) {
+
+    background: url(https://an2-img.amz.wtchn.net/image/v2/YH8i43pDiJFWRUCOb8BpJw.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk56STVlREV3T0RCeE9EQWlYU3dpY0NJNklpOTJNaTl6ZEc5eVpTOXBiV0ZuWlM4eE5qUTFNRGMzTlRVM01URTFOVFV6T0RRMkluMC5XUlNXX2VwVkVHQWxmcmdQU1MyVmM0ejhUUTFuTzgxNmgyQWVMbGVmdmZz);
+    background-size: cover;
+
+  }
+
+  .lay>section:nth-child(4)>div:nth-child(2) {
+
+    background: url(https://an2-img.amz.wtchn.net/image/v2/uphrzC9T_Wdm1Dstq-U28A.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk56STVlREV3T0RCeE9EQWlYU3dpY0NJNklpOTJNaTl6ZEc5eVpTOXBiV0ZuWlM4eE5qUXdNalEyTXpBMU9EY3dPVFEyTURrM0luMC51V2dBSXM0VER1M2tDdmF1Q3ZNZTFVTjQ3VlY1M1ZxLWtSVDhoXzZ6ZmxB);
+    background-size: cover;
+
+  }
+
+  .lay>section:nth-child(4)>div:nth-child(3) {
+
+    background: url(https://an2-img.amz.wtchn.net/image/v2/u0tKltiL3XcPp5xmMJRC8Q.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk56STVlREV3T0RCeE9EQWlYU3dpY0NJNklpOTJNaTl6ZEc5eVpTOXBiV0ZuWlM4eE5qTXhNREV5T1Rnd05UVTVNVFkwTVRjeUluMC5EQmNfaHFFcDBpclBmck9GdnJsSzhySUVCN3V5clJvVEhxMThJNno3WW13);
+    background-size: cover;
+
+  }
+
+  .lay>section:nth-child(4)>div:nth-child(4) {
+
+    background: url(https://an2-img.amz.wtchn.net/image/v2/7ZdwKaVwigZsocrfF8IGtg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk56STVlREV3T0RCeE9EQWlYU3dpY0NJNklpOTJNaTl6ZEc5eVpTOXBiV0ZuWlM4eE5qTXhNRGcyTlRBMk9UVXlNVEV5TnpnNUluMC44d2JBWEN4T0F3V1hJQjZYYU1ETmoyNkJIZzlOY2NTTWhCU1JfQzc5bmlF);
+    background-size: cover;
+
+  }
+
+  .lay>section:nth-child(4)>div:nth-child(5) {
+
+    background: url(https://an2-img.amz.wtchn.net/image/v2/PHUfGPYtliuSNLkhVgmE_g.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk56STVlREV3T0RCeE9EQWlYU3dpY0NJNklpOTJNaTl6ZEc5eVpTOXBiV0ZuWlM4eE5qTTFNakk0TURFNU5qVTRPVE01TkRNNUluMC43c2EweHBDbmFLMGxhWXNfajlGbnR3amN2UVJGQzhDYnpwb1lLMmlVWXdz);
+
+    background-size: cover;
+
+  }
+
+  .lay>section:nth-child(4)>div:nth-child(6) {
+
+    background: url(https://an2-img.amz.wtchn.net/image/v2/TqccPIvpQvygjEzy3CgHZw.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk56STVlREV3T0RCeE9EQWlYU3dpY0NJNklpOTJNaTl6ZEc5eVpTOXBiV0ZuWlM4eE5qUXhNemN5TkRJM05EZzFOVFU0TVRnNUluMC5GRmdJRkctUHBCY0dsb0thYklOTHVBUFhaTENaN21pMlhUZ1c5X082UnNn);
+
+    background-size: cover;
+
+  }
+}
