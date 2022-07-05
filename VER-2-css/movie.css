@@ -533,3 +533,10 @@
   transition: 0.5s;
   border-radius: 10px;
 }
+
+#root .lay:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}

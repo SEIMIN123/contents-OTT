@@ -385,4 +385,10 @@
     border-radius: 10px;
 
   }
+
+  .lay:hover {
+
+    transform: translateY(-20px);
+    transition: 0.5s;
+  }
 }

@@ -1,5 +1,5 @@
 const btn = document.querySelector('.btn');
 btn.addEventListener('click', function(){
-  let page = '../html/profile.html';
+  let page = '../VER-0/profile.html';
   location.href = page;
 });
