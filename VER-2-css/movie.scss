@@ -15,6 +15,12 @@
   border: 1px solid black;
 }
 
+body::-webkit-scrollbar {
+
+  width: 0; 
+  display : none;
+}
+
 #root {
 
   width: 100vw;

@@ -32,14 +32,17 @@
     @content;
   }
 }
+body::-webkit-scrollbar {
 
+  width: 0; 
+  display : none;
+}
 @include pc {
   #root {
 
     width: 100vw;
     height: 100vh;
     @include flex(flex, flex-start, flex-start);
-
 
     .side {
 
@@ -173,6 +176,7 @@
       background-position: 4.9vw top;
       background-attachment: fixed;
       background-repeat: no-repeat;
+      
       cursor: pointer;
       @include flex(flex, center, center);
 

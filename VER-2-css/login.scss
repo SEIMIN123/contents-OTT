@@ -41,7 +41,6 @@
     height: 100vh;
     flex-direction: column;
     background: url(../VER-2-pic/background.png);
-    @include border();
     @include flex(flex, center, center);
 
     .atv {
@@ -149,7 +148,6 @@
     height: 100vh;
     flex-direction: column;
     background: url(../VER-2-pic/background.png);
-    @include border();
     @include flex(flex, center, center);
 
     .atv {

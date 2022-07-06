@@ -5,6 +5,11 @@
           box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
 #root {
   width: 150vw;
   height: 100vh;
