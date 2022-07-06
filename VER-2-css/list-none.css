@@ -106,6 +106,12 @@ body::-webkit-scrollbar {
           align-items: center;
 }
 
+#root .hometext:hover {
+  color: #414141;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 #root .list {
   margin: 2vh;
   margin-left: -4vw;
@@ -138,6 +144,12 @@ body::-webkit-scrollbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#root .listtext:hover {
+  color: #414141;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 #root .contents {
@@ -174,6 +186,12 @@ body::-webkit-scrollbar {
           align-items: center;
 }
 
+#root .contentstext:hover {
+  color: #414141;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 #root .setting {
   margin: 2vh;
   margin-left: -4vw;
@@ -206,6 +224,12 @@ body::-webkit-scrollbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#root .settingtext:hover {
+  color: #4b4b4b;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 #root .box1 {

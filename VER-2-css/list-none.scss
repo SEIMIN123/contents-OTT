@@ -81,15 +81,21 @@ body::-webkit-scrollbar {
     font-weight: 400;
     color: #fff;
     cursor: pointer;
+
     @include flex(flex, center, center);
 
+  }
+
+  .hometext:hover {
+
+    color: rgb(65, 65, 65);
+    transition: 1s;
   }
 
   .list {
     margin: 2vh;
     margin-left: -4vw;
     color: #484848;
-
     @include flex(flex, center, center);
 
   }
@@ -103,9 +109,14 @@ body::-webkit-scrollbar {
     font-weight: 400;
     color: #fff;
     cursor: pointer;
-
     @include flex(flex, center, center);
 
+  }
+
+  .listtext:hover {
+
+    color: rgb(65, 65, 65);
+    transition: 1s;
   }
 
   .contents {
@@ -113,7 +124,6 @@ body::-webkit-scrollbar {
     margin: 2vh;
     margin-left: -4vw;
     color: #484848;
-
     @include flex(flex, center, center);
   }
 
@@ -126,9 +136,14 @@ body::-webkit-scrollbar {
     font-weight: 400;
     color: #fff;
     cursor: pointer;
-
     @include flex(flex, center, center);
 
+  }
+
+  .contentstext:hover {
+
+    color: rgb(65, 65, 65);
+    transition: 1s;
   }
 
   .setting {
@@ -136,7 +151,6 @@ body::-webkit-scrollbar {
     margin: 2vh;
     margin-left: -4vw;
     color: #484848;
-
     @include flex(flex, center, center);
   }
 
@@ -149,10 +163,17 @@ body::-webkit-scrollbar {
     font-weight: 400;
     color: #fff;
     cursor: pointer;
-
     @include flex(flex, center, center);
 
   }
+
+  .settingtext:hover {
+
+    color: rgb(75, 75, 75);
+    transition: 1s;
+  }
+
+  //----------------------------------------------------------
 
   .box1 {
 
