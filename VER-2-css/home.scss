@@ -32,11 +32,13 @@
     @content;
   }
 }
+
 body::-webkit-scrollbar {
 
-  width: 0; 
-  display : none;
+  width: 0;
+  display: none;
 }
+
 @include pc {
   #root {
 
@@ -54,18 +56,17 @@ body::-webkit-scrollbar {
       bottom: 0;
       z-index: 4;
       overflow: hidden;
-
-
+      
     }
-
+    
     .sidecon {
-
+      
       width: 5vw;
       height: 100vh;
       flex-direction: column;
       background-color: #141414;
       position: absolute;
-
+      
       @include flex(flex, flex-start, center);
     }
 
@@ -200,7 +201,7 @@ body::-webkit-scrollbar {
       background-position: 4.9vw top;
       background-attachment: fixed;
       background-repeat: no-repeat;
-      
+
       cursor: pointer;
       @include flex(flex, center, center);
 

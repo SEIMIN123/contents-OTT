@@ -235,10 +235,10 @@
             align-items: center;
   }
   #root .start {
-    width: 15vw;
+    width: 25vw;
     height: 5vh;
     margin: 1.5vw;
-    font-size: 1vw;
+    font-size: 2vw;
     font-weight: 600;
     border-radius: 10px;
     color: #fff;
@@ -272,7 +272,7 @@
             transform: translateY(2px);
   }
   #root .forgot {
-    font-size: 1vw;
+    font-size: 1.5vw;
     color: rgba(255, 255, 255, 0.5);
   }
 }
