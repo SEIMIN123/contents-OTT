@@ -39,9 +39,6 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-@include pc {
-  #root {
-
     width: 100vw;
     height: 100vh;
     @include flex(flex, flex-start, flex-start);
@@ -359,4 +356,3 @@ body::-webkit-scrollbar {
       transition: 0.5s;
     }
   }
-}
