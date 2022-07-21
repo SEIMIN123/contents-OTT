@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
@@ -13,20 +12,11 @@
   #root {
     width: 100vw;
     height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     background: url(../VER-2-pic/background.png);
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root .atv {
     width: 11.5vw;
@@ -34,26 +24,17 @@
     color: #fff;
     font-size: 50px;
     font-weight: 400;
-    font-family: 'Kumar One', cursive;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    font-family: "Kumar One", cursive;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root .login {
     width: 15vw;
     height: 13vh;
     color: #fff;
     font-size: 24px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     font-weight: 400;
   }
   #root .logtext {
@@ -69,10 +50,7 @@
     color: #fff;
     font-size: 24px;
     font-weight: 400;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   #root .passtext {
     width: 15vw;
@@ -91,58 +69,37 @@
     border-radius: 10px;
     color: #fff;
     border: 0;
-    -webkit-box-shadow: 0px 5px 5px #070707;
-            box-shadow: 0px 5px 5px #070707;
+    box-shadow: 0px 5px 5px #070707;
     background-color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
     border: 1px solid black;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root .start:hover {
     background-color: #666666;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
   #root .start:active {
-    -webkit-transition: 0.2s;
     transition: 0.2s;
-    -webkit-box-shadow: 0 5px #020101;
-            box-shadow: 0 5px #020101;
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px);
+    box-shadow: 0 5px rgb(2, 1, 1);
+    transform: translateY(2px);
   }
   #root .forgot {
     font-size: 1vw;
     color: rgba(255, 255, 255, 0.5);
   }
 }
-
 @media all and (max-width: 800px) {
   #root {
     width: 100vw;
     height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     background: url(../VER-2-pic/background.png);
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root .atv {
     width: 11.5vw;
@@ -150,36 +107,21 @@
     color: #fff;
     font-size: 50px;
     font-weight: 400;
-    font-family: 'Kumar One', cursive;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    font-family: "Kumar One", cursive;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root .login {
     width: 20vw;
     height: 13vh;
     color: #fff;
     font-size: 24px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     font-weight: 400;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root .logtext {
     width: 40vw;
@@ -187,15 +129,9 @@
     padding-left: 0.5vw;
     border-radius: 5px;
     font-size: 1.3vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root .password {
     width: 25vw;
@@ -203,19 +139,10 @@
     color: #fff;
     font-size: 24px;
     font-weight: 400;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    flex-direction: column;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root .passtext {
     width: 40vw;
@@ -224,15 +151,9 @@
     border-radius: 5px;
     letter-spacing: 5px;
     font-size: 1.3vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root .start {
     width: 25vw;
@@ -243,33 +164,22 @@
     border-radius: 10px;
     color: #fff;
     border: 0;
-    -webkit-box-shadow: 0px 5px 5px #070707;
-            box-shadow: 0px 5px 5px #070707;
+    box-shadow: 0px 5px 5px #070707;
     background-color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
     border: 1px solid black;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root .start:hover {
     background-color: #666666;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
   #root .start:active {
-    -webkit-transition: 0.2s;
     transition: 0.2s;
-    -webkit-box-shadow: 0 5px #020101;
-            box-shadow: 0 5px #020101;
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px);
+    box-shadow: 0 5px rgb(2, 1, 1);
+    transform: translateY(2px);
   }
   #root .forgot {
     font-size: 1.5vw;

@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
@@ -11,41 +10,30 @@
 /* PC (해상도 1024px)*/
 @media all and (min-width: 1024px) {
   body {
-    background-color: #313131;
+    background-color: rgb(49, 49, 49);
   }
   #con {
     width: 100vw;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
   }
   /* --------------------------------------------------------- */
   /*  사이드 바  */
   #con > div:nth-child(1) {
     width: 10vw;
     height: 100vh;
-    background-color: #313131;
+    background-color: rgb(49, 49, 49);
     position: fixed;
     margin-left: -160px;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   #con > div:nth-child(1):hover {
     margin-left: 0px;
   }
   #con > div:nth-child(1):hover:before {
-    -webkit-transition: 0.5s;
     transition: 0.5s;
     position: absolute;
   }
@@ -58,9 +46,8 @@
     font-size: 20px;
   }
   #con > div:nth-child(1) > ul > li:hover {
-    color: #b3b3b3;
+    color: rgb(179, 179, 179);
     cursor: pointer;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   /* ---------------------------------------------------- */
@@ -74,16 +61,10 @@
     height: 100vh;
     margin: 10px;
     margin-left: 2vw;
-    background-color: #424242;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    background-color: rgb(66, 66, 66);
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     border-radius: 30px;
   }
@@ -100,15 +81,9 @@
     width: 100vw;
     height: 35vh;
     color: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .lay > section:nth-child(2) > h2 {
     font-size: 1.3vw;
@@ -118,41 +93,25 @@
   .lay > section:nth-child(3) {
     width: 100vw;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
   .lay > section:nth-child(3) > div {
     width: 20vw;
     height: 40vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     border-radius: 30px;
     margin: 20px;
   }
   .lay > section:nth-child(3) > div:hover {
     cursor: pointer;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
-    -webkit-transform: translate(3px, 3px);
-            transform: translate(3px, 3px);
+    transform: translate(3px, 3px);
   }
   .lay > section:nth-child(3) > div:nth-child(1) {
     background: url(https://www.waratomo.com/shop/upfiles/psimg_UPCH20497.jpg);
@@ -187,10 +146,9 @@
     background-size: cover;
   }
 }
-
 @media all and (max-width: 800px) {
   body {
-    background-color: #313131;
+    background-color: rgb(49, 49, 49);
     /* --------------------------------------------------------- */
     /*  사이드 바  */
     /* ---------------------------------------------------- */
@@ -201,35 +159,24 @@
   body #con {
     width: 100vw;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
   }
   body #con > div:nth-child(1) {
     width: 45vw;
     height: 100vh;
-    background-color: #1f1f1f;
+    background-color: rgb(31, 31, 31);
     position: fixed;
     z-index: 999;
     margin-left: -41vw;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   body #con > div:nth-child(1):hover {
     margin-left: 0px;
   }
   body #con > div:nth-child(1):hover:before {
-    -webkit-transition: 0.5s;
     transition: 0.5s;
     position: absolute;
   }
@@ -243,8 +190,7 @@
     list-style: none;
   }
   body #con > div:nth-child(1) > ul > li:hover {
-    color: #b3b3b3;
-    -webkit-transition: 0.5s;
+    color: rgb(179, 179, 179);
     transition: 0.5s;
   }
   body .lay {
@@ -256,16 +202,10 @@
     height: 100vh;
     margin: 10px;
     margin-left: 2vw;
-    background-color: #424242;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    background-color: rgb(66, 66, 66);
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -286,54 +226,32 @@
     height: 30vh;
     color: #fff;
     font-size: 2vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   body .lay > section:nth-child(3) {
     width: 100vw;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
   body .lay > section:nth-child(3) > div {
     width: 40vw;
     height: 20vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     border-radius: 30px;
     margin: 20px;
   }
   body .lay > section:nth-child(3) > div:hover {
     cursor: pointer;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
-    -webkit-transform: translate(3px, 3px);
-            transform: translate(3px, 3px);
+    transform: translate(3px, 3px);
   }
   body .lay > section:nth-child(3) > div:nth-child(1) {
     background: url(https://www.waratomo.com/shop/upfiles/psimg_UPCH20497.jpg);

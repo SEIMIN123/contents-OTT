@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
@@ -18,47 +17,26 @@
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root .box {
     width: 30vw;
     height: 20vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   #root .text {
     width: 100vw;
     height: 100vh;
     color: white;
     margin-bottom: 100px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
   #root .btn {
@@ -67,24 +45,19 @@
     font-size: 25px;
     border: 0;
     border-radius: 15px;
-    color: #6e6a6a;
+    color: rgb(110, 106, 106);
     cursor: pointer;
-    -webkit-box-shadow: 0 5px #9e9e9e;
-            box-shadow: 0 5px #9e9e9e;
+    box-shadow: 0 5px rgb(158, 158, 158);
   }
   #root .btn:hover {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
   }
   #root .btn:active {
-    -webkit-transition: 0.2s;
     transition: 0.2s;
-    -webkit-box-shadow: 0 5px #1d1616;
-            box-shadow: 0 5px #1d1616;
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px);
+    box-shadow: 0 5px rgb(29, 22, 22);
+    transform: translateY(2px);
   }
 }
-
 @media all and (max-width: 800px) {
   #root {
     width: 100vw;
@@ -94,47 +67,26 @@
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root .box {
     width: 30vw;
     height: 20vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   #root .text {
     width: 100vw;
     height: 100vh;
     color: white;
     margin-bottom: 100px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
   #root .text > h1 {
@@ -146,19 +98,15 @@
     height: 10vh;
     font-size: 25px;
     border-radius: 15px;
-    color: #6e6a6a;
-    -webkit-box-shadow: 0 5px #9e9e9e;
-            box-shadow: 0 5px #9e9e9e;
+    color: rgb(110, 106, 106);
+    box-shadow: 0 5px rgb(158, 158, 158);
   }
   #root .btn:hover {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
   }
   #root .btn:active {
-    -webkit-transition: 0.2s;
     transition: 0.2s;
-    -webkit-box-shadow: 0 5px #1d1616;
-            box-shadow: 0 5px #1d1616;
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px);
+    box-shadow: 0 5px rgb(29, 22, 22);
+    transform: translateY(2px);
   }
 }
